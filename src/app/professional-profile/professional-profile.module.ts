@@ -2,6 +2,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import {PanelModule} from 'primeng/panel';
+import {CardModule} from 'primeng/card';
 
 import { ProfessionalProfileComponent } from './professional-profile.component';
 import { ProfessionalExperienceComponent } from './professional-experience/professional-experience.component';
@@ -12,7 +13,8 @@ import { EducationComponent } from './education/education.component';
   declarations: [ProfessionalProfileComponent, ProfessionalExperienceComponent, LanguagesComponent, EducationComponent],
   imports: [
     CommonModule,
-    PanelModule
+    PanelModule,
+    CardModule
   ],
   exports: [
     ProfessionalProfileComponent
