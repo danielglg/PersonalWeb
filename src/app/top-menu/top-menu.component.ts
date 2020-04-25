@@ -15,10 +15,12 @@ export class TopMenuComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-        label: 'About'
+        label: 'About',
+        routerLink: ['/about']
       },
       {
-        label: 'CV'
+        label: 'CV',
+        routerLink: ['/cv']
       },
       {
         label: 'Projects',
@@ -48,7 +50,8 @@ export class TopMenuComponent implements OnInit {
         ]
       },
       {
-        label: 'Contact'
+        label: 'Contact',
+        routerLink: ['/contact']
       }
   ];
   }
