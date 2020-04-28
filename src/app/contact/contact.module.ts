@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { FormsModule } from '@angular/forms';
 
+import {CardModule} from 'primeng/card';
+
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
 import { ContactComponent } from './contact.component';
@@ -11,7 +13,8 @@ import { ContactComponent } from './contact.component';
   declarations: [ContactComponent, ContactFormComponent],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    CardModule
   ],
   exports: [
     ContactComponent
