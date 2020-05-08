@@ -12,13 +12,32 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { AboutComponent } from './about/about.component';
 
+// Projects
+import { PaymentsComponent } from './projects/payments/payments.component';
+import { PaymentsEmvComponent } from './projects/payments/payments-emv.component';
+import { PaymentsAcquiringComponent } from './projects/payments/payments-acquiring.component';
+import { NetworksComponent } from './projects/networks/networks.component';
+import { NetworksPcrfComponent } from './projects/networks/networks-pcrf.component';
+import { VideoComponent } from './projects/video/video.component';
+import { VideoPersonalizationComponent } from './projects/video/video-personalization.component';
+import { EmbeddedComponent } from './projects/embedded/embedded.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     TopMenuComponent,
-    AboutComponent
+    AboutComponent,
+
+    // Projects
+    PaymentsComponent,
+    PaymentsEmvComponent,
+    PaymentsAcquiringComponent,
+    NetworksComponent,
+    NetworksPcrfComponent,
+    VideoComponent,
+    VideoPersonalizationComponent,
+    EmbeddedComponent
   ],
   imports: [
     BrowserModule,
