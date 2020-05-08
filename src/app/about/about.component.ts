@@ -10,12 +10,17 @@ import { ChartInfoService } from './chart-info.service';
 })
 export class AboutComponent implements OnInit {
 
+  timerId: any;
+  trial;
+
   dataLanguages: any;
   dataSectors: any;
   dataDevelopment: any;
   data: any;
 
   constructor(private chartInfoService: ChartInfoService) {
+
+    this.trial = 0;
 
     this.dataLanguages   = this.chartInfoService.getLanguages();
     this.dataSectors     = this.chartInfoService.getSectors();
@@ -24,6 +29,23 @@ export class AboutComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.timerId = setInterval( () => {this.changeAttentionGetter()} , 3000);
+  }
+
+  changeAttentionGetter() {
+    const messages = [
+      'Are you interested in knowing how excellent software factories work?',
+      'Have you ever wondered what is under the hood of ...',
+      '...telecommunication, audiovisual, electronic or payment systems?',
+      'Do global minds inspire you?'
+    ];
+
+    const text = messages[this.trial];
+
+    this.trial++;
+    this.trial = this.trial % messages.length;
+
+    document.getElementById('attention-getter-text').innerHTML = text;
   }
 
 }
