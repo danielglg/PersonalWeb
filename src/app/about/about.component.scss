@@ -1,17 +1,45 @@
+.top {
+    display: flex;
+}
+
+.text-section {
+    background-color: #d2f1ed;
+}
+
 .attention-getter {
     border: 1px solid #d1eda6;
-    background-color: #d2f1ed;
-    display: flex
+    width: 100%
 }
 
 .photo {
     border: 3px solid #000000;
+    display: flex;
 }
 
 .attention-getter-text {
-    margin: 10px
+    margin: 1em
 }
 
+#presentation {
+    margin: 1em
+}
+
+.medium {
+    display: flex;
+}
+
+.medium-split {
+    height: 100%;
+    width: 50%;
+}
+
+#background {
+    margin: 1em
+}
+
+.colorado-image {
+    width: 100%;
+}
 
 .charts-row {
     display: flex
@@ -20,3 +48,6 @@
 .chart-item-box {
     text-align: center
 }
+
+
+
