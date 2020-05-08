@@ -27,25 +27,41 @@ export class TopMenuComponent implements OnInit {
         items: [
           {
             label: 'Payments',
+            routerLink: ['/projects/payments'],
             items: [
-              {label: 'EMV'},
-              {label: 'Acquiring'}
+              {
+                label: 'EMV',
+                routerLink: ['/projects/payments/emv']
+              },
+              {
+                label: 'Acquiring',
+                routerLink: ['/projects/payments/acquiring']
+              }
             ]
           },
           {
             label: 'Networks',
+            routerLink: ['/projects/networks'],
             items: [
-              {label: 'PCRF Balancer'}
+              {
+                label: 'PCRF Balancer',
+                routerLink: ['/projects/networks/pcrf']
+              }
             ]
           },
           {
             label: 'Video',
+            routerLink: ['/projects/video'],
             items: [
-              {label: 'Personalization Platform'}
+              {
+                label: 'Personalization Platform',
+                routerLink: ['/projects/video/personalization']
+              }
             ]
           },
           {
-            label: 'Embedded systems'
+            label: 'Embedded systems',
+            routerLink: ['/projects/embedded']
           }
         ]
       },
