@@ -1,3 +1,16 @@
+ <!-- The sidebar -->
+ <div class="sidebar">
+  <a [routerLink]='"."' fragment="content-top" class="active">PCRF Balancer</a>
+  <a [routerLink]='"."' fragment="introduction">What is a PCRF?</a>
+  <a [routerLink]='"."' fragment="problem">The problem: context & objectives</a>
+  <a [routerLink]='"."' fragment="areas">Areas of activity</a>
+  <a [routerLink]='"."' fragment="features">Features</a>
+  <a [routerLink]='"."' fragment="keywords">Keywords</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+
 <h1>PCRF Balancer</h1>
 
 <table id="top-table">
@@ -19,10 +32,10 @@
     </tr>
   </table> 
 
-<h2>What is a PCRF?</h2>
+<h2 id="introduction">What is a PCRF?</h2>
 
 
-<h2>The problem: context & objectives</h2>
+<h2 id="problem">The problem: context & objectives</h2>
 
 <p>
     The Ericsson Service-Aware Policy Controller (SAPC) product is conceived based on 3GPP Policy and Charging Rules Function (PCRF). SAPC is responsible for the policy control and charging rules that define the services and applications supported in mobile, fixed and converged telecom networks. SAPC is key to secure the network behavior when users access data services, such as, authorizing the services, assigning the QoS of the data-session and the Charging that shall be applied; and performs a business critical role for monetization and differentiation of operator’s mobile and converged broadband commercial packages.
@@ -40,7 +53,7 @@
 <i>To describe the problem of the LDAP</i>
 
 
-<h2>Areas of activity</h2>
+<h2 id="areas">Areas of activity</h2>
 
 1 - Research, Innovation & Watch
 2 - Development
@@ -54,8 +67,11 @@ Skill Areas (up to 3)
 2 - Networks transformation & performance - Telco Cloud & Software Defined Networking (SDN) - Network Function Virtualization (NFV) Networking
 3 - Networks transformation & performance - Telco Cloud & Software Defined Networking (SDN) - Software Defined Networking (
 
+<h2 id="features">Developed features</h2>
 
-<h2>Keywords (tools & techniques)</h2>
+  <i>Describe design</i>
+
+<h2 id="keywords">Keywords (tools & techniques)</h2>
 
 <ul>
     <li>3GPP</li>
@@ -80,3 +96,4 @@ Skill Areas (up to 3)
     <li>Google Mock</li>
 </ul>
 
+</div>
