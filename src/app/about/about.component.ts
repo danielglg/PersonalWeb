@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { ChartInfoService } from './chart-info.service';
 
@@ -8,7 +8,7 @@ import { ChartInfoService } from './chart-info.service';
   styleUrls: ['./about.component.scss'],
   providers: [ChartInfoService]
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent implements OnInit, OnDestroy {
 
   timerId: any;
   attentionCatcherIdx;
@@ -30,6 +30,10 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.timerId = setInterval( () => {this.changeAttentionGetter()} , 3000);
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.timerId);
   }
 
   changeAttentionGetter() {
