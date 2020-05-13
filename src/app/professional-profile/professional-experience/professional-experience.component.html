@@ -28,30 +28,61 @@
     <br>
     <h3>Customers:</h3>
     <br>
-
-    <p-card header="AMADEUS (Amadeus Payments)" class="customer-card">
-        05/2018 – Currently
-        <br>
-        Product: EMV Payments
-        <br>
-        Key words: payments, travel sector stakeholders, Control Change Board processes, EDIFACT, BI, PCI DSS.
-    </p-card>
-    
-    <p-card header="ERICSSON" class="customer-card">
-        05/2017 – 05/2018
-        <br>
-        Product: Service-Aware Policy Controller (SAPC)
-        <br>
-        Key words: telecom, core network, 3GPP, PCRF, Diameter, 4G, 5G, migration to cloud architecture.
-    </p-card>
-    
-    <p-card header="NOKIA / ALCATEL-LUCENT (Video Business Unit)" class="customer-card">
-        10/2015 – 05/2017
-        <br>
-        Product: Velocix Personalization Platform (VPP)
-        <br>
-        Key words: multimedia specifications (HLS, MSS, DASH), Content Delivery Network (Nokia’s CDN), IPTV, content transformation (ad insertion, blackout, alternative content, etc.), HTTP REST APIs, compatibility.
-    </p-card>
+    <div class="customers">
+        <p-card header="AMADEUS (Amadeus Payments)" class="customer-card">
+            <div class="customer-card-content">
+                <div class="customer-left">
+                    05/2018 – Currently
+                    <br>
+                    Product: EMV Payments
+                    <br>
+                    Key words: payments, travel sector stakeholders, Control Change Board processes, EDIFACT, BI, PCI DSS.
+                </div>
+                <div class="customer-right">
+                    <a href="https://amadeus.com/">
+                        <img class="logo" src="assets/logos/Logo_Amadeus.png" alt="Logo and link: Amadeus">
+                    </a>
+                    <p-splitButton label="Go to payment projects" icon="pi pi-file" (onClick)="goToProjects('payments')" [model]="amadeusItems"></p-splitButton>
+                </div>
+            </div>
+        </p-card>
+        
+        <p-card header="ERICSSON" class="customer-card">
+            <div class="customer-card-content">
+                <div class="customer-left">
+                    05/2017 – 05/2018
+                    <br>
+                    Product: Service-Aware Policy Controller (SAPC)
+                    <br>
+                    Key words: telecom, core network, 3GPP, PCRF, Diameter, 4G, 5G, migration to cloud architecture.
+                </div>
+                <div class="customer-right">
+                    <a href="https://www.ericsson.com/">
+                        <img class="logo"src="assets/logos/Logo_Ericsson.png" alt="Logo and link: Ericsson">
+                    </a>
+                    <p-splitButton label="Go to networks projects" icon="pi pi-file" (onClick)="goToProjects('networks')" [model]="ericssonItems"></p-splitButton>
+                </div>
+            </div>
+        </p-card>
+        
+        <p-card header="NOKIA / ALCATEL-LUCENT (Video Business Unit)" class="customer-card">
+            <div class="customer-card-content">
+                <div class="customer-left">
+                    10/2015 – 05/2017
+                    <br>
+                    Product: Velocix Personalization Platform (VPP)
+                    <br>
+                    Key words: multimedia specifications (HLS, MSS, DASH), Content Delivery Network (Nokia’s CDN), IPTV, content transformation (ad insertion, blackout, alternative content, etc.), HTTP REST APIs, compatibility.
+                </div>
+                <div class="customer-right">
+                    <a href="https://www.nokia.com/">
+                        <img class="logo" src="assets/logos/Logo_Nokia.png" alt="Logo and link: Nokia">
+                    </a>
+                    <p-splitButton label="Go to video projects" icon="pi pi-file" (onClick)="goToProjects('video')" [model]="nokiaItems"></p-splitButton>
+                </div>
+            </div>
+        </p-card>
+    </div>
 
 </p-panel>
 
