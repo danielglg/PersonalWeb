@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {PanelModule} from 'primeng/panel';
 import {CardModule} from 'primeng/card';
+import {SplitButtonModule} from 'primeng/splitbutton';
 
 import { ProfessionalProfileComponent } from './professional-profile.component';
 import { ProfessionalExperienceComponent } from './professional-experience/professional-experience.component';
@@ -14,7 +15,8 @@ import { EducationComponent } from './education/education.component';
   imports: [
     CommonModule,
     PanelModule,
-    CardModule
+    CardModule,
+    SplitButtonModule
   ],
   exports: [
     ProfessionalProfileComponent
