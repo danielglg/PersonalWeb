@@ -2,16 +2,71 @@
     <p-header>
         <span class="ui-panel-title">MSc in Systems and Services Engineering for the Information Society.</span>
     </p-header>
-    Technical University of Madrid, EUITT centre.
-    <br>
-    09/2011 – 07/2013 
+    <div class="degree">
+        <div class="degree-details">
+            <div class="degree-details-top">
+                Technical University of Madrid, EUITT centre.
+                <br>
+                09/2011 – 07/2013
+                <br>
+            </div>
+            <p-fieldset legend="Subject list" [toggleable]="true" collapsed=true>
+                Fill table
+                <p-table>
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th *ngFor="let col of cols">
+                                {{col.header}}
+                            </th>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </p-fieldset>
+        </div>
+        <div class="degree-centre">
+            <a href="http://www.upm.es/internacional">
+                <img class="logo" src="assets/logos/Logo_Politecnica.png" alt="Logo and link: university">
+            </a>
+            <a href="https://www.euitt.upm.es/?idioma=EN">
+                <img class="logo" src="assets/logos/Logo_ETSIST.png" alt="Logo and link: faculty">
+            </a>
+        </div>
+    </div>
 </p-panel>
 
 <p-panel>
     <p-header>
         <span class="ui-panel-title">Technical Telecommunications Engineer, major in Sound and Image.</span>
     </p-header>
-    Technical University of Madrid, EUITT centre.
-    <br>
-    09/2006 – 07/2011
+    <div class="degree">
+        <div class="degree-details">
+            <div class="degree-details-top">
+                Technical University of Madrid, EUITT centre.
+                <br>
+                09/2006 – 07/2011
+                <br>
+            </div>
+            <p-fieldset legend="Subject list" [toggleable]="true" collapsed=true>
+                Fill table
+                <p-table>
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th *ngFor="let col of cols">
+                                {{col.header}}
+                            </th>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </p-fieldset>
+        </div>
+        <div class="degree-centre">
+            <a href="http://www.upm.es/internacional">
+                <img class="logo" src="assets/logos/Logo_Politecnica.png" alt="Logo and link: university">
+            </a>
+            <a href="https://www.euitt.upm.es/?idioma=EN">
+                <img class="logo" src="assets/logos/Logo_ETSIST.png" alt="Logo and link: faculty">
+            </a>
+        </div>
+    </div>
+
 </p-panel>
