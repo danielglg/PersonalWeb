@@ -1,37 +1,54 @@
+ <!-- The sidebar -->
+ <div class="sidebar">
+    <a [routerLink]='"."' fragment="goal">Career goal</a>
+    <a [routerLink]='"."' fragment="education">Main education</a>
+    <a [routerLink]='"."' fragment="experience">Professional experience</a>
+    <a [routerLink]='"."' fragment="languages">Languages</a>
+    <a [routerLink]='"."' fragment="awards">Awards</a>
+    <a [routerLink]='"."' fragment="tools">Software engineering tools</a>
+    <a [routerLink]='"."' fragment="courses">Complementary courses</a>
+    <a [routerLink]='"."' fragment="participation">Active participation</a>
+    <a [routerLink]='"."' fragment="additional">Additional data</a>
+</div>
+
+<!-- Page content -->
+<div class="content">
+
+
 <br>
 <p>Updated: date</p>
 
 <p-toast [style]="{marginTop: '0px'}"></p-toast>
 
-<p-panel>
+<p-panel id="goal">
     <p-header>
         <span class="ui-panel-title">CAREER GOAL</span>
     </p-header>
     Design, develop and deploy innovative engineering systems and services by combining multimedia, electronic and telematic technologies.
 </p-panel>
 
-<p-panel>
+<p-panel id="education">
     <p-header>
         <span class="ui-panel-title">MAIN EDUCATION</span>
     </p-header>
     <app-education></app-education>
 </p-panel>
 
-<p-panel>
+<p-panel id="experience">
     <p-header>
         <span class="ui-panel-title">PROFESSIONAL EXPERIENCE</span>
     </p-header>
     <app-professional-experience></app-professional-experience>
 </p-panel>
 
-<p-panel>
+<p-panel id="languages">
     <p-header>
         <span class="ui-panel-title">LANGUAGES</span>
     </p-header>
     <app-languages></app-languages>
 </p-panel>
 
-<p-panel>
+<p-panel id="awards">
     <p-header>
         <span class="ui-panel-title">AWARDS</span>
     </p-header>
@@ -40,25 +57,25 @@
 
 </p-panel>
 
-<p-panel>
+<p-panel id="tools">
     <p-header>
         <span class="ui-panel-title">SOFTWARE ENGINEERING TOOLS</span>
     </p-header>
 </p-panel>
 
-<p-panel>
+<p-panel id="courses">
     <p-header>
         <span class="ui-panel-title">COMPLEMENTARY COURSES</span>
     </p-header>
 </p-panel>
 
-<p-panel>
+<p-panel id="participation">
     <p-header>
         <span class="ui-panel-title">ACTIVE PARTICIPATION</span>
     </p-header>
 </p-panel>
 
-<p-panel>
+<p-panel id="additional">
     <p-header>
         <span class="ui-panel-title">ADDITIONAL DATA</span>
     </p-header>
@@ -66,3 +83,5 @@
     <br>
     Willingness to travel: yes (internationally when required).
 </p-panel>
+<br>
+</div>
