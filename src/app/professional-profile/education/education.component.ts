@@ -1,21 +1,47 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfessionalProfileService } from '../professional-profile.service';
+
+import { Degree, Subject } from './../degree.model'
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss']
+  styleUrls: ['./education.component.scss'],
+  providers: [
+    ProfessionalProfileService
+  ]
 })
 export class EducationComponent implements OnInit {
 
-  cols: any[];
+  masterDegree: Degree;
+  masterSubjects: Subject[];
 
-  constructor() { }
+  bachelorDegree: Degree;
+  bachelorSubjects: Subject[];
+
+  subjectTablecols: any[];
+
+  constructor(private profileService: ProfessionalProfileService) {}
 
   ngOnInit(): void {
 
-    this.cols = [
-      { field: 'subject', header: 'Subject' },
-      { field: 'category', header: 'Category' },
+    this.profileService.getMasterDegree()
+      .subscribe(resp => {
+          this.masterDegree = resp;
+          this.masterSubjects = this.masterDegree.subjects;
+        }
+      );
+
+    this.profileService.getBachelorDegree()
+      .subscribe(resp => {
+          this.bachelorDegree = resp;
+          this.bachelorSubjects = this.bachelorDegree.subjects;
+        }
+      );
+
+    this.subjectTablecols = [
+      { field: 'title', header: 'Subject' },
+      { field: 'type', header: 'Type' },
       { field: 'credits', header: 'Credits/Time' }
     ];
   }

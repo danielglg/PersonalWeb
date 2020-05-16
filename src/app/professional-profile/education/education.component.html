@@ -11,13 +11,18 @@
                 <br>
             </div>
             <p-fieldset legend="Subject list" [toggleable]="true" collapsed=true>
-                Fill table
-                <p-table>
+                <p-table [value]="masterSubjects">
                     <ng-template pTemplate="header">
                         <tr>
-                            <th *ngFor="let col of cols">
+                            <th *ngFor="let col of subjectTablecols">
                                 {{col.header}}
                             </th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-subject>
+                        <tr>
+                            <td *ngFor="let col of subjectTablecols">
+                                {{subject[col.field]}}
                         </tr>
                     </ng-template>
                 </p-table>
@@ -47,13 +52,18 @@
                 <br>
             </div>
             <p-fieldset legend="Subject list" [toggleable]="true" collapsed=true>
-                Fill table
-                <p-table>
+                <p-table [value]="bachelorSubjects">
                     <ng-template pTemplate="header">
                         <tr>
-                            <th *ngFor="let col of cols">
+                            <th *ngFor="let col of subjectTablecols">
                                 {{col.header}}
                             </th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-subject>
+                        <tr>
+                            <td *ngFor="let col of subjectTablecols">
+                                {{subject[col.field]}}
                         </tr>
                     </ng-template>
                 </p-table>

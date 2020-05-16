@@ -13,7 +13,12 @@ import { LanguagesComponent } from './languages/languages.component';
 import { EducationComponent } from './education/education.component';
 
 @NgModule({
-  declarations: [ProfessionalProfileComponent, ProfessionalExperienceComponent, LanguagesComponent, EducationComponent],
+  declarations: [
+    ProfessionalProfileComponent,
+    ProfessionalExperienceComponent,
+    LanguagesComponent,
+    EducationComponent
+  ],
   imports: [
     CommonModule,
     CardModule,
