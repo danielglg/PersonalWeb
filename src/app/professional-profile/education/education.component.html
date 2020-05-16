@@ -1,14 +1,17 @@
+
+<!-- Master degree -->
 <p-panel>
     <p-header>
-        <span class="ui-panel-title">MSc in Systems and Services Engineering for the Information Society.</span>
+        <span class="ui-panel-title" *ngIf="masterDegree">{{masterDegree.title}}.</span>
     </p-header>
     <div class="degree">
         <div class="degree-details">
             <div class="degree-details-top">
-                Technical University of Madrid, EUITT centre.
-                <br>
-                09/2011 – 07/2013
-                <br>
+                <div *ngIf="masterDegree">
+                    {{masterDegree.entity}} , {{masterDegree.centre}} centre.
+                    <br>
+                    09/2011 – 07/2013
+                </div>
             </div>
             <p-fieldset legend="Subject list" [toggleable]="true" collapsed=true>
                 <p-table [value]="masterSubjects">
@@ -39,17 +42,19 @@
     </div>
 </p-panel>
 
+<!-- Bachelor degree -->
 <p-panel>
     <p-header>
-        <span class="ui-panel-title">Technical Telecommunications Engineer, major in Sound and Image.</span>
+        <span class="ui-panel-title" *ngIf="bachelorDegree">{{bachelorDegree.title}}</span>
     </p-header>
     <div class="degree">
         <div class="degree-details">
             <div class="degree-details-top">
-                Technical University of Madrid, EUITT centre.
-                <br>
-                09/2006 – 07/2011
-                <br>
+                <div *ngIf="bachelorDegree">
+                    {{bachelorDegree.entity}} , {{bachelorDegree.centre}} centre.
+                    <br>
+                    09/2006 – 07/2011
+                </div>
             </div>
             <p-fieldset legend="Subject list" [toggleable]="true" collapsed=true>
                 <p-table [value]="bachelorSubjects">

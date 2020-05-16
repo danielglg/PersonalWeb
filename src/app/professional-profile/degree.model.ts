@@ -12,19 +12,24 @@ export class Subject {
 }
 
 export class Degree {
+    public title: string;
+    public entity: string;
+    public centre: string;
     public subjects: Subject[];
 
     constructor(
-        public data: any
+      title: string,
+      entity: string,
+      centre: string,
+      data: any
       ) {
+          this.title = title;
+          this.entity = entity;
+          this.centre = centre;
           this.subjects = data.map(
             (subject: Subject) => new Subject(subject.part, subject.title, subject.credits, subject.duration, subject.type)
           );
       }
-
-    public toString = (): string => {
-        return `Degree subjects)`;
-    }
 }
 
 @Injectable({
@@ -33,7 +38,10 @@ export class Degree {
 export class DegreeAdapter implements ModelAdapter<Degree> {
   adapt(object: any): Degree {
     return new Degree(
-        object.data
+      object.title,
+      object.entity,
+      object.centre,
+      object.data
     );
   }
 }
