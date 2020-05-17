@@ -1,17 +1,87 @@
+
+<!-- Master degree -->
 <p-panel>
     <p-header>
-        <span class="ui-panel-title">MSc in Systems and Services Engineering for the Information Society.</span>
+        <span class="ui-panel-title" *ngIf="masterDegree">{{masterDegree.title}}.</span>
     </p-header>
-    Technical University of Madrid, EUITT centre.
-    <br>
-    09/2011 – 07/2013 
+    <div class="degree">
+        <div class="degree-details">
+            <div class="degree-details-top">
+                <div *ngIf="masterDegree">
+                    {{masterDegree.entity}} , {{masterDegree.centre}} centre.
+                    <br>
+                    09/2011 – 07/2013
+                </div>
+            </div>
+            <p-fieldset legend="Subject list" [toggleable]="true" collapsed=true>
+                <p-table [value]="masterSubjects">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th *ngFor="let col of subjectTablecols">
+                                {{col.header}}
+                            </th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-subject>
+                        <tr>
+                            <td *ngFor="let col of subjectTablecols">
+                                {{subject[col.field]}}
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </p-fieldset>
+        </div>
+        <div class="degree-centre">
+            <a href="http://www.upm.es/internacional">
+                <img class="logo" src="assets/logos/Logo_Politecnica.png" alt="Logo and link: university">
+            </a>
+            <a href="https://www.euitt.upm.es/?idioma=EN">
+                <img class="logo" src="assets/logos/Logo_ETSIST.png" alt="Logo and link: faculty">
+            </a>
+        </div>
+    </div>
 </p-panel>
 
+<!-- Bachelor degree -->
 <p-panel>
     <p-header>
-        <span class="ui-panel-title">Technical Telecommunications Engineer, major in Sound and Image.</span>
+        <span class="ui-panel-title" *ngIf="bachelorDegree">{{bachelorDegree.title}}</span>
     </p-header>
-    Technical University of Madrid, EUITT centre.
-    <br>
-    09/2006 – 07/2011
+    <div class="degree">
+        <div class="degree-details">
+            <div class="degree-details-top">
+                <div *ngIf="bachelorDegree">
+                    {{bachelorDegree.entity}} , {{bachelorDegree.centre}} centre.
+                    <br>
+                    09/2006 – 07/2011
+                </div>
+            </div>
+            <p-fieldset legend="Subject list" [toggleable]="true" collapsed=true>
+                <p-table [value]="bachelorSubjects">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th *ngFor="let col of subjectTablecols">
+                                {{col.header}}
+                            </th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-subject>
+                        <tr>
+                            <td *ngFor="let col of subjectTablecols">
+                                {{subject[col.field]}}
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </p-fieldset>
+        </div>
+        <div class="degree-centre">
+            <a href="http://www.upm.es/internacional">
+                <img class="logo" src="assets/logos/Logo_Politecnica.png" alt="Logo and link: university">
+            </a>
+            <a href="https://www.euitt.upm.es/?idioma=EN">
+                <img class="logo" src="assets/logos/Logo_ETSIST.png" alt="Logo and link: faculty">
+            </a>
+        </div>
+    </div>
+
 </p-panel>

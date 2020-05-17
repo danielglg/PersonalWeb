@@ -1,0 +1,147 @@
+{
+    "metadata" : {
+        "types" : {
+            "C" : "Bridge Courses",
+            "B" : "Compulsory",
+            "O" : "Optional",
+            "T" : "Core",
+            "L" : "Free Choice"
+        },
+        "durations" : {
+            "S" : "Semester",
+            "Q" : "Trimester"
+        }
+    },
+    "title" : "MSc in Systems and Services Engineering for the Information Society",
+    "entity" : "Technical University of Madrid",
+    "centre" : "EUITT",
+    "data" : [
+        {
+            "part" : -1,
+            "title" : "Complementary Credits in Bachelor Degree",
+            "credits": 30.00,
+            "duration" : "S",
+            "type" : "C"
+        },
+        {
+            "part" : 0,
+            "title" : "Television Distribution",
+            "credits": 4.50,
+            "duration" : "S",
+            "type" : "C"
+        },
+        {
+            "part" : 0,
+            "title" : "Advanced Application Programming",
+            "credits": 6.00,
+            "duration" : "S",
+            "type" : "C"
+        },
+        {
+            "part" : 0,
+            "title" : "Operating Systems",
+            "credits": 4.50,
+            "duration" : "S",
+            "type" : "C"
+        },
+        {
+            "part" : 0,
+            "title" : "Modelling Languages",
+            "credits": 4.50,
+            "duration" : "S",
+            "type" : "C"
+        },
+        {
+            "part" : 0,
+            "title" : "Telecommunications Networks and Services",
+            "credits": 6.00,
+            "duration" : "S",
+            "type" : "C"
+        },
+        {
+            "part" : 0,
+            "title" : "Computer Networks",
+            "credits": 4.50,
+            "duration" : "S",
+            "type" : "C"
+        },
+        {
+            "part" : 1,
+            "title" : "Wireless Communications",
+            "credits": 5.00,
+            "duration" : "S",
+            "type" : "O"
+        },
+        {
+            "part" : 1,
+            "title" : "Advanced Digital Architectures",
+            "credits": 5.00,
+            "duration" : "S",
+            "type" : "O"
+        },
+        {
+            "part" : 1,
+            "title" : "Audio and Video Signal Processing",
+            "credits": 5.00,
+            "duration" : "S",
+            "type" : "O"
+        },
+        {
+            "part" : 1,
+            "title" : "Signal Recognition Techniques",
+            "credits": 5.00,
+            "duration" : "S",
+            "type" : "B"
+        },
+        {
+            "part" : 1,
+            "title" : "Ubiquitous and Secure Networks and Services",
+            "credits": 5.00,
+            "duration" : "S",
+            "type" : "O"
+        },
+        {
+            "part" : 1,
+            "title" : "Services and Protocols Engineering",
+            "credits": 5.00,
+            "duration" : "S",
+            "type" : "B"
+        },
+        {
+            "part" : 1,
+            "title" : "Embedded Systems",
+            "credits": 5.00,
+            "duration" : "S",
+            "type" : "O"
+        },
+        {
+            "part" : 1,
+            "title" : "Data Modelling and Analysis in Engineering",
+            "credits": 5.00,
+            "duration" : "S",
+            "type" : "O"
+        },
+        {
+            "part" : 1,
+            "title" : "ICT Management in Organizations",
+            "credits": 2.00,
+            "duration" : "S",
+            "type" : "O"
+        },
+        {
+            "part" : 1,
+            "title" : "ICT and the Information Society",
+            "credits": 3.00,
+            "duration" : "S",
+            "type" : "O"
+        },
+        {
+            "part" : 1,
+            "title" : "Master Thesis",
+            "credits": 15.00,
+            "duration" : "S",
+            "type" : "B"
+        }
+    
+    ]
+}
