@@ -44,6 +44,7 @@ export class EducationComponent implements OnInit {
       { field: 'type', header: 'Type' },
       { field: 'credits', header: 'Credits/Time' }
     ];
+
   }
 
 }
