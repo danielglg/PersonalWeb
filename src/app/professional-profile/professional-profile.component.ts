@@ -30,10 +30,10 @@ export class ProfessionalProfileComponent implements OnInit {
       );
 
     this.courseTablecols = [
-      { field: 'date', header: 'Date' },
-      { field: 'timespan', header: 'Duration' },
-      { field: 'title', header: 'Name' },
-      { field: 'provider', header: 'Provider' }
+      { field: 'date', header: 'Date', width: '10%' },
+      { field: 'timespan', header: 'Duration', width: '10%' },
+      { field: 'title', header: 'Name', width: '45%' },
+      { field: 'provider', header: 'Provider', width: '35%' }
     ];
 
   }

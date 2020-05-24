@@ -75,7 +75,7 @@
         <p-table [value]="courses">
             <ng-template pTemplate="header">
                 <tr>
-                    <th *ngFor="let col of courseTablecols">
+                    <th *ngFor="let col of courseTablecols" [ngStyle]="{'width': col.width}">
                         {{col.header}}
                     </th>
                 </tr>
