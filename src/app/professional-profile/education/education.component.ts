@@ -40,9 +40,9 @@ export class EducationComponent implements OnInit {
       );
 
     this.subjectTablecols = [
-      { field: 'title', header: 'Subject' },
-      { field: 'type', header: 'Type' },
-      { field: 'credits', header: 'Credits/Time' }
+      { field: 'title', header: 'Subject', width: '60%' },
+      { field: 'type', header: 'Type', width: '20%' },
+      { field: 'credits', header: 'Credits/Time', width: '20%' }
     ];
 
   }
