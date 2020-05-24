@@ -1,17 +1,22 @@
+
 .customer-card-content {
     display: flex;
     justify-content: space-between;
 }
 
 .customer-left {
-    width: 75%
+    width: 80%
 }
 
 .customer-right {
-    width: 25%
+    width: 20%;
+    flex-direction: column;
+    align-content: space-between;
+
 }
 
 .logo {
     max-width:100%;
     height:auto;
+    margin-bottom: 1em;
 }
