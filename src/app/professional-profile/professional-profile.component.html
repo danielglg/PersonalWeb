@@ -1,5 +1,8 @@
- <!-- The sidebar -->
- <div class="sidebar">
+<div class="project_content">
+
+<!-- The sidebar -->
+
+<div class="sidebar">
     <a [routerLink]='"."' fragment="goal">Career goal</a>
     <a [routerLink]='"."' fragment="education">Main education</a>
     <a [routerLink]='"."' fragment="experience">Professional experience</a>
@@ -10,6 +13,7 @@
     <a [routerLink]='"."' fragment="participation">Active participation</a>
     <a [routerLink]='"."' fragment="additional">Additional data</a>
 </div>
+
 
 <!-- Page content -->
 <div class="content">
@@ -71,7 +75,7 @@
         <p-table [value]="courses">
             <ng-template pTemplate="header">
                 <tr>
-                    <th *ngFor="let col of courseTablecols">
+                    <th *ngFor="let col of courseTablecols" [ngStyle]="{'width': col.width}">
                         {{col.header}}
                     </th>
                 </tr>
@@ -103,4 +107,6 @@
     Willingness to travel: yes (internationally when required).
 </p-panel>
 <br>
+</div>
+
 </div>
