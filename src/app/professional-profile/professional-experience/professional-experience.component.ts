@@ -13,6 +13,8 @@ export class ProfessionalExperienceComponent implements OnInit {
   amadeusItems: MenuItem[];
   ericssonItems: MenuItem[];
   nokiaItems: MenuItem[];
+  sapecItems: MenuItem[];
+  gdemItems: MenuItem[];
 
   constructor(private router: Router) { }
 
@@ -26,6 +28,12 @@ export class ProfessionalExperienceComponent implements OnInit {
     ];
     this.nokiaItems = [
       {label: 'VPP', icon: 'pi pi-refresh', routerLink: ['/projects/video/personalization']},
+    ];
+    this.sapecItems = [
+      {label: 'HEVC', icon: 'pi pi-refresh', routerLink: ['/projects/video/']}, //TODO: set page for SAPEC&GTI project.
+    ];
+    this.gdemItems = [
+      {label: 'HEVC', icon: 'pi pi-refresh', routerLink: ['/projects/video/personalization']}, //TODO: set page for GDEM project.
     ];
   }
 
