@@ -1,12 +1,48 @@
-.top-banner {
+.top-bar {
     top: 0;
-    bottom: 30px;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 65px;
     display: flex;
     align-items: center;
     background-color: #1976d2;
     color: white;
     font-weight: 600;
   }
+
+.left-block {
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
+
+
+
+#photo-thumbnail {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#linkedin-icon {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.right-block {
+  display: flex;
+  width: 20%;
+  justify-content: right;
+  align-items: center;
+}
+
+#links {
+  margin-right: 1em;
+}
+
+#linkedin-icon:hover {
+  opacity: .7;
+}
