@@ -4,6 +4,7 @@ import { ProfessionalProfileModule } from './professional-profile.module';
 import { ProfessionalProfileService } from './professional-profile.service';
 
 import { Course } from './course.model'
+import { SkillCategory } from './skill-categories.model'
 
 @Component({
   selector: 'app-professional-profile',
@@ -16,8 +17,9 @@ import { Course } from './course.model'
 export class ProfessionalProfileComponent implements OnInit {
 
   courses: Course[];
-
   courseTablecols: any[];
+
+  softwareEngSkills: SkillCategory[];
 
   constructor(private profileService: ProfessionalProfileService) { }
 
@@ -35,6 +37,12 @@ export class ProfessionalProfileComponent implements OnInit {
       { field: 'title', header: 'Name', width: '45%' },
       { field: 'provider', header: 'Provider', width: '35%' }
     ];
+
+    this.profileService.getSoftwareEngineeringSkills()
+    .subscribe(resp => {
+        this.softwareEngSkills = resp;
+      }
+    );
 
   }
 
