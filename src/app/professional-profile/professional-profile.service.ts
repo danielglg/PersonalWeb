@@ -6,6 +6,9 @@ import { map } from "rxjs/operators";
 
 import { Degree, DegreeAdapter } from './degree.model'
 import { Course, CourseAdapter } from './course.model'
+import { SkillCategory, SkillCategoriesAdapter } from './skill-categories.model'
+
+
 
 
 @Injectable()
@@ -14,10 +17,12 @@ export class ProfessionalProfileService {
   private urlMasterDegree = '../../assets/data/master_degree.json';
   private urlBachelorDegree = '../../assets/data/bachelor_degree.json';
   private urlCourses = '../../assets/data/courses.json';
+  private urlSoftwareEngineeringSkills = '../../assets/data/software_engineering_tools.json';
 
   constructor(private httpClient: HttpClient,
               private degreeAdapter: DegreeAdapter,
-              private courseAdapter: CourseAdapter)
+              private courseAdapter: CourseAdapter,
+              private skillCategoriesAdapter: SkillCategoriesAdapter)
               {}
 
   getMasterDegree(): Observable<Degree> {
@@ -42,6 +47,13 @@ export class ProfessionalProfileService {
               map( (response: any[]) => response.map( item => this.courseAdapter.adapt(item) ) )
             );
 
+  }
+
+  getSoftwareEngineeringSkills(): Observable<SkillCategory[]> {
+    return this.httpClient.get<SkillCategory[]>(this.urlSoftwareEngineeringSkills)
+            .pipe(
+              map( (response: any) => response.map( item => this.skillCategoriesAdapter.adapt(item) ) )
+            );
   }
 
 }

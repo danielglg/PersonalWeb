@@ -1,0 +1,453 @@
+[
+    {
+        "category": "Programming languages",
+        "skills": [
+            {
+                "name": "C++",
+                "comment": "11/14/17",
+                "level": "H"
+            },
+            {
+                "name": "Java",
+                "comment": "J8SE",
+                "level": "H"
+            },
+            {
+                "name": "C",
+                "level": "H"
+            },
+            {
+                "name": "UML",
+                "level": "H"
+            },
+            {
+                "name": "LabVIEW",
+                "level": "H"
+            },
+            {
+                "name": "Python",
+                "level": "M-L"
+            },
+            {
+                "name": "Bash",
+                "level": "M-L"
+            },
+            {
+                "name": "Java",
+                "level": "M-L"
+            },
+            {
+                "name": "VHDL",
+                "level": "M-L"
+            },
+            {
+                "name": "HTML",
+                "level": "M-L"
+            },
+            {
+                "name": "Javascript",
+                "level": "M-L"
+            },
+            {
+                "name": "SQL",
+                "level": "M-L"
+            },
+            {
+                "name": "XML",
+                "level": "M-L"
+            },
+            {
+                "name": "Json",
+                "level": "M-L"
+            },
+            {
+                "name": "Scala",
+                "level": "M-L"
+            },
+            {
+                "name": "Perl",
+                "level": "M-L"
+            },
+            {
+                "name": "C#",
+                "level": "M-L"
+            },
+            {
+                "name": "Batch",
+                "level": "M-L"
+            }
+        ]
+    },
+    {
+        "category": "Version control & Code review",
+        "skills": [
+            {
+                "name": "Git",
+                "level": "H"
+            },
+            {
+                "name": "Perforce",
+                "level": "H"
+            },
+            {
+                "name": "Bitbucket",
+                "level": "H"
+            },
+            {
+                "name": "Gerrit",
+                "level": "H"
+            },
+            {
+                "name": "Reviewboard",
+                "level": "H"
+            },
+            {
+                "name": "P4V",
+                "level": "H"
+            },
+            {
+                "name": "Mercurial",
+                "level": "M"
+            },
+            {
+                "name": "SourceSafe",
+                "level": "M"
+            }
+        ]
+    },
+    {
+        "category": "Testing & Debugging",
+        "skills": [
+            {
+                "name": "Google Test",
+                "comment": "",
+                "level": "H"
+            },
+            {
+                "name": "Google Mock",
+                "comment": "",
+                "level": "H"
+            },
+            {
+                "name": "Mockito",
+                "level": "H"
+            },
+            {
+                "name": "JUnit",
+                "level": "H"
+            },
+            {
+                "name": "CppUnit",
+                "level": "H"
+            },
+            {
+                "name": "GDB",
+                "level": "H"
+            },
+            {
+                "name": "CGDB",
+                "level": "H"
+            },
+            {
+                "name": "Valgrind",
+                "level": "H"
+            },
+            {
+                "name": "Postman",
+                "level": "H"
+            },
+            {
+                "name": "Wireshark",
+                "level": "H"
+            },
+            {
+                "name": "Fiddler",
+                "level": "H"
+            },
+            {
+                "name": "JMeter",
+                "level": "H"
+            },
+            {
+                "name": "Test Tool Server",
+                "level": "M"
+            },
+            {
+                "name": "TTCN-3",
+                "level": "M"
+            },
+            {
+                "name": "Squish GUI Tester",
+                "level": "M"
+            },
+            {
+                "name": "Behave",
+                "level": "M"
+            }
+        ]
+    },
+    {
+        "category": "Integrated development environments",
+        "skills": [
+            {
+                "name": "Eclipse",
+                "level": "H"
+            },
+            {
+                "name": "Microsoft Visual Studio",
+                "level": "H"
+            },
+            {
+                "name": "NetBeans",
+                "level": "H"
+            },
+            {
+                "name": "Matlab",
+                "level": "H"
+            },
+            {
+                "name": "LabVIEW",
+                "level": "H"
+            },
+            {
+                "name": "VI/VIM",
+                "level": "M"
+            },
+            {
+                "name": "Atom",
+                "level": "M"
+            },
+            {
+                "name": "Qt",
+                "level": "M"
+            },
+            {
+                "name": "Code Composer Studio",
+                "level": "M"
+            },
+            {
+                "name": "μVision",
+                "level": "M"
+            },
+            {
+                "name": "ModelSim",
+                "level": "M"
+            },
+            {
+                "name": "Quartus II",
+                "level": "M"
+            },
+            {
+                "name": "Android Studio",
+                "level": "M"
+            },
+            {
+                "name": "Altium Designer",
+                "level": "M"
+            }
+        ]
+    },
+    {
+        "category": "DevOps (Continuous integration & Delivery)",
+        "skills": [
+            {
+                "name": "Jenkins",
+                "level": "M"
+            },
+            {
+                "name": "SonarQube",
+                "level": "M"
+            },
+            {
+                "name": "JFrog",
+                "level": "L"
+            },
+            {
+                "name": "Buildbot",
+                "level": "L"
+            }
+        ]
+    },
+    {
+        "category": "Infrastructure",
+        "skills": [
+            {
+                "name": "VirtualBox",
+                "level": "H"
+            },
+            {
+                "name": "TV equipment",
+                "level": "H"
+            },
+            {
+                "name": "hardware for CDNs and codecs",
+                "level": "H"
+            },
+            {
+                "name": "Docker",
+                "level": "M"
+            },
+            {
+                "name": "VMware",
+                "level": "M"
+            },
+            {
+                "name": "Kubernetes",
+                "level": "L"
+            },
+            {
+                "name": "KVM",
+                "level": "L"
+            },
+            {
+                "name": "Ansible",
+                "level": "L"
+            }
+        ]
+    },
+    {
+        "category": "Web technologies",
+        "skills": [
+            {
+                "name": "HTTP",
+                "comment": "",
+                "level": "H"
+            },
+            {
+                "name": "REST",
+                "comment": "",
+                "level": "H"
+            },
+            {
+                "name": "OpenAPI/Swagger",
+                "level": "H"
+            },
+            {
+                "name": "Angular",
+                "level": "M-L"
+            },
+            {
+                "name": "SOAP",
+                "level": "M-L"
+            },
+            {
+                "name": "JSP",
+                "level": "M-L"
+            },
+            {
+                "name": "Servlet",
+                "level": "M-L"
+            },
+            {
+                "name": "Apache Tomcat",
+                "level": "M-L"
+            },
+            {
+                "name": "Node.js",
+                "level": "M-L"
+            }
+        ]
+    },
+    {
+        "category": "Databases",
+        "skills": [
+            {
+                "name": "Oracle",
+                "level": "M"
+            },
+            {
+                "name": "HeidiSQL",
+                "level": "M"
+            },
+            {
+                "name": "LDAP",
+                "level": "M"
+            },
+            {
+                "name": "PostgreSQL",
+                "level": "L"
+            },
+            {
+                "name": "MongoDB",
+                "level": "L"
+            },
+            {
+                "name": "MariaDB",
+                "level": "L"
+            }
+        ]
+    },
+    {
+        "category": "Operating systems and middleware",
+        "skills": [
+            {
+                "name": "Linux-based",
+                "comment": "e.g. RedHat, uCLinux",
+                "level": "H"
+            },
+            {
+                "name": "Windows-based",
+                "level": "H"
+            },
+            {
+                "name": "Android",
+                "level": "L"
+            },
+            {
+                "name": "Tizen",
+                "level": "L"
+            }
+        ]
+    },
+    {
+        "category": "Software design",
+        "skills": [
+            {
+                "name": "Architectural patterns",
+                "level": "H"
+            },
+            {
+                "name": "design patterns",
+                "level": "H"
+            },
+            {
+                "name": "concurrency",
+                "level": "H"
+            }
+        ]
+    },
+    {
+        "category": "Other tools",
+        "skills": [
+            {
+                "name": "CMake",
+                "level": "H"
+            },
+            {
+                "name": "Maven",
+                "level": "M"
+            },
+            {
+                "name": "Gradle",
+                "level": "M"
+            },
+            {
+                "name": "Notepad++",
+                "level": "H"
+            },
+            {
+                "name": "HipChat",
+                "level": "H"
+            },
+            {
+                "name": "Slack",
+                "level": "H"
+            },
+            {
+                "name": "Grafana",
+                "level": "M"
+            }
+        ]
+    }
+
+]
