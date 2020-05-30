@@ -65,12 +65,15 @@
     <p-header>
         <span class="ui-panel-title">SOFTWARE ENGINEERING TOOLS</span>
     </p-header>
-    <div *ngFor="let category of softwareEngSkills">
-        {{category.category}}
-        <div *ngFor="let skill of category.skills">
-            {{skill.name}}
-        </div>
-    </div>
+    <p-accordion [multiple]="true">
+        <p-accordionTab *ngFor="let category of softwareEngSkills" header="{{category.category}}">
+            <div class="skillsList">
+                <p-card *ngFor="let skill of category.skills">
+                    {{skill.name}}
+                </p-card>
+            </div>
+        </p-accordionTab>
+    </p-accordion>
 </p-panel>
 
 <p-panel id="courses">
