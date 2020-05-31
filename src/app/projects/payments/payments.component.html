@@ -28,26 +28,179 @@
 <h3 id="entities">Participant entities</h3>
 
 <h4>Cardholder</h4>
+<p>
+    Who initiates the payment in order to be provided specific goods or services.
+    To do it, the cardholder presents a means of identification provided by the issuer (e.g. payment card, account number, voucher, electronic wallet, user name, mobile phone number, NFC sticker, etc.).
+    With it, the cardholder instructs the issuer to make a payment to the merchant (seller) on cardholder's behalf and promises the issuer to pay back the payment amount.
+</p>
+
+<h4>Issuer</h4>
+<p>
+    The issuer provides the method of payment to the cardholder and manages the funds associated to the cardholder payments, existing hence a legal relationship between them.
+    This method of payment operates under agreed conditions, which determines how the payment is processed (e.g. debit, credit, pre-funded, etc.).
+    Independetly of the categorization of the method as "pay now", "pay later" or "pay before", the issuer is who authorises or declines the transactions of the cardholder, based on different criteria at the time like availability of funds or safeness.
+    Eventually the issuer will bill the cardholder.
+</p>
+<p>
+    The issuer can be a financial institution (bank) or a non-financial institution (e.g. electronic wallet, cumulative tokens of fidelization program, etc.).
+    Non-financial ones have to either work with a bank or obtain a banking license.
+    For the issuer to issue payment cards, the issuer requires first to have license agreements with the corresponding card schemes.
+    In some cases, the same card scheme issues the card directly to the cardholder without the intervention of other issuing entity.
+</p>
 
 
-<h4>Issues</h4>
 <h4>Merchant</h4>
+<p>
+    The merchant is who sells the goods or services and is entitled to receive the funds from the cardholder.
+    A merchant can offer goods or services of partner providers, but it acts as the merchant of the payment record for the whole payment transaction.
+    As acceptor of the payment, it is its responsibility to carry associated risks (e.g. unhappy customer, fraudulent transaction, etc.) although it may have some levels of protection.
+</p>
+
+
 <h4>Acquirer</h4>
+<p>
+    It is the financial institution that works with the merchant, collecting all its payments transactions regularly and submitting them to the card schemes for settlement.
+    After their processing, it accepts the corresponding desposits and forwards them to the merchant account.
+    As consequence of acquiring a merchant, the acquirer must deal with responsibilities and risks from the relationship.
+    Hence, acquirers also require a license from the respective card schemes.
+    Equally, in some cases, there are card schemes that become directly the acquirer of a merchant without the intervention of other acquiring entity.
+</p>
+<p>
+    The acquirer usually supplies the merchant the necessary payment infrastructure (e.g. Point-Of-Sale devices or just POS, imprinters, e-commerce, call-centre, etc.).
+    To provide such infrastructure acquirers usually cooperate with Payment Service Providers (PSP).
+</p>
+<p>
+    As interface with the merchant, the acquirer is responsible for charging the merchant a fee that is then divided between all the entities involved in the payment processing.
+    Such fee is a share of the transaction amount and thus the merchant eventually perceives an amount smaller than that to be billed to the cardholder.
+</p>
+
 <h4>Scheme/Card association</h4>
+<p>
+    Payment schemes provide a wide payment network under a brand name, tying all participants together (e.g. multiple issuers and acquirers).
+    They not only provide the communication infrastructure, but also a corporate framework and the rules and regulations that govern how transactions, services and disputes are to be handled.
+</p>
+
 <h4>Processor</h4>
+<p>
+    It is a transaction processing company, providing software, data centres and communication to those issuers, acquirers and card schemes that want to outsource this task.
+</p>
+
 <h4>Payment Service Provider (PSP)</h4>
+<p>
+    Often, a merchant can connect directly to its acquirer but there may exist reasons to not do that, being more interesting to connect to a payment service provider or payment gateway provider instead.
+    In general the reason behind consist on the complexity and costs involved. It happens for instance when integrating direct distribution channels (e.g. e-commerce).
+    The PSP serves as an interface between merchant and acquirer, providing the merchant a simplified interface to its distribution application and hiding the complexity of connecting to multiple acquirers, card schemes and payment networks.
+    The range of offered services is wide: connectivity, end-to-end transaction management, reporting tools, risk management tools, currency conversion, ..., sometimes even funds management.
+</p>
+
 <h4>Clearing Houses</h4>
+<p>
+    Clearing houses collate and settle large amounts of transactions between the counterparties.
+    They are responsible for moving (clearing and settling) the funds between the issuer and acquirer within a card scheme.
+    They do it by optimizing the number of financial movements to each member, reducing them to a single daily settlement.
+</p>
 
-
+<h5>NOTES ABOUT ENTITIES IN AIRLINE WORLD</h5>
 
 <h3 id="flows">Main flows</h3>
+<p>
+    Multiple sub-transactions are carried out between the involved entities described in order to complete a payment transaction.
+</p>
+
 <h4>Authorization (& pre-authorization)</h4>
+<p>
+    Pre-authorization is a type of authorization performed before the actual authorization in order to validate a token within a payment mean.
+    Such validation ensures the token is valid (e.g. active, not lost, not stolen, etc.).
+    However, it doesn't give a payment guarantee for the future transaction (e.g. verifying there are enough funds available).
+    Some issuers do not support this type and to work around this an actual authorization with a minimal amount is performed.
+</p>
+<p>
+    The authorisation transaction is a request to the cardholder's issuer  to authorize a payment transaction towards a merchant.
+    If accepted (authorized), the issuer promises to pay the merchant the requested amount, so the issuer makes a series of non-trivial checks.
+    It is handled as a promise because the funds are not directly transferred, just temporarily "put aside", and the merchant has to claim it later on;
+    as guarantee the merchant receives an authorization code that is used later at payment confirmation or capture (actual payment). 
+</p>
+<p>
+    The response to the authorization request can be either accepted, declined, referral (refer to issuer) or pick up card (when fraud at face-to-face payment).
+</p>
+
 <h4>Payment confirmation</h4>
+<p>
+    The actual payment request is this transaction and the prerequisite for it is that the goods or services have been provided from the merchant to the cardholder.
+    As examples of the time when this prerequisite is met consider an immediate transfer of goods at shopping mall, a hotel stay or a car rental.
+</p>
+<p>
+    The confirmed amount has to be equal to or lower than the authorized amount.
+    The merchant loses the payment guarantee if the amount is higher, although specific small tolerances apply (e.g. tips or currency exchange fluctuations).
+    In addition, the issuer can decline the request if the transaction cannot be covered with the funds available.
+</p>
+
 <h4>Reversals, cancellation, refund and credit</h4>
+<p>
+    Most payments methods offer corrective transactions, as there are situations that can require the payment to be modified or cancelled at the request of either the cardholder or the merchant.
+    Reversals and cancellation apply if the transaction is not submitted submitted, deleting it before that (information is kept just for audit purposes).
+    Refunds apply if the transaction is submitted, amending the original transaction with another and an amount equal or lower to the original.
+    Some electronic method of payments can only be refunded with an alternative method of payment (e.g. cash).
+    Credits are independent of any previous transaction (e.g. customer compensation) and not all payment methods allow it.
+</p>
+
 <h4>Capture (Transaction Submission)</h4>
+<p>
+    The merchant or the PSP (if present) have a time window to submit all the transactions performed during a defined period of time to the corresponding acquirers.
+    If they do not do it, they lose the payment guarantee.
+</p>
+<p>
+    This transaction flow is tipically done using batch files and depending on the channel used (POS, reservation system, e-commerce, ...) distinct procedures apply.
+</p>
+
 <h4>Clearing and settlement</h4>
+<p>
+    They form the flows of fund movement from issuer to acquirer and then to the merchant.
+    The acquirer initiates the clearing by submitting all the captured transactions to the payment scheme, which notifies the issuer.
+    The total amount is debited from the issuer account at the clearing house of the scheme, from which the acquirer receives the total amount of the transactions performed by its merchants.
+</p>
+<p>
+    Given that banks can be both issuer and acquirer at the same time, clearing houses usually work with the difference between those amounts to transfer to determine the funds movement direction.
+    Moreover, if the bank is at the same time issuer of the cardholder and acquirer of the merchant, it can process the transaction internally, avoiding the fees of the processing with the other entities.
+</p>
+<p>
+    When the payment transaction is a refund, charge-back or credit transaction, the funds flow in the opposite direction.
+</p>
+
 <h4>Billing</h4>
+<p>
+    The payment method determines when and how the issuer bills the cardholder. 
+    Credit cards (charge cards, revolving credit), debit cards, direct debits, bank transfers, prepaid cards, prepaid accounts, wallets, ... are billed differently.
+    For instance, prepaid implies billing before the payment, debit applies it immediately at capture and credit allows for deferred billing.
+</p>
+
 <h4>Disputes (e.g. chargeback)</h4>
+<p>
+    Payment schemes set rules to protect cardholders and merchants against illegitimate and fraud transactions.
+    Some scenarios are:
+</p>
+<ul>
+    <li>Cardholder did not make the transaction (authorization not got, misused card, ...).</li>
+    <li>Amount charged differs from amount agreed.</li>
+    <li>Duplicate transaction.</li>
+    <li>Invalid or expired card/account.</li>
+    <li>Late presentment.</li>
+    <li>Incorrect transaction details.</li>
+    <li>The goods or services were not delivered.</li>
+    <li>The delivered goods or services were not those that were ordered or expected.</li>
+    <li>Fraudulent disputes on a legitimate purchase.</li>
+</ul>
+<p>
+    Cardholders, issuers and merchants have the right to dispute the transaction. The dispute generally advances based on evidences.
+    Several stages apply in that process:
+</p>
+<ul>
+    <li>Retrieval request or request for copy.</li>
+    <li>Charge-back (partial or full refund).</li>
+    <li>Re-presentment (second presentment).</li>
+    <li>Second charge-back.</li>
+    <li>Arbitration process.</li>
+</ul>
 
 <h2 id="scope">Scope of my projects</h2>
 
