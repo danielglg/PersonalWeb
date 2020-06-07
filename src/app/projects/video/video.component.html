@@ -2,7 +2,10 @@
 
 <!-- The sidebar -->
  <div class="sidebar">
-    <a [routerLink]='"."' fragment="content-top" class="active">Networks</a>
+    <a [routerLink]='"."' fragment="content-top" class="active">Video</a>
+    <a [routerLink]='"."' fragment="architecture">Simplified architecture</a>
+    <a [routerLink]='"."' fragment="contribution">Contribution</a>
+    <a [routerLink]='"."' fragment="distribution">Distribution</a>
     <a [routerLink]='"."' fragment="delivery">Delivery</a>
     <a [routerLink]='"."' fragment="scope">Scope of projects</a>
 </div>
@@ -12,8 +15,93 @@
 
 <h1 id="content-top">Video</h1>
 
-<h2 id="delivery">Delivery</h2>
+The present section aims to introduce the reader into those main projects in relation to video technology where I have worked on.
+It is a very simplified overview designed to make everybody understand what they are about (of course, much more could be said about).
 
+<h2 id="architecture">Simplified architecture</h2>
+<p>
+    One of the main applications of video technology is the transmission of real content to viewers.
+    For this simplified architecture this end-to-end scenario is used: the video content goes through different steps from the moment a scene is captured with a camera
+    to the moment when the final user consumes the video content.
+    I highlight the word simplified because several business and technical processes can be attached to the presented architecture in order to offer not only required
+    services or products but extra ones.
+    For instance take into consideration sport events or news: the audiovisual content at origin may not only be transmitted but enriched and served in different ways.
+</p>
+<p>
+    We can split this simplified architecture in three networks that will be described next: contribution network, distribution network and delivery network.
+    Each of these networks has its own particularities (applicable telecommunication technologies and processings, levels of quality, reliability or security, etc.).
+    For the sake of simplicity, just consider these networks are connected by specialized entities (e.g. production studio, data center, ...).
+    From a service perspective, the aim of the whole system is to offer audivisual content consumption within acceptable levels of quality of experience.
+</p>
+
+
+<h3 id="contribution">Contribution network</h3>
+<p>
+    Contribution mission is to deliver the highest feasible quality within budget to the reception headend of a processing entity (tipically a production studio).
+</p>
+<p>
+    The content will suffer many degradation processes afterwards, so in order to avoid that content reaches inadmissible levels of quality it is basic that the
+    original signal is transmitted with very good quality at the beginning of the end-to-end flow.
+    For digital video, information lost at sampling and compression-decompression cycles (multigeneration) are two of these main degradation processes, as the raw video signal
+    cannot be transmitted to the viewer, stored or processed as it is.
+    Other important attributes are:
+</p>
+<ul>
+    <li>
+        Security: to protect original content from disclosure and unauthorized use.
+    </li>
+    <li>
+        Reliability: to guarantee every piece of information to transmit is actually conveyed (redundant links are usually placed for this).
+    </li>
+    <li>
+        Timeliness (depending on the kind of program): to ensure the information arrives on time (e.g. live events, live bi-directional conversations, ...).
+    </li>
+</ul>
+<p>
+    Contribution links use specific telecommunication technologies appropriate for the setup, currently satellite, fiber and baseband (SDI) are quite common.
+</p>
+
+<h3 id="distribution">Distribution network</h3>
+<p>
+    Its function is to transmit finished content from final production centres to contracted content delivery providers.
+    Delivery providers are who eventually send the content to the viewers and hence involve network operators, over-the-air broadcaster, satellite companies, cable companies, etc.
+</p>
+<p>
+    Different versions of the content may flow to one or several delivery providers and besides the content service information is included, creating a digital multiplex of information (content, signalling, etc.).
+</p>
+<p>
+    At distribution it is assumed that no more multigeneration will happen and then content is adapted to fit the bandwidth requirements of the delivery network,
+    which implies to reduce the information of the audiovisual signal more aggressively in the distribution link than those used in the contribution link by means of
+    compression and sampling. However, quality is still a significant concern, as well as security, reliability, cost and timeliness.
+</p>
+
+<h3 id="delivery">Delivery network</h3>
+<p>
+    Its function is to transmit the content to the viewers by means of the technology that binds the delivery provider and multiple viewers (almost always many).
+    Examples of widespread deployed technologies for delivery networks are:
+</p>
+<ul>
+    <li>
+        Terrestrial radio links.
+    </li>
+    <li>
+        Terrestrial cable links.
+    </li>
+    <li>
+        Fiber links.
+    </li>
+    <li>
+        Satellite links.
+    </li>
+</ul>
+<p>
+    Each one of these technologies has its advantages and drawbacks. All the previous features are still important but optimizing cost becomes more significant.
+</p>
+<p>
+    The delivery provider can decide to further process the content stream (e.g. storage, ad insertion, etc.).
+    For instance, the IP-based video delivery networks of network operators employ systems based on Content Delivery Networks (CDNs) that allow to apply specific
+    business models, like for example video on demand, recording, timeshift, ad insertion, blackout, personalization, etc.
+</p>
 
 <h2 id="scope">Scope of my projects</h2>
 
@@ -23,3 +111,6 @@
 </div>
 
 </div>
+
+
+https://books.google.es/books?id=b4BnwgLuR8EC&pg=PA34&lpg=PA34&dq=video+content+contribution+delivery&source=bl&ots=tjzYWUiz2U&sig=ACfU3U1L2brTF8_3m2hec4ZHuW1Z7OF-5w&hl=es&sa=X&ved=2ahUKEwiiqKe0iPDpAhXy1uAKHYGmAkMQ6AEwEHoECAgQAQ#v=onepage&q=video%20content%20contribution%20delivery&f=false
