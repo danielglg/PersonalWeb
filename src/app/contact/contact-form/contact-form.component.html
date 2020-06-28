@@ -32,7 +32,7 @@
             <div class="form-group">
                 <label for="message">Message</label>
                 <br>
-                <textarea type="textarea" class="form-control" id="message" required [(ngModel)]="model.message" name="message" #message="ngModel" placeholder="What's on your mind?"></textarea>
+                <textarea type="textarea" class="form-control" id="message" rows=25 required [(ngModel)]="model.message" name="message" #message="ngModel" placeholder="What's on your mind?"></textarea>
                 <div [hidden]="message.valid || message.pristine" class="alert alert-danger">
                     Message is required.
                 </div>
