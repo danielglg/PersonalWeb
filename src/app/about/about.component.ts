@@ -29,6 +29,7 @@ export class AboutComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    alert("The webpage you are accessing is still under development; however you are allowed to see ongoing work.");
     this.timerId = setInterval( () => {this.changeAttentionGetter()} , 3000);
   }
 
