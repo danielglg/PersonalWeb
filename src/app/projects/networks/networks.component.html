@@ -1,6 +1,9 @@
+<div class="project_content">
+ 
  <!-- The sidebar -->
  <div class="sidebar">
     <a [routerLink]='"."' fragment="content-top" class="active">Networks</a>
+    <a [routerLink]='"."' fragment="architecture">Mobile network architecture</a>
     <a [routerLink]='"."' fragment="core">Core network</a>
     <a [routerLink]='"."' fragment="radio">Radio network</a>
     <a [routerLink]='"."' fragment="scope">Scope of projects</a>
@@ -11,10 +14,136 @@
 
 
 <h1 id="content-top">Networks</h1>
+<p>
+  All my projects have involved telecommunication networks and this section is specifically focused on mobile networks.
+  Next I provide a very brief summary of key concepts needed to understand the projects where I worked.
+  The scope is kept to basically 4G and 5G technologies.
+</p>
+
+<h2 id="architecture">Mobile network architecture</h2>
+<p>
+  2G/3G network architectures already split the architecture in two main parts: the Core Network (CN) and the Radio Access Network (RAN).
+  Both are connected together through the backhaul, the RAN is the infrastructure with the base stations communicating signals through air and the CN connects to voice and data networks.
+  With 4G, data neworks become predominant and the ensemble of CN, RAN and backhaul evolves, acquiring the name of Evolved Packet System (EPS).
+  Most of the components and subcomponents of the system are renamed as well, for instance CN becomes Evolved Packet Core (EPC) and RAN Radio Interface.
+</p>
+<p>
+  The architecture experiments a paradigm change during the evolution of 4G: Control and User Plane Separation (CUPS).
+  This change contributes to the development of network improvements and technologies like Software Defined Networks (SDN) and Network Function Virtualization (NFV).
+  It splits the user function from the control functions, so the parts of the system form part of such planes depending on the function they carry out.
+</p>
+<p>
+  CUPS is kept in 5G, but with 5G component evolve again and with that their names: 5G Core (5GC), Next-Generation RAN (NG-RAN).
+</p>
+<p>
+  At the core the protocols used to link the parts have had an evolution too with these standards.
+  RADIUS and DIAMETER (evolution of RADIUS) are the most important.
+</p>
+<p>
+  The radio network evolution depends more on breakthroughs based on physical improvements in radio transmission, signal processing and other optimizations.
+  It can be consulted on the corresponding standards: WCDMA/HSPA for 3G, Long Term Evolution (LTE) for 4G and New Radio (NR) for 5G.
+</p>
+
 
 <h2 id="core">The core network</h2>
+<p>For 5G, As mentioned, the components of the core network belong to either the control plane (C-plane) or the user plane (U-plane). They are:</p>
+<p><i>REVIEW</i></p>
+<ul>
+  <li>C-plane:
+    <ul>
+      <li>
+        AF (application Function): 
+      </li>
+      <li>
+        AMF (Access and Mobility Management Function):
+      </li>
+      <li>
+        AUSF (Authentication Server Function):
+      </li>
+      <li>
+        FE (Front End):
+      </li>
+      <li>
+        NEF (Network Exposure Function):
+      </li>
+      <li>
+        NRF (NF Repository Function):
+      </li>
+      <li>
+        NSSF (Network Slice Selection Function):
+      </li>
+      <li>
+        PCF (Policy Control Function):
+      </li>
+      <li>
+        SEPP (Security Edge Protection Function)
+      </li>
+      <li>
+        SMF (Session Management Function):
+      </li>
+      <li>
+        UDM (Unified Data Management)
+      </li>
+      <li>
+        UDR (Unified Data Repository)
+      </li>
+      <li>
+        UDSF (unstructured Data Storage Function)
+      </li>
+    </ul>
+    
+  </li>
+  <li>U-plane:
+    <ul>
+      <li>
+        UPF (User Plane function):
+      </li>
+    </ul>
+    
+  </li>
+</ul>
 
 <h2 id="radio">The radio network</h2>
+<p>
+  It is possible to find also C-plane and U-plane related elements in the radio network, so different splitting approaches were considered when transitioning to 5G.
+  Taking into consideration the OSI model, we can identify for 5G:
+</p>
+<p><i>REVIEW</i></p>
+<ul>
+  <li>Layer 1 (physical):
+    <ul>
+      <li>
+        PHY
+      </li>
+    </ul>
+  </li>
+  <li>Layer 2 (link):
+    <ul>
+      <li>
+        MAC
+      </li>
+      <li>
+        RLC
+      </li>
+      <li>
+        PDCP
+      </li>
+      <li>
+        SDAP
+      </li>
+    </ul>
+  </li>
+  <li>Layer 3 (routing):
+    <ul>
+      <li>
+        RRC
+      </li>
+      <li>
+        NAS
+      </li>
+    </ul>
+  </li>
+</ul>
 
 <h2 id="scope">Scope of my projects</h2>
 
@@ -31,4 +160,4 @@ Work packages with participation:
 
 </div>
 
-
+</div>
