@@ -13,3 +13,26 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+
+.award-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.award-left {
+    width: 80%
+}
+
+.award-right {
+    max-width: 20%;
+    flex-direction: column;
+    align-content: space-between;
+
+}
+
+.logo {
+    width:150px;
+    height:auto;
+    margin-bottom: 1em;
+}
