@@ -26,7 +26,10 @@ export class ContactFormComponent implements OnInit {
    * Only alerting for now.
    */
   sendEmail() {
-    const allInfo = `Hello ${this.model.name},\nyour e-mail has been submitted!`;
+    // TODO: change alert.
+    const allInfo = `Hello ${this.model.name},\nsorry, your e-mail cannot be submitted!
+    The server side for mailing is not available yet,
+    please send your e-mail to cuax@hotmail.es`;
     alert(allInfo);
   }
 
