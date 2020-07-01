@@ -6,6 +6,7 @@ export class ChartInfoService {
     dataLanguages: any;
     dataSectors: any;
     dataDevelopment: any;
+    dataMethodologies: any;
     data: any;
 
     constructor()
@@ -64,6 +65,28 @@ export class ChartInfoService {
               }]
           };
 
+        this.dataMethodologies = {
+            labels: ['Scrum', 'Kanban', 'SaFe', 'Other Agile', 'Traditional project management'],
+            datasets: [
+                {
+                    data: [300, 50, 50, 50, 100],
+                    backgroundColor: [
+                        "#FF6384",
+                        "#36A2EB",
+                        "#FFCE56",
+                        "#FFCE56",
+                        "#FFCE56"
+                    ],
+                    hoverBackgroundColor: [
+                        "#FF6384",
+                        "#36A2EB",
+                        "#FFCE56",
+                        "#FFCE56",
+                        "#FFCE56"
+                    ]
+                }]
+            };
+
         this.data = {
           labels: ['A', 'B', 'C'],
           datasets: [
@@ -94,6 +117,10 @@ export class ChartInfoService {
 
     getDevelopment() {
         return this.dataDevelopment;
+    }
+
+    getMethodologies() {
+        return this.dataMethodologies;
     }
 
     getRandomData() {
