@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import {MenubarModule} from 'primeng/menubar';
 import {ChartModule} from 'primeng/chart';
+import {CarouselModule} from 'primeng/carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,6 +48,7 @@ import { EmbeddedComponent } from './projects/embedded/embedded.component';
     AppRoutingModule,
     MenubarModule,
     ChartModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

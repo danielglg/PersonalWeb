@@ -24,22 +24,32 @@
     margin: 1em
 }
 
-.medium {
-    display: flex;
-}
-
-.medium-split {
-    height: 100%;
-    width: 50%;
-}
-
 #background {
     margin: 1em
 }
 
-.colorado-image {
+.about-content {
+    display: flex;
+}
+
+.about-content-left {
+    width: 30%;
+}
+
+.medium {
+    display: flex;
+}
+
+
+.story-content {
+    display: flex;
+}
+
+.evidence-image {
     width: 100%;
 }
+
+
 
 .charts-row {
     display: flex
@@ -48,6 +58,4 @@
 .chart-item-box {
     text-align: center
 }
-
-
 
