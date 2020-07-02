@@ -20,7 +20,10 @@
 
 
 <br>
-<p>Updated: date</p>
+<a href="/" target="_blank">
+    Click here to download a generic version.
+</a>
+<p>Updated: date (please download the generic version with above link, the content of the page is not mature enough yet)</p>
 
 <p-toast [style]="{marginTop: '0px'}"></p-toast>
 
@@ -56,8 +59,63 @@
     <p-header>
         <span class="ui-panel-title">AWARDS</span>
     </p-header>
-    <h3>“Best End-of-Degree Project with National Instruments technologies”</h3>
-    <p>National Instruments awarded my project “Measurement and automated control system to characterize magnetic elements” (July 5, 2012). Such project required skills in software engineering, electronic instrumentation, data acquisition and data analysis.</p>
+    <div class="award-content">
+        <div class="award-content-left">
+            <h3>“Best End-of-Degree Project with National Instruments technologies”</h3>
+            <p>National Instruments awarded my project “Measurement and automated control system to characterize magnetic elements” (July 5, 2012). Such project required skills in software engineering, electronic instrumentation, data acquisition and data analysis.</p>
+        </div>
+
+        <div class="award-content-right">
+            <a href="https://ni.com/" target="_blank">
+                <img class="logo" src="assets/logos/Logo_NI.png" alt="Logo and link: NI">
+            </a>
+
+            <button type="button" (click)="showModalDialog()" pButton icon="pi pi-external-link" label="Info"></button>
+            <p-dialog header="Publications about received award." [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+                [draggable]="false" [resizable]="false">
+        
+                <h3><a href="https://youtu.be/2aSytLl4oL0?list=UUNW9djX3St9Wtb-oAsSEtkQ&t=3567" target="_blank">
+                    Video of Diploma Delivery Ceremony, starting at the award delivery act.
+                </a></h3>
+                <p>
+                    <i>“Se va a proceder a continuación a la entrega del premio National Instruments al mejor proyecto fin de carrera en el área de ingeniería en equipos electrónicos, test y medida titulado ‘Sistema de medida y control automatizado para caracterizar elementos magnéticos’. Hará entrega del premio Don César Verdejo, responsable del programa académico de National Instruments. El señor secretario llamará al premiado.”</i>
+                </p>
+                <p>
+                    <i>“El premiado es Don David, perdón, Don Daniel Gómez-Lobo García.”</i>
+                </p>
+        
+                <h3><a href="http://www.upm.es/UPM/SalaPrensa/Noticias?fmt=detail&prefmt=articulo&id=ae3e531528078310VgnVCM10000009c7648a____" target="_blank">
+                    Press release: Diploma Delivery Ceremony at the faculty EUITT.
+                </a></h3>
+                <p>
+                    <i>“En la ceremonia también se hizo entrega por parte de José Javier Medina, decano del COITT, del premio al mejor expediente a Roberto Pérez Carrasco, y Carlos Conde entregó el Premio Javier Hernández Bermejo al mejor rendimiento de primer curso a Víctor Diéguez Rubio. Asimismo, se entregaron los premios a los mejores proyectos fin de carrera por parte de las empresas National Instruments a Daniel Gómez-Lobo García, Graudio a Aitor Hernández Martínez y Rohde&Schwarz a Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez.”</i>
+                </p>
+        
+        
+                <h3><a href="https://www.euitt.upm.es/escuela/comunicaciones_escuela/eventos_historicos?anyoactual=2012&mesactual=6&fechalink=29/11/2018&mesmas=1" target="_blank">
+                    Press release: Awards of course 2011-2012 (06/07/2012)
+                </a></h3>
+                
+                <p>
+                    Premio COITT al mejor expediente:
+                    Roberto Pérez Carrasco
+                    Premio Javier Hernández al mejor expediente 1er curso:
+                    Víctor Diéguez Rubio
+                    Premio Rohde&Schwarz al mejor PFC en Radiocomunicación:
+                    Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez
+                    Premio National Instruments al mejor PFC en Instrumentación Virtual:
+                    Daniel Gómez-Lobo García
+                    Premio Graudio al mejor PFC en Audio:
+                    Aitor Hernández Martínez
+                </p>
+                <hr>
+                <h3><a href="/">
+                    Project details and memory
+                </a></h3>
+        
+            </p-dialog>
+        </div>
+    </div>
 
 </p-panel>
 
@@ -107,7 +165,9 @@
     </p-header>
     <div class="participation-categories">
         <p-card header="Volunteering" class="participation-category">
-            <p>Board of European Students of Engineering (BEST):</p>
+            <a href="https://www.best.eu.org/" target="_blank">
+                <p>Board of European Students of Technology (BEST):</p>
+            </a>
             <p>Main organizer of course, international delegate, international participant, member supporting organization development, events, networking and training. Currently “alumnus”.</p>
 
         </p-card>
@@ -115,7 +175,7 @@
             Intel Software Summit, Red Innova
         </p-card>
         <p-card header="Competitions" class="participation-category">
-            ActúaUPM, Satelec
+            ActúaUPM, Satelec, Hack The Crisis Norway
         </p-card>
     </div>
 </p-panel>

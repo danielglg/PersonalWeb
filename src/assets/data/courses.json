@@ -1,6 +1,48 @@
 [
     {
-        "title" : "Security for Hackers and Developers.",
+        "title" : "Angular Best Practices.",
+        "date" : "04/2020",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "How to Start and Run A Consulting Business.",
+        "date" : "04/2020",
+        "timespan" : "(3h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Natural Language Processing (NLP).",
+        "date" : "02/2020",
+        "timespan" : "(16h.)",
+        "provider" : "Altran, Madrid"
+    },
+    {
+        "title" : "Introduction to Banking.",
+        "date" : "01/2020",
+        "timespan" : "(21h.)",
+        "provider" : "Altran, online."
+    },
+    {
+        "title" : "Automating Networks with Python.",
+        "date" : "09/2019",
+        "timespan" : "(4h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Security for Hackers and Developers: Fuzzing.",
+        "date" : "06/2019",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Payment Card Security, Processing, and the PCI Standards.",
+        "date" : "06/2019",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Security for Hackers and Developers: Overview",
         "date" : "07/2019",
         "timespan" : "(+3h.)",
         "provider" : "Pluralsight, online."
@@ -8,6 +50,12 @@
     {
         "title" : "Managing Technical Professionals.",
         "date" : "07/2019",
+        "timespan" : "(3h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Spring Fundamentals.",
+        "date" : "03/2019",
         "timespan" : "(3h.)",
         "provider" : "Pluralsight, online."
     },

@@ -21,6 +21,8 @@ export class ProfessionalProfileComponent implements OnInit {
 
   softwareEngSkills: SkillCategory[];
 
+  displayModal: boolean;
+
   constructor(private profileService: ProfessionalProfileService) { }
 
   ngOnInit(): void {
@@ -46,6 +48,10 @@ export class ProfessionalProfileComponent implements OnInit {
 
     alert("The webpage you are accessing is still under development; however you are allowed to see ongoing work.");
 
+  }
+
+  showModalDialog() {
+    this.displayModal = true;
   }
 
 }
