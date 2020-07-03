@@ -23,6 +23,7 @@ import { NetworksPcrfComponent } from './projects/networks/networks-pcrf.compone
 import { VideoComponent } from './projects/video/video.component';
 import { VideoPersonalizationComponent } from './projects/video/video-personalization.component';
 import { EmbeddedComponent } from './projects/embedded/embedded.component';
+import { ScadaComponent } from './projects/scada/scada.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { EmbeddedComponent } from './projects/embedded/embedded.component';
     NetworksPcrfComponent,
     VideoComponent,
     VideoPersonalizationComponent,
-    EmbeddedComponent
+    EmbeddedComponent,
+    ScadaComponent
   ],
   imports: [
     BrowserModule,

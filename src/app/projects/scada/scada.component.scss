@@ -1,0 +1,60 @@
+#system-diagram {
+    display: flex;
+}
+
+#system-diagram-left {
+    width: 40%;
+}
+
+#system-diagram-right {
+    width: 60%;
+}
+
+#system-instrumentation {
+    display: flex;
+}
+
+#img-instrumentation {
+    margin: 1em;
+}
+
+#diagrams-architecture {
+    text-align: center;
+}
+
+#gui-examples {
+    display: flex;
+    justify-content: space-between;
+}
+
+#img-gui {
+    width: 700px;
+}
+
+#managers {
+    display: flex;
+}
+
+#managers-left {
+    width: 40%;
+}
+
+#managers-right {
+    width: 60%;
+}
+
+#loaders {
+    display: flex;
+}
+
+#loaders-left {
+    width: 40%;
+}
+
+#loaders-right {
+    width: 60%;
+}
+
+#img-right {
+    width: 550px;
+}

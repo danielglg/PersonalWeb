@@ -62,6 +62,10 @@ export class TopMenuComponent implements OnInit {
           {
             label: 'Embedded systems',
             routerLink: ['/projects/embedded']
+          },
+          {
+            label: 'Supervisory control and data acquisition',
+            routerLink: ['/projects/scada']
           }
         ]
       },
