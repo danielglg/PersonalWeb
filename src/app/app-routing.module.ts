@@ -14,6 +14,7 @@ import { NetworksPcrfComponent } from './projects/networks/networks-pcrf.compone
 import { VideoComponent } from './projects/video/video.component';
 import { VideoPersonalizationComponent } from './projects/video/video-personalization.component';
 import { EmbeddedComponent } from './projects/embedded/embedded.component';
+import { ScadaComponent } from './projects/scada/scada.component';
 
 
 const routerOptions: ExtraOptions = {
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'projects/video', component: VideoComponent },
   { path: 'projects/video/personalization', component: VideoPersonalizationComponent },
   { path: 'projects/embedded', component: EmbeddedComponent },
+  { path: 'projects/scada', component: ScadaComponent },
 
   // Default
   { path: '**', component: AboutComponent }

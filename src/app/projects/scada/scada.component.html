@@ -1,0 +1,190 @@
+<div class="project_content">
+
+    <!-- The sidebar -->
+     <div class="sidebar">
+        <a [routerLink]='"."' fragment="content-top" class="active">Supervisory control and data acquisition</a>
+        <a [routerLink]='"."' fragment="scada">What is a SCADA system?</a>
+        <a [routerLink]='"."' fragment="summary">Project summary</a>
+        <a [routerLink]='"."' fragment="system">The system</a>
+        <a [routerLink]='"."' fragment="architecture">Architecture of the solution</a>
+        <a [routerLink]='"."' fragment="gui">Graphical user interface</a>
+        <a [routerLink]='"."' fragment="achievements">Achievements</a>
+        
+    </div>
+    
+    <!-- Page content -->
+    <div class="content">
+    
+    <h1 id="top-table">Supervisory control and data acquisition (SCADA)</h1>
+
+    <h3 id="scada">What is a SCADA system?</h3>
+    
+    <h2 id="summary">Project summary</h2>
+
+    <p>
+        The characterization of magnetic materials is of fundamental importance in the development of new technological objects and improvement of existing ones. Transformers, motors, sensors, speakers and magnetic information systems are just some examples.
+    </p>
+
+    <p>
+        Systems that extract the magnetic properties of materials are complex and involve specific instrumentation and laborious procedures.
+    </p>
+
+    <p>
+        The aim of this project was to build an application that controls a measurement and characterization system recently developed, and meets the needs of its users. The system is based on Kerr effect to extract information from magnetic materials.
+    </p>
+
+    <p>
+        Such application was developed with LabVIEWTM and has a modular structure that allows for future changes or additions regardless of equipment used.
+        The name given to the application implement is CAELMAG (which comes from the Spanish 'CAracterización de ELementos MAGnéticos', in English 'Characterization of magnetic elements'). 
+    </p>
+
+    <p>
+        This page offers a quick introduction to the project.
+        For more details you can consult the following resources (although in Spanish, they have many visual resources):
+    </p>
+    <ul>
+        <li>Memory of the project.</li>
+        <li>Presentation slides.</li>
+    </ul>
+
+
+
+    <h2 id="requirements">Requirements</h2>
+
+    <p>Main objective: measurement and control system.</p>
+    <p>Primary requirements:</p>
+
+    <ul>
+        <li>Apropriate programmation of tests parameters for trying out a sample target of the assay.</li>
+        <li>Data acquisition.</li>
+        <li>Configuration of devices.</li>
+        <li>Correct synchronization.</li>
+        <li>Measure and control using the instruments involved in the test, and excite the sample target of the assay according to the programmed test parameters.</li>
+        <li>Storage and retrieval of data files.</li>
+        <li>Analysis and visualization of the data resulting from tests.</li>
+        <li>Deploy a 'correct' programming style.</li>
+        
+    </ul>
+
+    <p>Secondary requirements:</p>
+
+    <ul>
+        <li>Possibility of using the data acquired by means of other appliations.</li>
+        <li>Graphical user interface with an attractive and friendly design for its users.</li>
+        <li>Help resources and assistants.</li>
+        <li>Users management.</li>
+    </ul>
+
+    <p>Improvements (lower priority):</p>
+    <ul>
+        <li>Application usage register.</li>
+        <li>Visualization of laboratory elements.</li>
+        <li>Control of positioner device.</li>
+        <li>Instrumentation interchange.</li>
+        <li>Alternative disposition of equipment.</li>
+        <li>Possibility that the delay generator P400 communicates with computer either via RS-232 or Ethernet.</li>
+    </ul>
+
+
+    <h2 id="system">The system</h2>
+
+    <div id="system-diagram">
+        <div id="system-diagram-left">
+            <p>Description missing</p>
+        </div>
+        <div id="system-diagram-right">
+            <img src="assets/img/projects/Scada_Characterization_system_for_magnetic_elements.jpg" alt="Diagram: system for the characterization of magnetic elements">
+        </div>
+    </div>
+
+    <br/>
+
+    <div id="system-instrumentation">
+        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_1.jpg" alt="Photos: instrumentation">
+        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_2.jpg" alt="Photos: instrumentation">
+        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_3.jpg" alt="Photos: instrumentation">
+    </div>
+    
+    <h2 id="architecture">Architecture of the solution</h2>
+
+    <p>
+        The solution is a modular application. The first of the next two figure shows the main modules considered based on the requirements.
+        The second figure represents the global design of the application, where modules have been organized according to their functionality.
+    </p>
+
+    <div id="diagrams-architecture">
+        <img src="assets/img/projects/Scada_Application_modules.png" alt="Diagram: application modules">
+        <img src="assets/img/projects/Scada_Architecture_overview.jpg" alt="Diagram: architecture overview">
+    </div>
+
+    <p>
+        The structure of CAELMAG is substantiated in a considerable amount of state machines and produced-consumer relationships distributed among components.
+    </p>
+
+    <p>
+        The error detection and treament mechanisms are of undeniable value (the dependability requirement is very high), so they were taken into account when defining the architecture.
+        The state machines, the producers and the consumers handle them following a similar behavioural pattern.
+    </p>
+
+    <p>
+        Within the global architecture of the application two main software patterns are identified: the structure of loaders and the structure of managers.
+    </p>
+
+
+    <div id="managers">
+        <div id="managers-left">
+            <p>
+                A manager carries out a set of defined actions very related among them and executes concurrently with other managers executing other independent tasks,
+            </p>
+        
+            <p>
+                Managers communicate through messages sent and received via queues (e.g. orders, errors, warnings, etc.), so a manager implies both producer and consumer behaviors.
+                When sharing data, they employ one of two mechanism depending on the need of the application: global variables and queues.
+                Global variables are used when the information shared is not big and not frequently consulted.
+                Queues are employed when the amount of information to transmit is big and very frequent.
+                Beyond these aspects, in general each manager is implemented differently based on its committed functions.
+            </p>
+        </div>
+        <div id="managers-right">
+            <img id="img-right" src="assets/img/projects/Scada_Architecture_managers.png" alt="Diagram: managers">
+        </div>
+
+    </div>
+    
+    <br/>
+
+    <div id="loaders">
+        <div id="loaders-left">
+            <p>
+                Loaders have the mission of executing concurrently independent pieces of software (they load and execute).
+                The number of available loaders (and then the concurrency) is limited by an structure which also incorporates a controller whose purpose is coordinating the set of loaders.
+                Controllers and loaders share data via global variables and queues too.
+            </p>
+        </div>
+        <div id="loaders-right">
+            <img id="img-right" src="assets/img/projects/Scada_Architecture_module_loaders.jpg" alt="Diagram: module loaders">
+        </div>
+        
+    </div>
+    
+    
+    
+
+    <h2 id="gui">Graphical user interface</h2>
+
+    <div id="gui-examples">
+        <div id="gui-examples-left">
+            <img id="img-gui" src="assets/img/projects/Scada_Gui_menu.JPG" alt="Capture: graphical user interface - menu">
+
+        </div>
+        <div id="gui-examples-right">
+            <img id="img-gui" src="assets/img/projects/Scada_Gui_delay_generator.JPG" alt="Capture: graphical user interface - example of virtual instruments (delay generator)">
+            
+        </div>
+    </div>
+
+    <h2 id="achievements">Achievements</h2>
+
+    </div>
+    
+</div>
