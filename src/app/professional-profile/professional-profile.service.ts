@@ -14,10 +14,10 @@ import { SkillCategory, SkillCategoriesAdapter } from './skill-categories.model'
 @Injectable()
 export class ProfessionalProfileService {
 
-  private urlMasterDegree = '../../assets/data/master_degree.json';
-  private urlBachelorDegree = '../../assets/data/bachelor_degree.json';
-  private urlCourses = '../../assets/data/courses.json';
-  private urlSoftwareEngineeringSkills = '../../assets/data/software_engineering_tools.json';
+  private urlMasterDegree = 'assets/data/master_degree.json';
+  private urlBachelorDegree = 'assets/data/bachelor_degree.json';
+  private urlCourses = 'assets/data/courses.json';
+  private urlSoftwareEngineeringSkills = 'assets/data/software_engineering_tools.json';
 
   constructor(private httpClient: HttpClient,
               private degreeAdapter: DegreeAdapter,
