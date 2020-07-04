@@ -1,168 +1,173 @@
-<div class="top">
-    <div class="photo">
-        <img src="assets/img/Daniel_Gomez_Lobo_Garcia.jpg" alt="Photo: Daniel Gómez-Lobo García">
-    </div>
-    <div class="text-section attention-getter">
-        <div class="attention-getter-text">
-            <h2 id="attention-getter-text">Welcome!</h2>
-            <p>     Yes? Then, you should keep reading.</p>
+<div class="common-bg">
+    
+    <div class="top">
+        <div class="photo">
+            <img src="assets/img/Daniel_Gomez_Lobo_Garcia.jpg" alt="Photo: Daniel Gómez-Lobo García">
         </div>
-
-        <div id="presentation">
-            <h1>Presentation</h1>
-            <p>
-            Welcome to my website. Let me present the contents you will find.
-            </p>
-            <p>
-            The current page briefly introduces me. For more professional details please navigate to CV section, 
-            where you can find a more extended and interactive description of my profile.
-            </p>
-            <p>
-            You can learn more about my projects by visiting the projects section.
-            When hovering over 'Projects' in the navigation menu, the categories where each project has been classified are found first.
-            Each category has its own page and there I provide introductory material to ease the understanding and delimitation of such projects.
-            Some of these projects and categories can be accessed too from links in the CV section, so that you can better relate such experiences.
-            </p>
-            <p>
-            Hope it wakes up your curiosity!
-            Anyway, I recommend you to come back in the future, as I am planning to post articles and even learning material.
-            </p>
-            <p>
-            At the end, there is a contact page with resources for contacting me.
-            </p>
-
-        </div>
-    </div>
-</div>
-
-
-<div class="medium text-section">
-    <div class="about" id="background">
-        <h1>About me</h1>
-
-        <div class="about-content">
-            <div class="about-content-left">
-                <p>
-                    Cross-functional engineer with strong expertise in software engineering and telecommunication technologies, 
-                    having already spent more than 8 years creating technological solutions,
-                    in 6 sectors as member of around 10 Research & Development teams.
-                </p>
+        <div class="attention-getter">
+            <div class="attention-getter-text">
+                <h2 id="attention-getter-text">Welcome!</h2>
+                <p>     Yes? Then, you should keep reading.</p>
             </div>
-
-            <div class="about-content-right">
-                <div id="graphical-summary">
-                    <div class="charts">
-                        <div class="charts-row">
-                            <div class="chart-item-box">
-                                <i>Programming languages</i>
-                                <p-chart type="doughnut" class="chart-item" [data]="dataLanguages" height="150"></p-chart>
+    
+            <div id="presentation">
+                <h1>Presentation</h1>
+                <p>
+                Welcome to my website. Let me present the contents you will find.
+                </p>
+                <p>
+                The current page briefly introduces me. For more professional details please navigate to CV section, 
+                where you can find a more extended and interactive description of my profile.
+                </p>
+                <p>
+                You can learn more about my projects by visiting the projects section.
+                When hovering over 'Projects' in the navigation menu, the categories where each project has been classified are found first.
+                Each category has its own page and there I provide introductory material to ease the understanding and delimitation of such projects.
+                Some of these projects and categories can be accessed too from links in the CV section, so that you can better relate such experiences.
+                </p>
+                <p>
+                Hope it wakes up your curiosity!
+                Anyway, I recommend you to come back in the future, as I am planning to post articles and even learning material.
+                </p>
+                <p>
+                At the end, there is a contact page with resources for contacting me.
+                </p>
+    
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="medium">
+        <div class="about" id="background">
+            <h1>About me</h1>
+    
+            <div class="about-content">
+                <div class="about-content-left">
+                    <p>
+                        Cross-functional engineer with strong expertise in software engineering and telecommunication technologies, 
+                        having already spent more than 8 years creating technological solutions,
+                        in 6 sectors as member of around 10 Research & Development teams.
+                    </p>
+                </div>
+    
+                <div class="about-content-right">
+                    <div id="graphical-summary">
+                        <div class="charts">
+                            <div class="charts-row">
+                                <div class="chart-item-box">
+                                    <i>Programming languages</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataLanguages" height="150"></p-chart>
+                                </div>
+                                <div class="chart-item-box">
+                                    <i>Sectors</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataSectors" height="150"></p-chart>
+                                </div>
+                                <div class="chart-item-box">
+                                    <i>Development area</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataDevelopment" height="150"></p-chart>
+                                </div>
+                                <div class="chart-item-box">
+                                    <i>Methodologies</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataMethodologies" height="150"></p-chart>
+                                </div>
+                    
                             </div>
-                            <div class="chart-item-box">
-                                <i>Sectors</i>
-                                <p-chart type="doughnut" class="chart-item" [data]="dataSectors" height="150"></p-chart>
-                            </div>
-                            <div class="chart-item-box">
-                                <i>Development area</i>
-                                <p-chart type="doughnut" class="chart-item" [data]="dataDevelopment" height="150"></p-chart>
-                            </div>
-                            <div class="chart-item-box">
-                                <i>Methodologies</i>
-                                <p-chart type="doughnut" class="chart-item" [data]="dataMethodologies" height="150"></p-chart>
-                            </div>
-                
-                        </div>
-                        <div class="charts-row">
-                            <div class="chart-item-box">
-                                <i></i>
-                                <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
-                            </div>
-                            <div class="chart-item-box">
-                                <i></i>
-                                <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
-                            </div>
-                            <div class="chart-item-box">
-                                <i></i>
-                                <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
-                            </div>
-                            <div class="chart-item-box">
-                                <i></i>
-                                <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                            <div class="charts-row">
+                                <div class="chart-item-box">
+                                    <i></i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                                </div>
+                                <div class="chart-item-box">
+                                    <i></i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                                </div>
+                                <div class="chart-item-box">
+                                    <i></i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                                </div>
+                                <div class="chart-item-box">
+                                    <i></i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+    
             </div>
-
         </div>
+    
     </div>
-
-</div>
-
-<div class="medium text-section">
-    <div class="story" id="background">
-        <h1>How did I arrive here?</h1>
-
-        <div class="story-content">
-            <div class="story-content-left">
-                <p>
-                Curiosity, creativity and socializing have always driven my growth.
-                </p>
-                <p>
-                When I was a child I enjoyed reading, painting, playing sports and building amazing models with creative toys such as Lego and K'nex.
-                Some of my works won competitions at school and high-school, being probably the most impressive the hat contest where I presented a hat attachable to my head 
-                which had motors powered with small solar panels.
-                </p>
-                <p>
-                Later on, composing music became my main passion.
-                I learned the basics from a mentor, the rest came with self-study and practice.
-                It meant too the inception of me as a teacher, firstly as collaborator of my mentor and afterwards on my own.
-                At some point I stopped teaching music and started teaching maths, physics and languages.
-                </p>
-                <p>
-                As a consequence of realizing over the course of these years that I wanted to design, build and produce things, I opted for a technical path.
-                Next, I focused towards the engineering world and eventually decided to pursue my university studies in telecommunication engineering
-                (with strong specialization on those areas I liked the most).
-                My enthusiasm transformed into grit, positively impacting the outcome of my efforts;
-                for instance, I successfully took more courses than the required on the degree and my end-of-degree project was awarded by a top company.
-                </p>
-                <p>
-                Once accomplished such milestone I honestly faced a very challenging context at my arrival to the job market.
-                Nonetheless I was ready, available and well-prepared (not just due to the knowledge acquired but also due to my work ethic and self-learning skill), 
-                so I persisted and eventually fixed the setback.
-                </p>
-                <p>
-                Events of different kind presented me opportunities; chances to: meet new amazing teammates, learn new tools and ways of working, 
-                discover new sectors, resolve new challenges, interact with new perspectives, travel, ...
-                </p>
-                <p>
-                As a result, in retrospect, I can say that I am currently as such engineer focused on designing, developing and deploying innovative systems and services,
-                but enriched and more flexible. And in addition, I added travelling and languages to the set of main activities I enjoy. 
-                </p>
-                
-            </div>
-        
-            <div class="story-content-right">
-                <p-carousel [value]="evidences" orientation="vertical" [style]="{'max-width':'100%'}" verticalViewPortHeight="600px" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="6000">
-                    <ng-template let-evidence pTemplate="item">
-                        <div class="evidence-details">
-                            <div class="p-grid p-nogutter">
-                                <div class="p-col-12">
-                                    <img class="evidence-image" src="assets/img/{{evidence.image}}.jpg" alt="{{evidence.imageAsText}}"/>
-                                </div>
-                                <div class="p-col-12 evidence-data">
-                                    <span class="evidence-title">{{evidence.title}}</span>
+    
+    <div class="medium">
+        <div class="story" id="background">
+            <h1>How did I arrive here?</h1>
+    
+            <div class="story-content">
+                <div class="story-content-left">
+                    <p>
+                    Curiosity, creativity and socializing have always driven my growth.
+                    </p>
+                    <p>
+                    When I was a child I enjoyed reading, painting, playing sports and building amazing models with creative toys such as Lego and K'nex.
+                    Some of my works won competitions at school and high-school, being probably the most impressive the hat contest where I presented a hat attachable to my head 
+                    which had motors powered with small solar panels.
+                    </p>
+                    <p>
+                    Later on, composing music became my main passion.
+                    I learned the basics from a mentor, the rest came with self-study and practice.
+                    It meant too the inception of me as a teacher, firstly as collaborator of my mentor and afterwards on my own.
+                    At some point I stopped teaching music and started teaching maths, physics and languages.
+                    </p>
+                    <p>
+                    As a consequence of realizing over the course of these years that I wanted to design, build and produce things, I opted for a technical path.
+                    Next, I focused towards the engineering world and eventually decided to pursue my university studies in telecommunication engineering
+                    (with strong specialization on those areas I liked the most).
+                    My enthusiasm transformed into grit, positively impacting the outcome of my efforts;
+                    for instance, I successfully took more courses than the required on the degree and my end-of-degree project was awarded by a top company.
+                    </p>
+                    <p>
+                    Once accomplished such milestone I honestly faced a very challenging context at my arrival to the job market.
+                    Nonetheless I was ready, available and well-prepared (not just due to the knowledge acquired but also due to my work ethic and self-learning skill), 
+                    so I persisted and eventually fixed the setback.
+                    </p>
+                    <p>
+                    Events of different kind presented me opportunities; chances to: meet new amazing teammates, learn new tools and ways of working, 
+                    discover new sectors, resolve new challenges, interact with new perspectives, travel, ...
+                    </p>
+                    <p>
+                    As a result, in retrospect, I can say that I am currently as such engineer focused on designing, developing and deploying innovative systems and services,
+                    but enriched and more flexible. And in addition, I added travelling and languages to the set of main activities I enjoy. 
+                    </p>
+                    
+                </div>
+            
+                <div class="story-content-right">
+                    <p-carousel [value]="evidences" orientation="vertical" [style]="{'max-width':'100%'}" verticalViewPortHeight="600px" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="6000">
+                        <ng-template let-evidence pTemplate="item">
+                            <div class="evidence-details">
+                                <div class="p-grid p-nogutter">
+                                    <div class="p-col-12">
+                                        <img class="evidence-image" src="assets/img/{{evidence.image}}.jpg" alt="{{evidence.imageAsText}}"/>
+                                    </div>
+                                    <div class="p-col-12 evidence-data">
+                                        <span class="evidence-title">{{evidence.title}}</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </ng-template>
-                </p-carousel>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+    
             </div>
-
         </div>
+    
     </div>
-
+    
+    
+    
 </div>
-
 
 <div>
     <h1>A one-shot view</h1>
