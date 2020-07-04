@@ -3,7 +3,8 @@
 }
 
 .attention-getter {
-    border: 1px solid #d1eda6;
+    border-bottom: 4px solid #d1eda6;
+    border-bottom-style: dotted;
     width: 100%
 }
 
@@ -13,6 +14,7 @@
 }
 
 .attention-getter-text {
+    text-align: center;
     margin: 1em
 }
 
@@ -32,6 +34,7 @@
     width: 30%;
 }
 
+
 .medium {
     display: flex;
 }
@@ -41,8 +44,18 @@
     display: flex;
 }
 
+.story-content-left {
+    padding-right: 2.5em;
+}
+
 .evidence-image {
     width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+
+.evidence-title {
+    text-align: center;
 }
 
 
@@ -55,3 +68,11 @@
     text-align: center
 }
 
+
+p.about-short {
+    text-align: center;
+    font-size: 22px;
+    padding: 2em;
+    border-radius: 20%;
+    background-color: rgb(234, 203, 241, 0.50);
+}
