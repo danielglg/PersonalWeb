@@ -7,7 +7,7 @@
         <div class="attention-getter">
             <div class="attention-getter-text">
                 <h2 id="attention-getter-text">Welcome!</h2>
-                <p>     Yes? Then, you should keep reading.</p>
+                <p id="attention-getter-call-to-action"><br/></p>
             </div>
     
             <div id="presentation">
@@ -34,6 +34,7 @@
                 </p>
     
             </div>
+
         </div>
     </div>
     
@@ -44,8 +45,9 @@
     
             <div class="about-content">
                 <div class="about-content-left">
-                    <p>
-                        Cross-functional engineer with strong expertise in software engineering and telecommunication technologies, 
+                    <p class="about-short">
+                        Cross-functional engineer
+                        with strong expertise in software engineering and telecommunication technologies, 
                         having already spent more than 8 years creating technological solutions,
                         in 6 sectors as member of around 10 Research & Development teams.
                     </p>
@@ -60,36 +62,38 @@
                                     <p-chart type="doughnut" class="chart-item" [data]="dataLanguages" height="150"></p-chart>
                                 </div>
                                 <div class="chart-item-box">
-                                    <i>Sectors</i>
-                                    <p-chart type="doughnut" class="chart-item" [data]="dataSectors" height="150"></p-chart>
-                                </div>
-                                <div class="chart-item-box">
                                     <i>Development area</i>
                                     <p-chart type="doughnut" class="chart-item" [data]="dataDevelopment" height="150"></p-chart>
                                 </div>
                                 <div class="chart-item-box">
-                                    <i>Methodologies</i>
+                                    <i>Sectors</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataSectors" height="150"></p-chart>
+                                </div>
+                                <div class="chart-item-box">
+                                    <i>Project management methodologies</i>
                                     <p-chart type="doughnut" class="chart-item" [data]="dataMethodologies" height="150"></p-chart>
                                 </div>
                     
                             </div>
+                            <br>
                             <div class="charts-row">
                                 <div class="chart-item-box">
-                                    <i></i>
-                                    <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                                    <i>Version control</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataVersionControl" height="150"></p-chart>
                                 </div>
                                 <div class="chart-item-box">
-                                    <i></i>
-                                    <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                                    <i>Testing</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataTesting" height="150"></p-chart>
                                 </div>
                                 <div class="chart-item-box">
-                                    <i></i>
-                                    <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                                    <i>Databases</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataDatabases" height="150"></p-chart>
                                 </div>
                                 <div class="chart-item-box">
-                                    <i></i>
-                                    <p-chart type="doughnut" class="chart-item" [data]="data" height="150"></p-chart>
+                                    <i>Operating system</i>
+                                    <p-chart type="doughnut" class="chart-item" [data]="dataOperatingSystem" height="150"></p-chart>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -144,15 +148,15 @@
                 </div>
             
                 <div class="story-content-right">
-                    <p-carousel [value]="evidences" orientation="vertical" [style]="{'max-width':'100%'}" verticalViewPortHeight="600px" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="6000">
+                    <p-carousel [value]="evidences" orientation="vertical" [style]="{'max-width':'100%'}" verticalViewPortHeight="620px" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="6000">
                         <ng-template let-evidence pTemplate="item">
                             <div class="evidence-details">
                                 <div class="p-grid p-nogutter">
                                     <div class="p-col-12">
                                         <img class="evidence-image" src="assets/img/{{evidence.image}}.jpg" alt="{{evidence.imageAsText}}"/>
                                     </div>
-                                    <div class="p-col-12 evidence-data">
-                                        <span class="evidence-title">{{evidence.title}}</span>
+                                    <div class="p-col-12">
+                                        <p class="evidence-title">{{evidence.title}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -166,27 +170,5 @@
     </div>
     
     
-    
-</div>
-
-<div>
-    <h1>A one-shot view</h1>
-    <br>
-    Some software engineering skills:
-    <ol type="disc">
-        <li>Programming languages: C++, C++11, Java, Python, UML, LabVIEW, VHDL.</li>
-        <li>Software design: Architectural patterns, design patterns, concurrency.</li>
-        <li>Testing & Debugging: Google Test, Google Mock, Mockito, JUnit, CppUnit, GDB, CGDB, Valgrind, Postman, Wireshark, Fiddler, JMeter, Test Tool Server, TTCN-3.</li>
-        <li>Version control & Code review: Git, Perforce, Bitbucket, Gerrit, Reviewboard.</li>
-        <li>Continuous integration & Delivery: Jenkins, SonarQube, JFrog, Buildbot.</li>
-        <li>Integrated development environments: Eclipse, Microsoft Visual Studio, NetBeans, Matlab, LabVIEW, VI/VIM, Atom, Qt, Code Composer Studio, μVision, ModelSim, Quartus II, Android Studio.</li>
-        <li>Operating systems: Linux-based (e.g. RedHat, uCLinux).</li>
-        <li>Infrastructure: VMware, VirtualBox, hardware for CDNs and “descos”, Docker.</li>
-        <li>Web technologies: HTTP, REST, OpenAPI, Swagger.</li>
-        <li>Project management: Agile, Scrum, Jira, Confluence, Microsoft Project, Doxygen.</li>
-        <li>Other tools: Notepad++, CMake, Maven, Gradle.</li>
-    </ol>
-
-
     
 </div>

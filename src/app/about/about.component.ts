@@ -18,6 +18,10 @@ export class AboutComponent implements OnInit, OnDestroy {
   dataSectors: any;
   dataDevelopment: any;
   dataMethodologies: any;
+  dataDatabases: any;
+  dataTesting: any;
+  dataOperatingSystem: any;
+  dataVersionControl: any;
   data: any;
 
   evidences: any[];
@@ -26,11 +30,14 @@ export class AboutComponent implements OnInit, OnDestroy {
 
     this.attentionCatcherIdx = 0;
 
-    this.dataLanguages     = this.chartInfoService.getLanguages();
-    this.dataSectors       = this.chartInfoService.getSectors();
-    this.dataDevelopment   = this.chartInfoService.getDevelopment();
-    this.dataMethodologies = this.chartInfoService.getMethodologies();
-    this.data              = this.chartInfoService.getRandomData();
+    this.dataLanguages       = this.chartInfoService.getLanguages();
+    this.dataSectors         = this.chartInfoService.getSectors();
+    this.dataDevelopment     = this.chartInfoService.getDevelopment();
+    this.dataMethodologies   = this.chartInfoService.getMethodologies();
+    this.dataDatabases       = this.chartInfoService.getDatabases();
+    this.dataTesting         = this.chartInfoService.getTesting();
+    this.dataOperatingSystem = this.chartInfoService.getOperatingSystem();
+    this.dataVersionControl  = this.chartInfoService.getVersionControl();
   }
 
   ngOnInit(): void {
@@ -61,6 +68,7 @@ export class AboutComponent implements OnInit, OnDestroy {
       '...telecommunication, audiovisual, electronic or payment systems?',
       'Do global minds inspire you?'
     ];
+    const callToAction = "Yes? Then, you should keep reading.";
 
     const text = messages[this.attentionCatcherIdx];
 
@@ -68,6 +76,7 @@ export class AboutComponent implements OnInit, OnDestroy {
     this.attentionCatcherIdx = this.attentionCatcherIdx % messages.length;
 
     document.getElementById('attention-getter-text').innerHTML = text;
+    document.getElementById('attention-getter-call-to-action').innerHTML = callToAction;
   }
 
 }
