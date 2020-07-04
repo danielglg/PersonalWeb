@@ -2,10 +2,19 @@
     font-weight: bold;
 }
 
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
 #name ,
 #emailAddress,
 #subject,
 #message
 {
     width: 100%
+}
+
+.form-button {
+    font-weight: bold;
 }
