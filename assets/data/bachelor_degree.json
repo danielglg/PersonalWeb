@@ -1,0 +1,321 @@
+{
+    "metadata" : {
+        "types" : {
+            "C" : "Bridge Courses",
+            "B" : "Compulsory",
+            "O" : "Optional",
+            "T" : "Core",
+            "L" : "Free Choice"
+        },
+        "durations" : {
+            "S" : "Semester",
+            "Q" : "Trimester"
+        }
+    },
+    "title" : "Technical Telecommunications Engineer, major in Sound and Image",
+    "entity" : "Technical University of Madrid",
+    "centre" : "EUITT",
+    "data" : [
+        {
+            "part" : 0,
+            "title" : "University Activities",
+            "credits": 6.50,
+            "duration" : "",
+            "type" : "L"
+        },
+
+
+        {
+            "part" : 1,
+            "title" : "Circuits Analysis I",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 1,
+            "title" : "Technical English",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 1,
+            "title" : "Mathematics I",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 1,
+            "title" : "Programming I",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 1,
+            "title" : "Logic Systems",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 1,
+            "title" : "Circuits Analysis II",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 1,
+            "title" : "Electronics Fundamentals",
+            "credits": 9.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 1,
+            "title" : "Engineering Physical Fundamentals",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 1,
+            "title" : "Mathematics II",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 1,
+            "title" : "Programming II",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "B"
+        },
+
+
+        {
+            "part" : 2,
+            "title" : "Management Systems of Quality and Environment in Telecommunications Companies",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "L"
+        },
+        {
+            "part" : 2,
+            "title" : "Academic and Professional Writing in Spanish",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "L"
+        },
+        {
+            "part" : 2,
+            "title" : "Acoustics",
+            "credits": 9.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 2,
+            "title" : "Audio and Video Electronics",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 2,
+            "title" : "Statistics",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 2,
+            "title" : "Linear Systems",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 2,
+            "title" : "Television Systems",
+            "credits": 9.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 2,
+            "title" : "Room Acoustics",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 2,
+            "title" : "Audio and Video Communications",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 2,
+            "title" : "Economics and Business Management",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 2,
+            "title" : "Electroacoustics",
+            "credits": 9.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 2,
+            "title" : "Digital Signal Processing",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 2,
+            "title" : "Microprocessors",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "O"
+        },
+        {
+            "part" : 2,
+            "title" : "German Language",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "L"
+        },
+        {
+            "part" : 2,
+            "title" : "Printed Circuits",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "L"
+        },
+        {
+            "part" : 2,
+            "title" : "Workshops Initiation to Engineering",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "L"
+        },
+
+
+
+        {
+            "part" : 3,
+            "title" : "Audio Systems I",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 3,
+            "title" : "Sound Reinforcement",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 3,
+            "title" : "Video Engineering",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 3,
+            "title" : "Noise Control",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 3,
+            "title" : "Audio Systems II",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "B"
+        },
+        {
+            "part" : 3,
+            "title" : "Digital Image Processing",
+            "credits": 7.50,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 3,
+            "title" : "Projects",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "T"
+        },
+        {
+            "part" : 3,
+            "title" : "Audio Auxiliary Equipment",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "O"
+        },
+        {
+            "part" : 3,
+            "title" : "Acoustic Signals, Audio and Speech Processing",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "O"
+        },
+        {
+            "part" : 3,
+            "title" : "Video for Multimedia Applications",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "O"
+        },
+        {
+            "part" : 3,
+            "title" : "Virtual Instrumentation (Data Acquisition Systems Fundamentals)",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "O"
+        },
+        {
+            "part" : 3,
+            "title" : "Sound Reinforcement Installations",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "O"
+        },
+        {
+            "part" : 3,
+            "title" : "Computer Animation and Image Synthesis",
+            "credits": 6.00,
+            "duration" : "Q",
+            "type" : "O"
+        },
+        {
+            "part" : 3,
+            "title" : "Technotronics",
+            "credits": 4.50,
+            "duration" : "Q",
+            "type" : "O"
+        },
+        {
+            "part" : 3,
+            "title" : "Final Degree Project",
+            "credits": 9.00,
+            "duration" : "Q",
+            "type" : "B"
+        }
+    ]
+}

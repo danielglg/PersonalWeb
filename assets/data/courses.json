@@ -1,0 +1,134 @@
+[
+    {
+        "title" : "Angular Best Practices.",
+        "date" : "04/2020",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "How to Start and Run A Consulting Business.",
+        "date" : "04/2020",
+        "timespan" : "(3h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Natural Language Processing (NLP).",
+        "date" : "02/2020",
+        "timespan" : "(16h.)",
+        "provider" : "Altran, Madrid"
+    },
+    {
+        "title" : "Introduction to Banking.",
+        "date" : "01/2020",
+        "timespan" : "(21h.)",
+        "provider" : "Altran, online."
+    },
+    {
+        "title" : "Automating Networks with Python.",
+        "date" : "09/2019",
+        "timespan" : "(4h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Security for Hackers and Developers: Fuzzing.",
+        "date" : "06/2019",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Payment Card Security, Processing, and the PCI Standards.",
+        "date" : "06/2019",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Security for Hackers and Developers: Overview",
+        "date" : "07/2019",
+        "timespan" : "(+3h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Managing Technical Professionals.",
+        "date" : "07/2019",
+        "timespan" : "(3h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Spring Fundamentals.",
+        "date" : "03/2019",
+        "timespan" : "(3h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "MongoDB; Amadeus Cloud Services.",
+        "date" : "4Q, 2018",
+        "timespan" : "",
+        "provider" : "Amadeus, Madrid."
+    },
+    {
+        "title" : "WebAPI Design.",
+        "date" : "05/2018",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Developer to Architect; Building Trust and Commitment on Your Team.",
+        "date" : "05/2018",
+        "timespan" : "(4h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Docker (Deep Dive; Networking; DevOps Automated Workflows).",
+        "date" : "05/2018",
+        "timespan" : "(10h.)",
+        "provider" : "Pluralsight, online."
+    },
+    {
+        "title" : "Continuous integration with Jenkins.",
+        "date" : "04/2017",
+        "timespan" : "(16h.)",
+        "provider" : "Altran, Madrid."
+    },
+    {
+        "title" : "Continuous Integration (for project managers).",
+        "date" : "09/2016",
+        "timespan" : "(5h.)",
+        "provider" : "Altran, Madrid."
+    },
+    {
+        "title" : "French.",
+        "date" : "2013 - 2017",
+        "timespan" : "(4y.)",
+        "provider" : "Official School of Languages Moratalaz, Madrid."
+    },
+    {
+        "title" : "English Immersion Course.",
+        "date" : "2014",
+        "timespan" : "(40h./5d.)",
+        "provider" : "International University Menéndez Pelayo, Seville (Spain)"
+    },
+    {
+        "title" : "English Immersion Course.",
+        "date" : "2012",
+        "timespan" : "(40h./5d.)",
+        "provider" : "International University Menéndez Pelayo, Seville (Spain)"
+    },
+    {
+        "title" : "Multimedia Indexing and Retrieval.",
+        "date" : "2012",
+        "timespan" : "(45h./10d.)",
+        "provider" : "Télécom ParisTech, Paris (France)."
+    },
+    {
+        "title" : "German course.",
+        "date" : "2011",
+        "timespan" : "(75h./23d.)",
+        "provider" : "ActiLingua Academy, Vienna (Austria)."
+    },
+    {
+        "title" : "German",
+        "date" : "2002 - 2006",
+        "timespan" : "(4y.)",
+        "provider" : "Official School of Languages Moratalaz, Madrid."
+    }
+]
