@@ -13,8 +13,10 @@ import { NetworksComponent } from './projects/networks/networks.component';
 import { NetworksPcrfComponent } from './projects/networks/networks-pcrf.component';
 import { VideoComponent } from './projects/video/video.component';
 import { VideoPersonalizationComponent } from './projects/video/video-personalization.component';
+import { VideoHevcComponent } from './projects/video/video-hevc.component';
 import { EmbeddedComponent } from './projects/embedded/embedded.component';
 import { ScadaComponent } from './projects/scada/scada.component';
+import { OthersComponent } from './projects/others/others.component';
 
 
 const routerOptions: ExtraOptions = {
@@ -36,9 +38,11 @@ const routes: Routes = [
   { path: 'projects/networks', component: NetworksComponent },
   { path: 'projects/networks/pcrf', component: NetworksPcrfComponent },
   { path: 'projects/video', component: VideoComponent },
+  { path: 'projects/video/hevc', component: VideoHevcComponent },
   { path: 'projects/video/personalization', component: VideoPersonalizationComponent },
   { path: 'projects/embedded', component: EmbeddedComponent },
   { path: 'projects/scada', component: ScadaComponent },
+  { path: 'projects/others', component: OthersComponent },
 
   // Default
   { path: '**', component: AboutComponent }

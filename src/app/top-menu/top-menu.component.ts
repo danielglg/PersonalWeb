@@ -56,6 +56,10 @@ export class TopMenuComponent implements OnInit {
               {
                 label: 'Personalization Platform',
                 routerLink: ['/projects/video/personalization']
+              },
+              {
+                label: 'HEVC Streams',
+                routerLink: ['/projects/video/hevc']
               }
             ]
           },
@@ -66,6 +70,10 @@ export class TopMenuComponent implements OnInit {
           {
             label: 'Supervisory control and data acquisition',
             routerLink: ['/projects/scada']
+          },
+          {
+            label: 'Others',
+            routerLink: ['/projects/others']
           }
         ]
       },
