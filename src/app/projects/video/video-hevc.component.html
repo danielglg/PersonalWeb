@@ -1,0 +1,54 @@
+<div class="project_content common-bg">
+
+    <!-- The sidebar -->
+     <div class="sidebar">
+        <a [routerLink]='"."' fragment="content-top" class="active">UltraHD-4U project</a>
+      </div>
+    
+<!-- Page content -->
+<div class="content">
+
+<h1 id="content-top">UltraHD-4U project</h1>
+
+<p>
+    ► Studied the video coding standard H.265 (HEVC) and its development in depth. 
+</p>
+<p>
+    ► Trained colleagues in H.265 throughout a 10 hours course that teaches it at an expert level (for instance, taking into account issues like the motivation, design and consequences of its algorithms; for example, performance, trade-offs, parallelization capability, etc.). My slides are in English.
+</p>
+
+<p>
+    ► Designed, implemented, tested and maintained a C++ console application that analyzes coded media files and automates their insertion into a Transport Stream (MPEG-2 Part 1). Several standards like MPEG-2 (system, video and audio), MPEG-1 Part 3 (audio), H.265, H.264, AC-3, Enhanced AC-3 and AAC were studied and introduced into the application functionality.
+</p>
+<p>
+    Firstly, legacy software was understood. Later, this legacy software was efficiently encapsulated in a newer and clearer software architecture that I designed (more suited for the offline nature of the application). To this architecture, each feature (e.g. new coding format) was developed, integrated and tested iteratively. Among the elements of this software architecture there are several threads: 1) stream managers (modules that use specific stream analyzers and circular buffers to keep efficiently current interesting data), 2) reporting module (it filters and manages how messages are displayed to the user or logged according to verbose and debugging levels), and 3) multiplexer thread. For managing concurrency, there are synchronization variables and mechanisms distributed along the previous threads, etc.
+</p>
+<p>
+    The application was coded following high quality coding standards and documentation was generated using Doxygen. Moreover, the application was optimized when and where optimization was suitable for the business needs (for example, adjust the size of circular buffers to suitable sizes according to UltraHD screen resolutions and bitstream structure).
+</p>
+<p>
+    The most important tools used: Microsoft Visual Studio (C++/C/C#; non-managed classes were preferred in the application), SourceSafe, Doxygen, Notepad++ and Modelio.
+</p>
+
+<p>
+    ► Automated and executed video quality measures using scripts in Perl. VideoClarity products produce logs and results as text documents that these well-commented and easy to use scripts (using batch files, Perl and Perl modules) convert into awesome spreadsheets that contain only the interesting information (e.g. date, files; PSNR, DMOS, JND quality measures) and graphics.
+</p>
+
+<p>
+    ► Introduced to algorithm vectorization for optimizing an image scaler with relation to the processor architecture. Tools used: C++, Intel intrinsics (MMX, SSE to SSE 4.2, AVX). 
+</p>
+<p>
+    ► Implemented scripts using batch files, FFmpeg, and HEVC encoder.
+</p>
+<p>
+    ► Analysed the log files of Sapec’s encoders and decoders.
+</p>
+<p>
+    ► Informed the development team of: 1) bugs observed in Sencore’s media stream analyzer (after that, Sencore fixed them following my description), 2) flaws that exist in analyzers of Elecard and MainConcept.
+</p>
+
+<p>
+    ► Collaborated along with the engineering department and other participant entities in the elaboration of documentation of the UltraHD-4U research project for the CATRENE office. Participated in the sections of our company and, as leaders of the work package 2, integrated the documentation and established working style guidelines.
+</p>
+
+</div>
