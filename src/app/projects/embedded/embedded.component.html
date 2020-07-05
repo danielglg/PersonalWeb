@@ -4,7 +4,10 @@
  <div class="sidebar">
     <a [routerLink]='"."' fragment="content-top" class="active">Embedded systems</a>
     <a [routerLink]='"."' fragment="platforms">Processing platforms</a>
-    <a [routerLink]='"."' fragment="codec">Evaluation of video codec</a>
+    <a [routerLink]='"."' fragment="fpga">With FPGA</a>
+    <a [routerLink]='"."' fragment="gpp_dsp">With GPP and DSP</a>
+    <a [routerLink]='"."' fragment="microprocessors">With microprocessor</a>
+    <a [routerLink]='"."' fragment="reconfigurable">Reconfigurable embedded systems</a>
 </div>
 
 <!-- Page content -->
@@ -16,8 +19,120 @@
 DSP, GPP, FPGA
 
 
-<h2 id="codec">Evaluation of video codec</h2>
 
-</div>
+
+<h1>Projects</h1>
+
+<h2 id="fpga">Embedded systems with FPGA</h2>
+
+<p>
+    ► PART A
+</p>
+<ul>
+    <li>
+        Designed, implemented, simulated and analysed system units and their verification testbenches using VHDL and Modelsim. Evaluated the whole system (it comprises BCD counter, frequency divider, display encoder and synchro) and later, synthesised and prototyped on the FPGA of the DE2-70 board (Terasic, Altera) using Quartus II.
+    </li>
+    <li>
+        Carried out functional verification and testbench design of a synchronous system using VHDL and Modelsim. Functions, procedures assertion and file management were required. Later, a peripheral (image filter) was analyzed and verified using the same skills.
+    </li>
+</ul>
+
+<p>
+    ► PART B
+</p>
+<ul>
+    <li>
+        Studied Altera’s Nios II processor, the Avalon bus, the SoPC Builder Tool and JTAG and SignalTap II as debugging tools. After that, created the core (addition of PLL, memory interfaces, CPU, internal peripherals; selection of clock domains; allocation of the memory and IRQ maps, edition of the interconnection scheme). Then, synthesised and fitted. Finally, deployed it on the DE2-70 with an operating system uCLinux (two ways of booting used) and the components described next. 
+    </li>
+    <li>
+        Prepared the uCLinux source distribution for the target system architecture, customized the kernel and application settings, built and tested the kernel. (BusyBox, loadable modules, memory requirements, etc.).
+    </li>
+    <li>
+        Studied LCD display on the DE2-70 (Optrex 16207 LCD, a char device). Then, created and tested a driver for it. This activity involves: registering/unregistering of major/minor device, creation of required “structs” and functions (e.g. initialization sequence), compilation of the module, loading/unloading of the module and testing. C language was used.
+    </li>
+    <li>
+        Added custom made peripheral (simply going-thru logic) to the previous system. For this, studied the DM9000A chip (Fast Ethernet controller chip), defined new VHDL code, integrated accordingly (e.g. timing, instantiation and routing).
+    </li>
+
+</ul>
+
+
+<h2 id="gpp_dsp">Advanced digital architectures</h2>
+
+<p>
+    ► Configured, built (cross-compilation) and booted a Linux Kernel on the BeagleBoard. Compatible X-loader, U-boot and Linux Kernel images were generated; the SD card was set up with a bootable partition and a file system partition.
+</p>
+<p>
+    ► Acquired, processed and generated signals on the DSK6713 (board with Texas Instruments DSP). The McBSP (serial port) was controlled by managing timers, interrupts and handles; for that, Code Composer Studio v3, DSP/BIOS, the Chip Support Library and the Board Support Library (C language interfaces) were employed. Optimized libraries were employed for the processing. 
+</p>
+<p>
+    ► Established data communications between the GPP and DSP of the BeagleBoard (it is necessary to install the DSPLINK driver and use message queues and shared memory for the communication). 
+</p>
+
+
+
+<h2 id="microprocessors">Microprocessors</h2>
+
+<p>
+    ► Studied the MCS-51 family of Philips’s microcontrollers. For example, its architecture, features (CPU, instruction set, memory organization, register, machine cycles, instructions, low power consumption modes, I/O ports, peripherals, interruptions management) and programming details (C51 compiler).
+</p>
+<p>
+    ► Did project for applying this knowledge: designed, implemented and tested chronometer using C language, μVision (Keil’s IDE), the SEC-552 board (which is designed for the 80C552 microcontroller), an external LCD display and an external keyboard.
+</p>
+
+
+<h2 id="reconfigurable">Master’s thesis: HEVC, DSPs and reconfigurable embedded systems.</h2>
+
+<p>
+    ►The project carried out within the thesis mainly aims to adapt an automated development environment for multicore GPPs to include automation for multicore DSP-based platforms too. The automated development environment converts the configuration and the description of the algorithms in CAL and XML languages to a target code structure in a specific language (C/C++/C#, Java, VHDL, etc.) that can be organised later into an integrated development environment (IDE) project with CMake. This automated development environment has been always since its origin ongoing research and development, so it was necessary to keep up with all the continuous updates.
+</p>
+<p>
+    ► Studied target processing platforms (PC, ARM within PandaBoard, DM6437 EVM from Texas Instruments). 
+</p>
+<p>
+    ► Studied video specifications, focusing on H.265 (HEVC) and Reconfigurable Video Coding (RVC). H.265 was endorsed as standard during the execution of the project.
+</p>
+<p>
+    ► Learned CAL (actor/dataflow programming language) as well as many development tools: Open RVC CAL Compiler (ORCC), Eclipse’s plugins, Graphiti, CAL editor, CMake, Visual Studio C++, Code Composer Studio v5, SYS/BIOS, Code::Blocks, Python, version control tools (Git, SVN), etc.
+</p>
+<p>
+    ► Understood legacy software written in CAL.
+</p>
+<p>
+    ► Evaluated and proposed working methodologies (including new development tools).
+</p>
+<p>
+    ► Migrated a GPP-based mono-core solution (H.265 decoder fulfilling RVC requirements) to a DSP-based mono-core implementation. It is the main contribution of the master’s thesis because it is the basis for future automation. For the migration, some of the necessary tasks were:
+</p>
+<ul>
+    <li>
+        Adapting the thread API to Pthreads-Embedded (the one accepted by the DSP OS).
+    </li>
+    <li>
+        Adapting function main to use input parameters and defining parameters for performance evaluation purposes.
+    </li>
+    <li>
+        Initializing many software parts: threads, FIFOs, string variables for I/O and mapping files, other variables.
+    </li>
+    <li>
+        Suppressing references to the SDL library.
+    </li>
+    <li>
+        Removing multicore management code.
+    </li>
+    <li>
+        Managing unavailable functions in the new environment: fdopen, strdup, fileno, library stat, etc.
+    </li>
+    <li>
+        Including functions to measure performance.
+    </li>
+</ul>
+<p>
+    ► Evaluated the performance of the H.265 standard into several conditions. For that, results from previous simulations were compared to the result obtained from the migration without optimizing it. The testbench was built based on scripts that use bash, Python and JavaScript. With the results, a research paper was elaborated and proposed to an edition of ESTIMEDIA
+</p>
+<p>
+    ► Generated comprehensible reference documentation.
+</p>
+
 
 </div>

@@ -21,9 +21,11 @@ import { PaymentsAcquiringComponent } from './projects/payments/payments-acquiri
 import { NetworksComponent } from './projects/networks/networks.component';
 import { NetworksPcrfComponent } from './projects/networks/networks-pcrf.component';
 import { VideoComponent } from './projects/video/video.component';
+import { VideoHevcComponent } from './projects/video/video-hevc.component';
 import { VideoPersonalizationComponent } from './projects/video/video-personalization.component';
 import { EmbeddedComponent } from './projects/embedded/embedded.component';
 import { ScadaComponent } from './projects/scada/scada.component';
+import { OthersComponent } from './projects/others/others.component';
 
 @NgModule({
   declarations: [
@@ -39,9 +41,11 @@ import { ScadaComponent } from './projects/scada/scada.component';
     NetworksComponent,
     NetworksPcrfComponent,
     VideoComponent,
+    VideoHevcComponent,
     VideoPersonalizationComponent,
     EmbeddedComponent,
-    ScadaComponent
+    ScadaComponent,
+    OthersComponent
   ],
   imports: [
     BrowserModule,
