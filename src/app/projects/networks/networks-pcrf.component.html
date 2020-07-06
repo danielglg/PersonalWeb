@@ -2,7 +2,7 @@
  
  <!-- The sidebar -->
  <div class="sidebar">
-  <a [routerLink]='"."' fragment="content-top" class="active">PCRF Balancer</a>
+  <a [routerLink]='"."' fragment="content-top" class="active">PCRF</a>
   <a [routerLink]='"."' fragment="introduction">What is a PCRF?</a>
   <a [routerLink]='"."' fragment="problem">The problem: context & objectives</a>
   <a [routerLink]='"."' fragment="areas">Areas of activity</a>
@@ -50,10 +50,33 @@
     The objective of the mission consists on helping Ericsson to evolve SAPC in order to adapt it to the new requirements and technologies of the market (e.g. virtualization, cloud, 5G, etc.).
 </p>
 
+<h3>Diameter interface Rx - RxRequest AVP</h3>
+<p>
+  Basically consisted on fixing an Attribute-Value-Pair (AVP) communicated through the Rx Diameter interface, which is the interface that binds SAPC and AFs.
+</p>
+
 <h3>External Database Redundancy N+N+N</h3>
 
-<i>To describe the problem of the LDAP</i>
+<p>
+  <i>TODO To describe the problem of the LDAP</i>
+</p>
+<p>
+  Basically consisted on refactorizing completely the component in charge of communicating SAPC components to an LDAP database.
+  The legacy component was based on a pool of connections that could not scale and communications with LDAP server were increasingly failing.
+  In addition, the software architecture was not ready for scaling and accomplishing the management algorithm that provided much higher redundancy.
+</p>
+<p>
+  <i>TODO To describe as achievement the improvements that I proposed for the algorithm and the SW architecture.</i>
+</p>
+<p>
+  <i>TODO To describe connection balancing.</i>
+</p>
 
+<h3>N+K (division in frontend and backend for scaling SAPC, increment redundancy and move towards a cloud microservice architecture)</h3>
+<p>
+  <i>TODO To describe the problems of the monolithic legacy application and the challanges to adapt to new times.</i>
+  <i>Talk about the automation with Swagger and the functional split, technical debt, ...</i>
+</p>
 
 <h2 id="areas">Areas of activity</h2>
 

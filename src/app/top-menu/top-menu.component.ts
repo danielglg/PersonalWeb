@@ -44,7 +44,7 @@ export class TopMenuComponent implements OnInit {
             routerLink: ['/projects/networks'],
             items: [
               {
-                label: 'PCRF Balancer',
+                label: 'PCRF',
                 routerLink: ['/projects/networks/pcrf']
               }
             ]
