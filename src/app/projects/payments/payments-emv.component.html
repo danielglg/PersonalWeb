@@ -3,7 +3,7 @@
 <!-- The sidebar -->
  <div class="sidebar">
   <a [routerLink]='"."' fragment="content-top" class="active">EMV</a>
-  <a [routerLink]='"."' fragment="introduction">What is EMV?</a>
+  <a [routerLink]='"."' fragment="introduction">Introduction</a>
   <a [routerLink]='"."' fragment="problem">The problem: context & objectives</a>
   <a [routerLink]='"."' fragment="areas">Areas of activity</a>
   <a [routerLink]='"."' fragment="features">Features</a>
@@ -27,7 +27,7 @@
     </tr>
     <tr>
       <td>Dates</td>
-      <td></td>
+      <td>7th May 2018 - Ongoing</td>
     </tr>
     <tr>
       <td>Activity summary</td>
@@ -37,32 +37,189 @@
 
 <h2 id="introduction">What is EMV?</h2>
 
-<h3>The standard</h3>
+<h3>What is EMV?</h3>
+<p>
+  EMV is both a payment method and an interoperability standard (the acronym stands for the three initial companies that developed it: Europay, Mastercard and Visa). 
+</p>
+<p>
+  EMV standardizes the technical methods for smart payment cards (which include integrated circuit chips), payment terminals (POS: Point Of Sale) and automated teller machines (ATM).
+</p>
+<p>
+  More information on
+  <a href="https://en.wikipedia.org/wiki/EMV" target="_blank">Wikipedia</a> and
+  <a href="https://www.emvco.com/" target="_blank">EMVCo</a>
+  (organism currently in charge of the specifications).
+</p>
 
-<h3>Distribution channels and merchants</h3>
+<h3>What is Airport-Pay?</h3>
+  <p>
+    Amadeus Airport Pay is an Amadeus solution which is:
+    the only CUTE-independent, multi-merchant enabled, Áltea-DCS integrated, EMV payment solution for airlines and ground handlers.
+    That's why EMV component is a core component in the solution.
+  </p>
+  <p>
+    It means that it allows these merchants to accept EMV chip card payments anywhere at the airport, in any airport worldwide, which is completely independent of the shared environment.
+  </p>
+  <p>
+    For instance, paying for ancillary services can be a painful experience for the traveller, as without the solution cardholders have to physically visit the sales desk and handover the card for using less secure paymeny methods.
+    In addition without it, being PCI-DSS compliant is much more difficult for airlines.
+  </p>
+  <p>
+    At kiosks, the solution offers the integration with the DCS and the reservation system of the merchant.
+  </p>
+  <p>
+    It applies to travellers with EMV chip cards or EMV compliant mobile wallets.
+    The cards accepted are: Visa, MasterCard, American Express, Diners Club, Girocard, ...
+  </p>
+  <p>
+    Deploy quicker and more ancillary sales conversion.
+  </p>
+  <p>
+    It gives the merchant the flexibility to choose its own bank as well.
+  <p>
+    PCI DSS (Payment Card Industry Data Security Standards). Credit card data fully encrypted and decrypted, Diagram of slide 8.
+  </p>
+  <p>
+    It offers the next desirable features:
+  </p>
+  <ul>
+    <li>Supported functionalities: payment transactions, EMV cards, magstripe cards, monetary compensayions (credit transactions), NFC contactless payments, wallet payments, DCC, (installments not supported in 2017).</li>
+    <li>Wireless POS devices.</li>
+    <li>Can enrich payment processes (HOT, daily report, etc.) with EMV data.</li>
+    <li>Amadeus (several options) or merchant frontends (via web services).</li>
+    <li>PNR integrated.</li>
+    <li>Supports on-line and pin-offline PIN verification.</li>
+    <li>Multi-environment: multi-merchant, multi-acquirer, multi-currency and multi-language.</li>
+    <li>Applicable to attended (DCS, ticket ofice) and unatteded (kiosk) POS.</li>
+    <li>Applicable to wired or wireless (GPRS) POS (e.g. mPOS: Mobile POS for roaming agents with tablets).</li>
+    <li>Receipt printing.</li>
+  </ul>
+  <p>
+    <i>TODO:</i>Simulate slide 11: channels supported.
+  </p>
 
 <h2 id="problem">The problem: context & objectives</h2>
 
 <h3>Complexity</h3>
+<p>
+  <i>REVIEW</i>
+  Talk about different things to support from the standard, the configuration of offices, the configuration of business rules, etc.
+</p>
+
+<h4>The standard</h4>
+
+<h4>Distribution channels and merchants</h4>
 
 <h2 id="areas">Areas of activity</h2>
 
-<h2 id="features">Developed features</h2>
+<p>
+  Development and maintenance of functionalities for Airport Pay in relation to POS whose devices operate with and without EMV technology.
+</p>
 
-<h3>Integration with partners and schemes</h3>
-FIS (Premmier Inn), Mastercard, Ingenico, etc.
+<h2 id="features">Development</h2>
+
+<h3>Integration with partners (PSPs, schemes, airlines)</h3>
+
+<p>
+  Examples:
+</p>
+
+<table id="top-table">
+  <tr>
+    <th>POS providers</th>
+    <th>PSPs</th>
+    <th>Schemes</th>
+    <th>Airlines</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>FIS (Premier Inn).</li>
+        <li>Ingenico.</li>
+        <li>Sita.</li>
+        <li>Concardis (kiosks).</li>
+        <li>Lufthansa kiosks.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>FIS (Premier Inn).</li>
+        <li>Worldpay.</li>
+        <li>Concardis?</li>
+        <li>Ingenico.</li>
+        <li>Sita.</li>
+        <li>Lufthansa kiosks.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Vista</li>
+        <li>MasterCard</li>
+        <li>Diners</li>
+        <li>JCB</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Lufthansa</li>
+        <li>AirFrance</li>
+        <li>KLM</li>
+        <li>Japan Airlines</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 <h3>Modern functionalities</h3>
-<h4>DCC (Dynamic Currency Conversion)</h4>
-<h4>Business intelligence AppEvents</h4>
+
+<h4>Dynamic Currency Conversion (DCC))</h4>
+<p>
+  It is a feature applicable in foreign exchange (FX) payments: the POS is configured with a local currency different that the currency set
+  in cardholder's card and offers the cardholder to choose one of these currencies for the payment (commissions vary depending on the elected currency).
+</p>
+
+<h4>Business intelligence (BI) AppEvents</h4>
+<p>
+  At key stages of the payment with a POS, the EMV backend generates events containing EMV-related data.
+  Such events are used to feed Amadeus products that aggregate business intelligence information interesting for both
+  Amadeus and customers.
+</p>
+
+<h4>Kibana events</h4>
+<p>
+  Similar to BI events, but feeding Kibana and having only Amadeus as stakeholder.
+  Data and events generated can differ from BI events.
+</p>
 
 <h3>Maintenance, support and evolution</h3>
+<p>
+  <i>REVIEW</i>
+</p>
 
-<h2 id="keywords">Keywords (tools & techniques)</h2>
+<h3>Others</h3>
 
+<p>
+  <i>REVIEW</i>
+</p>
 <ul>
-    <li></li>
+  <li>Understood Multicurrency-Pricing (MCP).</li>
+  <li>Learned and worked with the operations environment of Amadeus (Change Control Board, delivery pipeline phases, etc.).</li>
+  <li>Learned and collaborated with the transition of Amadeus to cloud and virtualization (Amadeus Cloud Services).</li>
+  <li>Alignment of database.</li>
+  <li>Tests for local development environment.</li>
 </ul>
+
+<h2 id="keywords">Keywords</h2>
+
+<p>
+  Technologies: EMV, EDIFACT, ISO20022, Web Services, Open Backend, Cloud, SQL, Python, C++, Linux.
+</p>
+<p>
+  Tools: Test Tool Server (TTS), Oracle Database, SQL Developer, Sentinel, Win@pproach, Eclipse, Atom, Visual Studio Code, Notepad++
+</p>
+<p>
+  Procedures: Payment Authorization, Link implementation, Change Control Board, complex production pipeline (more than 8 phases), change-protection frameworks.
+</p>
 
 </div>
 
