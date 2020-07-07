@@ -8,6 +8,7 @@ import {SplitButtonModule} from 'primeng/splitbutton';
 import {TableModule} from 'primeng/table';
 import {AccordionModule} from 'primeng/accordion';
 import {DialogModule} from 'primeng/dialog';
+import {TooltipModule} from 'primeng/tooltip';
 
 import { ProfessionalProfileComponent } from './professional-profile.component';
 import { ProfessionalExperienceComponent } from './professional-experience/professional-experience.component';
@@ -29,7 +30,8 @@ import { EducationComponent } from './education/education.component';
     SplitButtonModule,
     TableModule,
     AccordionModule,
-    DialogModule
+    DialogModule,
+    TooltipModule
   ],
   exports: [
     ProfessionalProfileComponent
