@@ -76,48 +76,107 @@
             </a>
 
             <button type="button" (click)="showModalDialog()" pButton icon="pi pi-external-link" label="Info"></button>
-            <p-dialog header="Publications about received award." [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+            <p-dialog header="Award: Best End-of-Degree Project with National Instruments technologies" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
                 [draggable]="false" [resizable]="false">
-        
-                <h3><a href="https://youtu.be/2aSytLl4oL0?list=UUNW9djX3St9Wtb-oAsSEtkQ&t=3567" target="_blank">
-                    Video of Diploma Delivery Ceremony, starting at the award delivery act.
-                </a></h3>
-                <p>
-                    <i>“Se va a proceder a continuación a la entrega del premio National Instruments al mejor proyecto fin de carrera en el área de ingeniería en equipos electrónicos, test y medida titulado ‘Sistema de medida y control automatizado para caracterizar elementos magnéticos’. Hará entrega del premio Don César Verdejo, responsable del programa académico de National Instruments. El señor secretario llamará al premiado.”</i>
-                </p>
-                <p>
-                    <i>“El premiado es Don David, perdón, Don Daniel Gómez-Lobo García.”</i>
-                </p>
-        
-                <h3><a href="http://www.upm.es/UPM/SalaPrensa/Noticias?fmt=detail&prefmt=articulo&id=ae3e531528078310VgnVCM10000009c7648a____" target="_blank">
-                    Press release: Diploma Delivery Ceremony at the faculty EUITT.
-                </a></h3>
-                <p>
-                    <i>“En la ceremonia también se hizo entrega por parte de José Javier Medina, decano del COITT, del premio al mejor expediente a Roberto Pérez Carrasco, y Carlos Conde entregó el Premio Javier Hernández Bermejo al mejor rendimiento de primer curso a Víctor Diéguez Rubio. Asimismo, se entregaron los premios a los mejores proyectos fin de carrera por parte de las empresas National Instruments a Daniel Gómez-Lobo García, Graudio a Aitor Hernández Martínez y Rohde&Schwarz a Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez.”</i>
-                </p>
-        
-        
-                <h3><a href="https://www.euitt.upm.es/escuela/comunicaciones_escuela/eventos_historicos?anyoactual=2012&mesactual=6&fechalink=29/11/2018&mesmas=1" target="_blank">
-                    Press release: Awards of course 2011-2012 (06/07/2012)
-                </a></h3>
-                
-                <p>
-                    Premio COITT al mejor expediente:
-                    Roberto Pérez Carrasco
-                    Premio Javier Hernández al mejor expediente 1er curso:
-                    Víctor Diéguez Rubio
-                    Premio Rohde&Schwarz al mejor PFC en Radiocomunicación:
-                    Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez
-                    Premio National Instruments al mejor PFC en Instrumentación Virtual:
-                    Daniel Gómez-Lobo García
-                    Premio Graudio al mejor PFC en Audio:
-                    Aitor Hernández Martínez
-                </p>
-                <hr>
-                <h3><a href="/">
+
+                <h3><a href="projects/scada">
                     Project details and memory
                 </a></h3>
-        
+                <hr>
+
+                <h3>Publications</h3>
+                <div class="award-publications">
+                    <h4><a href="https://youtu.be/2aSytLl4oL0?list=UUNW9djX3St9Wtb-oAsSEtkQ&t=3567" target="_blank">
+                        Video of Diploma Delivery Ceremony, starting at the award delivery act.
+                    </a></h4>
+                    <p-fieldset legend="Transcription" [toggleable]="true" collapsed=true>
+                        <p-tabView>
+                            <p-tabPanel header="English">
+                                <p><i>
+                                    “It is going to proceed next to the presention of the <strong>award National Instruments to the best work end-of-degree in the field of engineering
+                                    in electronic equipment, test and measurement titled ‘Measurement and automated control system to characterize magnetic elements’.</strong>
+                                    The presentation of the award will be done by Mr. César Verdejo, responsible of the academic program of National Instruments.
+                                    The Mr. secretary will call the awarded.”
+                                    <br>“The awarded is Mr. David, sorry, <strong>Mr. Daniel Gómez-Lobo García.</strong>”
+                                </i></p>
+                            </p-tabPanel>
+                            <p-tabPanel header="Spanish (original)">
+                                <p><i>
+                                    “Se va a proceder a continuación a la entrega del <strong>premio National Instruments al mejor proyecto fin de carrera en el área de ingeniería
+                                    en equipos electrónicos, test y medida titulado ‘Sistema de medida y control automatizado para caracterizar elementos magnéticos’.</strong>
+                                    Hará entrega del premio Don César Verdejo, responsable del programa académico de National Instruments.
+                                    El señor secretario llamará al premiado.”
+                                    <br>“El premiado es Don David, perdón, <strong>Don Daniel Gómez-Lobo García.</strong>”
+                                </i></p>
+                            </p-tabPanel>
+                        </p-tabView>
+                    </p-fieldset>
+            
+                    <h4><a href="http://www.upm.es/UPM/SalaPrensa/Noticias?fmt=detail&prefmt=articulo&id=ae3e531528078310VgnVCM10000009c7648a____" target="_blank">
+                        Press release: Diploma Delivery Ceremony at the faculty EUITT.
+                    </a></h4>
+                    <p-fieldset legend="Transcription" [toggleable]="true" collapsed=true>
+                        <p-tabView>
+                            <p-tabPanel header="English">
+                                <p><i>
+                                    “In the ceremony it was done too the presentation by José Javier Medina, chairman of COITT,
+                                    of the award to the best record to Roberto Pérez Carrasco, and Carlos Conde presented the Award Javier Hernández Bermejo to the best record
+                                    in first course to Víctor Diéguez Rubio. Likewise, <strong>it was delivered the awards to the best works end-of-degree by the companies
+                                    National Instruments to Daniel Gómez-Lobo García</strong>, Graudio to Aitor Hernández Martínez and Rohde&Schwarz to
+                                    Javier Pérez Mesa, Patricia Robles Mansilla and David Sánchez Mínguez.”
+                                </i></p>
+                            </p-tabPanel>
+                            <p-tabPanel header="Spanish (original)">
+                                <p><i>
+                                    “En la ceremonia también se hizo entrega por parte de José Javier Medina, decano del COITT,
+                                    del premio al mejor expediente a Roberto Pérez Carrasco, y Carlos Conde entregó el Premio Javier Hernández Bermejo al mejor rendimiento de
+                                    primer curso a Víctor Diéguez Rubio. Asimismo, <strong>se entregaron los premios a los mejores proyectos fin de carrera por parte de las empresas
+                                    National Instruments a Daniel Gómez-Lobo García</strong>, Graudio a Aitor Hernández Martínez y Rohde&Schwarz a
+                                    Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez.”
+                                </i></p>
+                            </p-tabPanel>
+                        </p-tabView>
+                    </p-fieldset>
+            
+            
+                    <h4><a href="https://www.euitt.upm.es/escuela/comunicaciones_escuela/eventos_historicos?anyoactual=2012&mesactual=6&fechalink=29/11/2018&mesmas=1" target="_blank">
+                        Press release: Awards of course 2011-2012 (06/07/2012)
+                    </a></h4>
+                    <p-fieldset legend="Transcription" [toggleable]="true" collapsed=true>
+                        <p-tabView>
+                            <p-tabPanel header="English">
+                                <p><i>
+                                    Award 'COITT' to the best record:
+                                    <br>&emsp;Roberto Pérez Carrasco
+                                    <br>Award 'Javier Hernández' to the best record in 1st course:
+                                    <br>&emsp;Víctor Diéguez Rubio
+                                    <br>Award 'Rohde&Schwarz' to the best work-end-of-degree in Radiocommunication:
+                                    <br>&emsp;Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez
+                                    <strong><br>Award 'National Instruments' to the best work-end-of-degree in Virtual Instrumentation:
+                                    <br>&emsp;Daniel Gómez-Lobo García</strong>
+                                    <br>Award 'Graudio' to the best work-end-of-degree in Audio:
+                                    <br>&emsp;Aitor Hernández Martínez
+                                </i></p>
+                            </p-tabPanel>
+                            <p-tabPanel header="Spanish (original)">
+                                <p><i>
+                                    Premio COITT al mejor expediente:
+                                    <br>&emsp;Roberto Pérez Carrasco
+                                    <br>Premio Javier Hernández al mejor expediente 1er curso:
+                                    <br>&emsp;Víctor Diéguez Rubio
+                                    <br>Premio Rohde&Schwarz al mejor PFC en Radiocomunicación:
+                                    <br>&emsp;Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez
+                                    <strong><br>Premio National Instruments al mejor PFC en Instrumentación Virtual:
+                                    <br>&emsp;Daniel Gómez-Lobo García</strong>
+                                    <br>Premio Graudio al mejor PFC en Audio:
+                                    <br>&emsp;Aitor Hernández Martínez
+                                </i></p>
+                            </p-tabPanel>
+                        </p-tabView>
+                    </p-fieldset>
+
+                </div>
+
             </p-dialog>
         </div>
     </div>
