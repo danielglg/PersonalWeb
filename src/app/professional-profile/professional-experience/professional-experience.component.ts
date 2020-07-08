@@ -30,10 +30,10 @@ export class ProfessionalExperienceComponent implements OnInit {
       {label: 'VPP', icon: 'pi pi-refresh', routerLink: ['/projects/video/personalization']},
     ];
     this.sapecItems = [
-      {label: 'HEVC', icon: 'pi pi-refresh', routerLink: ['/projects/video/']}, //TODO: set page for SAPEC&GTI project.
+      {label: 'HEVC', icon: 'pi pi-refresh', routerLink: ['/projects/video/hevc']},
     ];
     this.gdemItems = [
-      {label: 'HEVC', icon: 'pi pi-refresh', routerLink: ['/projects/video/personalization']}, //TODO: set page for GDEM project.
+      {label: 'RVC-HEVC', icon: 'pi pi-refresh', routerLink: ['/projects/embedded']},
     ];
   }
 
@@ -46,6 +46,9 @@ export class ProfessionalExperienceComponent implements OnInit {
     }
     else if ( projectName == 'video') {
       this.router.navigateByUrl('/projects/video');
+    }
+    else if ( projectName == 'embedded') {
+      this.router.navigateByUrl('/projects/embedded');
     }
 }
 
