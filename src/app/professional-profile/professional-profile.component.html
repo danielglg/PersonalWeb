@@ -190,9 +190,32 @@
     </p-header>
     <p-accordion [multiple]="true">
         <p-accordionTab *ngFor="let category of softwareEngSkills" header="{{category.category}}">
-            <div class="skillsList">
-                <p-card *ngFor="let skill of category.skills">
-                    {{skill.name}}
+            <div class="skillsList" pTooltip="Level: high" tooltipPosition="left">
+                <p-card *ngFor="let skill of getSkillsByLevel(category, 'H')">
+                    <div class="skill-h">
+                        {{skill.name}}
+                    </div>
+                </p-card>
+            </div>
+            <div class="skillsList" pTooltip="Level: medium" tooltipPosition="left">
+                <p-card *ngFor="let skill of getSkillsByLevel(category, 'M')">
+                    <div class="skill-m">
+                        {{skill.name}}
+                    </div>
+                </p-card>
+            </div>
+            <div class="skillsList" pTooltip="Level: medium-low" tooltipPosition="left">
+                <p-card *ngFor="let skill of getSkillsByLevel(category, 'M-L')">
+                    <div class="skill-ml">
+                        {{skill.name}}
+                    </div>
+                </p-card>
+            </div>
+            <div class="skillsList" pTooltip="Level: low" tooltipPosition="left">
+                <p-card *ngFor="let skill of getSkillsByLevel(category, 'L')">
+                    <div class="skill-l">
+                        {{skill.name}}
+                    </div>
                 </p-card>
             </div>
         </p-accordionTab>

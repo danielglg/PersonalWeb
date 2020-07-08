@@ -54,4 +54,8 @@ export class ProfessionalProfileComponent implements OnInit {
     this.displayModal = true;
   }
 
+  getSkillsByLevel(skillCategory: SkillCategory , level: string ) {
+    return skillCategory.skills.filter(skill => skill.level === level);
+  }
+
 }
