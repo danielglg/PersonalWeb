@@ -20,7 +20,7 @@
             <div class="form-group">
                 <label for="emailAddress">E-mail</label>
                 <br>
-                <input type="email" class="form-control" id="emailAddress" required [(ngModel)]="model.emailAddress" name="emailAddress" #emailAddress="ngModel" placeholder="Your E-mail">
+                <input type="email" class="form-control" id="emailAddress" required [(ngModel)]="model.mailAddress" name="emailAddress" #emailAddress="ngModel" placeholder="Your E-mail">
                 <div [hidden]="emailAddress.valid || emailAddress.pristine" class="alert alert-danger">
                     E-mail address is required.
                 </div>
@@ -56,7 +56,7 @@
         </div>
         <div class="row">
             <div class="col-xs-3">E-mail</div>
-            <div class="col-xs-9">{{ model.emailAddress }}</div>
+            <div class="col-xs-9">{{ model.mailAddress }}</div>
         </div>
         <div class="row">
             <div class="col-xs-3">Subject</div>

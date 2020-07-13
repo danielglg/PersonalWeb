@@ -2,7 +2,7 @@ export class Message {
 
     constructor(
       public name: string,
-      public emailAddress: string,
+      public mailAddress: string,
       public message: string,
       public subject?: string
     ) {  }
