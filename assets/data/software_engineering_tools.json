@@ -34,6 +34,7 @@
             },
             {
                 "name": "Java",
+                "comment": "J2EE, J2ME",
                 "level": "M-L"
             },
             {
@@ -407,12 +408,13 @@
                 "level": "H"
             },
             {
-                "name": "design patterns",
+                "name": "Design patterns",
+                "comment": "Creational, structural, behavioral, concurrency",
                 "level": "H"
             },
             {
-                "name": "concurrency",
-                "level": "H"
+                "name": "APIs",
+                "level": "M"
             }
         ]
     },
