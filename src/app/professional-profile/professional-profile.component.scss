@@ -36,6 +36,33 @@
     padding-right: 1em;
 }
 
+.ni-award-container-bg {
+    background-color: #f9f9f9;
+    border-radius: 3%;
+}
+
+.ni-award-container {
+    width: 50%;
+    transition: all 0.25s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ni-award-container:hover {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ni-award {
+    width: 100%; max-width: 100%;
+    border: 2px solid #aaaaaa;
+    border-radius: 3%;
+    padding: 2px;
+}
+
 
 .logo {
     width:150px;
