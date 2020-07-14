@@ -79,6 +79,13 @@
             <p-dialog header="Award: Best End-of-Degree Project with National Instruments technologies" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
                 [draggable]="false" [resizable]="false">
 
+                <div class="ni-award-container-bg">
+                    <div class="ni-award-container">
+                        <img class="ni-award" src="assets/img/National_Instruments_award.jpg" alt="Photo: National Instruments award">
+                    </div>
+                </div>
+
+                <hr>
                 <h3><a href="projects/scada">
                     Project details and memory
                 </a></h3>
@@ -176,6 +183,7 @@
                     </p-fieldset>
 
                 </div>
+                <br>
 
             </p-dialog>
         </div>
@@ -190,9 +198,44 @@
     </p-header>
     <p-accordion [multiple]="true">
         <p-accordionTab *ngFor="let category of softwareEngSkills" header="{{category.category}}">
-            <div class="skillsList">
-                <p-card *ngFor="let skill of category.skills">
-                    {{skill.name}}
+            <div class="skillsList" pTooltip="Level: high" tooltipPosition="left">
+                <p-card *ngFor="let skill of getSkillsByLevel(category, 'H')">
+                    <div class="skill-h">
+                        {{skill.name}}
+                        <span *ngIf="skill.comment">
+                            ({{skill.comment}})
+                        </span>
+                    </div>
+                </p-card>
+            </div>
+            <div class="skillsList" pTooltip="Level: medium" tooltipPosition="left">
+                <p-card *ngFor="let skill of getSkillsByLevel(category, 'M')">
+                    <div class="skill-m">
+                        {{skill.name}}
+                        <span *ngIf="skill.comment">
+                            ({{skill.comment}})
+                        </span>
+                    </div>
+                </p-card>
+            </div>
+            <div class="skillsList" pTooltip="Level: medium-low" tooltipPosition="left">
+                <p-card *ngFor="let skill of getSkillsByLevel(category, 'M-L')">
+                    <div class="skill-ml">
+                        {{skill.name}}
+                        <span *ngIf="skill.comment">
+                            ({{skill.comment}})
+                        </span>
+                    </div>
+                </p-card>
+            </div>
+            <div class="skillsList" pTooltip="Level: low" tooltipPosition="left">
+                <p-card *ngFor="let skill of getSkillsByLevel(category, 'L')">
+                    <div class="skill-l">
+                        {{skill.name}}
+                        <span *ngIf="skill.comment">
+                            ({{skill.comment}})
+                        </span>
+                    </div>
                 </p-card>
             </div>
         </p-accordionTab>
