@@ -21,11 +21,11 @@
     </tr>
     <tr>
         <td>Framework</td>
-        <td>Research & Development in: Telecommunications - Multimedia distribution - Advertising</td>
+        <td>Research & Development in: Telecommunications - Multimedia distribution - Entertainment - Advertising</td>
     </tr>
     <tr>
       <td>Dates</td>
-      <td></td>
+      <td>October 2015 – May 2017</td>
     </tr>
     <tr>
       <td>Activity summary</td>
@@ -35,16 +35,71 @@
 
 <h2 id="introduction">What is a CDN?</h2>
 
+<p>
+    A CDN (Content Delivery Network or Content Distribution Network) is a network of proxy servers and data centers geographically distributed with the aim of
+    maximizing availability and performance of content distribution. Content (e.g. multimedia files, software, etc.) is cached through the network so that
+    proxy servers can efficiently retrieve content from other proxy servers, which produces a reduction in server load, traffic load and latency, and an increse
+    in bandwidth, scalability, reliability and security.
+</p>
+<p>
+    The CDN where I worked is called Velocix/Alcatel-Lucent/Nokia CDN from now on (Velocix was acquired by Alcatel-Lucent and Alcatel-Lucent by Nokia in 2016).
+    As broadband networks of service providers can be turned into advanced content delivery platforms if specialized systems are integrated within them,
+    the purpose of such companies is to provide systems of that kind, having predominantely the distribution of audiovisual content in scope.
+</p>
+<p>
+    It is possible to imagine the functionality of such systems from the main functions found in the Velocix CDN architecture:
+</p>
+<ul>
+    <li>Service tier: session, routing, management and reporting.</li>
+    <li>Storage tier: origin, publishing and storage.</li>
+    <li>Delivery tier: caching and delivery.</li>
+</ul>
 
 <h2 id="problem">The problem: context & objectives</h2>
 
-<p>Video Personalization Platform</p>
-<p>(Product development within the content delivery network of the customer Nokia / Alcatel-Lucent)</p>
+<b>Context:</b>
 
-<p>
-    Velocix Personalization Platform (VPP) is a new product that Nokia (formerly Alcatel-Lucent, before 2016) develops within its video business unit as part of its R&D strategy. This product is integrated in the CDN (Content Delivery Network) solution with the aim of providing those mechanisms that are necessary for performing dynamically one or several transformations of the audiovisual content requested by each user in the time of delivery, in a way that each user can consume a personalized content instead of the original one and based on a set of parameters that define the personalization.
-</p>
-
+<div id="problem-context">
+    <div id="problem-context-left">
+        <p>
+            Velocix Personalization Platform or Video Personalization Platform (VPP) was a new idea that Alcatel-Lucent/Nokia developed within its video business unit as part of its R&D strategy.
+            This product is integrated in its CDN solution with the aim of providing those mechanisms that are necessary for performing one or several transformations of
+            the audiovisual content requested by each user, dynamically in the time of delivery, in a way that each user can consume a personalized content instead of the original one
+            and based on a set of parameters that define the personalization.
+        </p>
+        <p>
+            Take a look at the next basic diagram, without this product the most common use case is the following:
+        </p>
+        <ol>
+            <li>End-user requests the content to the closest edge-node of the CDN (PCD).</li>
+            <li>If the PCD has a local copy of the content in its cache, it servers it to the user.</li>
+            <li>
+                If the PCD did not find a copy in such cache, it requests the content to other CDN nodes that operate similarly.
+                When no node up in the CDN hierarchy has the content, the upper nodes requests it to the origin server.
+            </li>
+            <li>Depending on content attributes, the content is kept cached or not for some timespan (e.g. on-demand video is cached while live video not).</li>
+        </ol>
+        <p>
+            When introducing VPP, this flow is altered: PCDs contact firstly their associated VPPs through component Personalization Engine (PE).
+            PE interacts with component Video Personalization Manager (VPM) to retrieve session information and transformation rules applicable to the content for that session.
+            Based on them, PE requests every content needed for the transformation (e.g. original on-demand video and a set of video ads) to PCD.
+            Eventually PE customizes the original content, passes the customized version to PCD and asks PCD for caching or not such customized content.
+        </p>
+        <p>
+            The VPM mainly consists of two components based on Service-Oriented Architecture (SOA) principles: the rule engine and the session tracker.
+            In addition, VPM can contact third-party systems like advertising tools.
+        </p>
+        <p>
+            The PE consists of HTTP front-end, groups of threads (for communication, personalization, cache and session management, etc.) transformation modules,
+            cache, system management (e.g. SNMP), etc.
+        </p>
+    </div>
+    <div id="problem-context-right">
+        <img src="assets/img/projects/Video_Personalization_Platform.svg" alt="Diagram: video personalization platform">
+    </div>
+    
+</div>
+<br>
 
 <b>Objectives:</b>
 
@@ -57,74 +112,25 @@
     <li>Guarantee that the solution is extensible to other specifications in the future (for instance DASH - Dynamic Adaptive Streaming over HTTP).</li>
     <li>Offer the next transformations: ad insertion in video-on-demand content, ad insertion in live content, different modalities of blackout, alternative content, bandwidth limitation, access control and content encryption, emergency alerts, etc.</li>
     <li>Be compatible with other systems by means of REST interfaces (HTTP).</li>
-    <li>Integrate within the content delivery network Velocix.</li>
+    <li>Integrate within Velocix's CDN.</li>
     <li>Deliver a competitive performance rate.</li>
     <li>Support highly variable specifications and customer requirements.</li>
 </ul>
 
 <h2 id="areas">Areas of activity</h2>
 
-
-<b>To delete probably</b>
-
-Mission Environment (according to ACM)
-Business Department
-*
-
-    Research & Development
-
-Product/Service
-*
-
-    Enginnering
-
-Segment
-*
-
-    Media - Entertainment
-
-Areas of Activities
-Activities Performed (up to 3)
-*
-
-1 - Research, Innovation & Watch
-2 - Consulting - Technical
-
-    3 - Development
-
-Skill Areas
-Skill Areas (up to 3)
-*
-
-1 - Engineering for media and telecommunication industries
-2 - Digital Applications & Media - Software application development - Custom application
-3 - Digital Applications & Media - Media engineering - Content engineering
-
-
-Key words: Software engineering. Content Delivery Networks. Video systems.
-
-
-
-
-
-<b>Approach & Achievements</b>
-<p>
-    I joined Altran for delivering value to its customer Nokia in this project, in a full-time basis. My main responsibilities were:
-</p>
-
+<b>Responsibilities:</b>
 <ul>
     <li>Developing software, carrying out tasks mainly related with coding, system integration and testing.</li>
     <li>Studying specifications for video streaming, like HLS and MSS, and researching how transformations of content based in such specifications can be done within the CDN.</li>
     <li>Designing and implementing the Personalization Engine, the component that implements the business logic of the transformations.</li>
     <li>Implementing simulators of third-party components, in order to allow early testing of the solutions when the original component is not available.</li>
-    <li>Developing personalization algorithms for the next transformation: ad insertion in video on demand content, ad insertion in live content, segment/fragment based blackout, manifest based blackout, alternative content in live content.</li>
+    <li>Developing personalization algorithms for the next transformations: ad insertion in video on demand content, ad insertion in live content, segment/fragment based blackout, manifest based blackout, alternative content in live content.</li>
     <li>Debugging workflows, integrations and bug fixing.</li>
     <li>Preparing proofs of concept (PoCs) for customers of Nokia (e.g. Time Warner Cable, Vodafone, Layer3 TV and Century Link). Sometimes, doing software integration tasks and demonstrations on-site.</li>
 </ul>
 
-<p>
-    Summarizing, I used the following tools and knowledge for accomplishing our objectives:
-</p>
+<b>Approach (tools and knowledge):</b>
 
 <ul>
     <li>Multimedia protocols and specifications (IPTV, TS, HLS, MSS, DASH, etc.)</li>
@@ -146,29 +152,44 @@ Key words: Software engineering. Content Delivery Networks. Video systems.
     <li>Web applications, web services and architectures of microservices.</li>
     <li>Video players like VLC.</li>
     <li>Scripting in Linux and Windows.</li>
-
 </ul>
 
 
-<b>Results & Added Value</b>
+<b>Achievements (results & added value):</b>
 
     <p>
-        During 2015 the effectiveness of the components Personalization Manager and Session Tracker was consolidated (they are other important components of the platform) . This allowed to start the development of the component Personalization Engine and thus this was the moment were I joined the project, focused on such compoenent. Throughout time the Personalization Engine has been improved and developed, adding new personalization capabilities and new features to the product. I left the project in April 2017 due to an offshoring decision.
+        During 2015 the effectiveness of the component VPM (Personalization Manager and Session Tracker) was consolidated.
+        This allowed to start the development of the component PE (Personalization Engine) and thus this was the moment were I joined the project, focused on such component.
+        Throughout time the PE has been improved and developed, adding new personalization capabilities and new features to the product.
+        I left the project in April 2017 due to an offshoring decision.
     </p>
 
-    <p>As a result of the period when I was involved, currently:</p>
+    <p>As a result of the period when I was involved:</p>
 
     <ul>
-        <li>The Personalization Engine (and then the VPP) is able to perform the following transformations: ad insertion in video on demand content, ad insertion in live content, segment/fragment based blackout, manifest based blackout, alternative content in live content. All these transformations work for HLS and only blackout works with MSS.</li>
-        <li>The Personalization Engine includes mechanisms for availability management, logging, debugging, etc.; following the design of the CDN.</li>
-        <li>The Personalization Engine is highly tested, basically by means of a complete set of unit tests (as well as integration and performance tests).</li>
-        <li>The software architecture and the code of the Personalization Engine is easier to understand, modify and expand.</li>
+        <li>The PE (and then VPP) is able to perform the following transformations:
+            <ol>
+                <li>ad insertion in video on demand content,</li>
+                <li>ad insertion in live content,</li>
+                <li>segment/fragment based blackout,</li>
+                <li>manifest based blackout,</li>
+                <li>alternative content in live content.</li>
+            </ol>
+            All these transformations work for HLS and only blackout works with MSS.
+        </li>
+        <li>The PE includes mechanisms for availability management, logging, debugging, etc.; following the design of the CDN.</li>
+        <li>The PE is highly tested, basically by means of a complete set of unit tests as well as integration and performance tests.</li>
+        <li>The software architecture and the code of the PE is easier to understand, modify and expand.</li>
         <li>A complete integration of the VPP in the Velocix CDN was carried out.</li>
-        <li>The first proof of concepts of the whole product were done to potential customers of Nokia (e.g. Vodafone, Time Warner Cable, Century Link, Layer3 TV), after doing some development effort in order to integrate with their systems.</li>
+        <li>The first proof of concepts of the whole product were done to potential customers of Nokia (e.g. Vodafone, Time Warner Cable, Century Link, Layer3 TV),
+            after doing some development effort in order to integrate with their systems.
+        </li>
     </ul>
 
 <p>
-    As a consequence, we can conclude that thanks to our R&D efforts, Nokia has got a product that is far from a minimum viable product and therefore the VPP can be currently employed for offering extra functionalities within its CDN. Moreover, the state of the VPP as a software engineering continous process outdoes any previous state and new requirements can be included and tested easier and faster.
+    As a consequence and thanks to our R&D efforts, Nokia got a product that is far from a minimum viable product and
+    therefore the VPP can be currently employed for offering extra functionalities within its CDN.
+    Moreover, the state of the VPP as a software engineering continuous process outdoes any previous state and new requirements can be included and tested easier and faster.
 </p>
 
 
@@ -179,11 +200,20 @@ Key words: Software engineering. Content Delivery Networks. Video systems.
     <li>Linux</li>
     <li>Python</li>
     <li>Perforce</li>
-    <li>GTest</li>
+    <li>Google Test</li>
+    <li>Flask</li>
+    <li>Postman</li>
+    <li>JMeter</li>
     <li>Eclipse</li>
-    <li>HLS</li>
+    <li>Video</li>
+    <li>HTTP</li>
+    <li>ICAP</li>
+    <li>HLS (Apple's HTTP Live Streaming)</li>
     <li>MSS (Microsoft Smooth Streaming)</li>
+    <li>CDN</li>
     <li>Agile</li>
+    <li>Scrum</li>
 </ul>
+
 
 </div>
