@@ -6,3 +6,19 @@
 th, td {
     border: 1px solid black;
 }
+
+
+
+#problem-context {
+    display: flex;
+}
+
+#problem-context-left {
+    width: 30%;
+}
+
+#problem-context-right {
+    width: 70%;
+    padding-left: 1em;
+    padding-right: 1em;
+}

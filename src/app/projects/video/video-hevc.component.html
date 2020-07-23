@@ -3,6 +3,9 @@
     <!-- The sidebar -->
      <div class="sidebar">
         <a [routerLink]='"."' fragment="content-top" class="active">UltraHD-4U project</a>
+        <a [routerLink]='"."' fragment="problem">The problem: context & objectives</a>
+        <a [routerLink]='"."' fragment="areas">Areas of activity</a>
+        <a [routerLink]='"."' fragment="keywords">Keywords</a>
       </div>
     
 <!-- Page content -->
@@ -10,45 +13,200 @@
 
 <h1 id="content-top">UltraHD-4U project</h1>
 
+<table id="top-table">
+    <tr>
+      <th>Context</th>
+      <th>Coding & compression of audiovisual signal</th>
+    </tr>
+    <tr>
+        <td>Framework</td>
+        <td>Research & Development in: Telecommunications - Multimedia distribution - Compression</td>
+    </tr>
+    <tr>
+      <td>Dates</td>
+      <td>March 2014 – December 2014</td>
+    </tr>
+    <tr>
+      <td>Activity summary</td>
+      <td>Development and deployment of new video coding standard H.265/HEVC</td>
+    </tr>
+</table>
+
+<h2 id="problem">The problem: context & objectives</h2>
+
+<b>Context:</b>
 <p>
-    ► Studied the video coding standard H.265 (HEVC) and its development in depth. 
+    The Ultra-HD or UHDTV (Ultra High Definition Television) emerged as the natural evolution of the HD (High Definition) and 3DTV formats,
+    aiming a more realistic experience for the end-user in an immersive environment, thanks to their enhanced viewing conditions.
+    The UHDTV standard defines two formats named 4K and 8K, with four and sixteen times the HD resolution respectively.
+    However, UHDTV is much more than higher spatial resolution, it involves a higher temporal resolution, an enhanced colorimetry,
+    a higher bit depth, and a higher dynamic range than the previous formats.
 </p>
 <p>
-    ► Trained colleagues in H.265 throughout a 10 hours course that teaches it at an expert level (for instance, taking into account issues like the motivation, design and consequences of its algorithms; for example, performance, trade-offs, parallelization capability, etc.). My slides are in English.
+    These improvements imply data increase, a storage increase, faster real-time professional interfaces above 10Gbps, and bigger display sizes with which to enjoy
+    high fidelity content. To overcome the challenges the whole broadcast industry and the administration have invested in bringing such technology to market.
+    UltraHD-4U, a research project of the European Union in the scope of its Eureka program (CATRENE office), was borned to coordinate such efforts along the value-chain.
+</p>
+<p>
+    The project goal was to set up a successful end-to-end 4K Ultra HDTV chain (broadband and/or broadcast) for use at consumer premises and/or at dedicated show-points. 
+    As far as I remember, the project consortium was composed by the following partners at that time : Alioscopy, Arçelik, Barco, Binocle, Hispasat, mediAVentures, Pace,
+    SAPEC, STM, Technicolor, Thomson Video Networks, University of Nantes and Vitec.
+    Most of these enterprises are contributors to standardization bodies like DVB, SMPTE and MPEG.
 </p>
 
-<p>
-    ► Designed, implemented, tested and maintained a C++ console application that analyzes coded media files and automates their insertion into a Transport Stream (MPEG-2 Part 1). Several standards like MPEG-2 (system, video and audio), MPEG-1 Part 3 (audio), H.265, H.264, AC-3, Enhanced AC-3 and AAC were studied and introduced into the application functionality.
-</p>
-<p>
-    Firstly, legacy software was understood. Later, this legacy software was efficiently encapsulated in a newer and clearer software architecture that I designed (more suited for the offline nature of the application). To this architecture, each feature (e.g. new coding format) was developed, integrated and tested iteratively. Among the elements of this software architecture there are several threads: 1) stream managers (modules that use specific stream analyzers and circular buffers to keep efficiently current interesting data), 2) reporting module (it filters and manages how messages are displayed to the user or logged according to verbose and debugging levels), and 3) multiplexer thread. For managing concurrency, there are synchronization variables and mechanisms distributed along the previous threads, etc.
-</p>
-<p>
-    The application was coded following high quality coding standards and documentation was generated using Doxygen. Moreover, the application was optimized when and where optimization was suitable for the business needs (for example, adjust the size of circular buffers to suitable sizes according to UltraHD screen resolutions and bitstream structure).
-</p>
-<p>
-    The most important tools used: Microsoft Visual Studio (C++/C/C#; non-managed classes were preferred in the application), SourceSafe, Doxygen, Notepad++ and Modelio.
-</p>
+<b>Objectives:</b>
+<ul>
+    <li>Fostering the adoption of Ultra-HD in Europe through technical research performed within UltraHD-4U project.</li>
+    <li>
+        Contributing to Work Package 2 of the project, which studies the content delivery architecture from the acquisition to the distribution
+        (addressing aspects of content acquisition, preparation, content encoding and distribution).
+    </li>
+    <li>
+        Studying the new H.265 (HEVC) video compression standard and capitalizing such knowledge among teammates of Sapec and Technical University of Madrid.
+    </li>
+    <li>
+        Helping Sapec to create the software and media files required to achieve the previous goals, in order to transfer innovation to its professional
+        encoders and decoders.
+    </li>
+</ul>
 
-<p>
-    ► Automated and executed video quality measures using scripts in Perl. VideoClarity products produce logs and results as text documents that these well-commented and easy to use scripts (using batch files, Perl and Perl modules) convert into awesome spreadsheets that contain only the interesting information (e.g. date, files; PSNR, DMOS, JND quality measures) and graphics.
-</p>
+<h2 id="areas">Areas of activity</h2>
 
-<p>
-    ► Introduced to algorithm vectorization for optimizing an image scaler with relation to the processor architecture. Tools used: C++, Intel intrinsics (MMX, SSE to SSE 4.2, AVX). 
-</p>
-<p>
-    ► Implemented scripts using batch files, FFmpeg, and HEVC encoder.
-</p>
-<p>
-    ► Analysed the log files of Sapec’s encoders and decoders.
-</p>
-<p>
-    ► Informed the development team of: 1) bugs observed in Sencore’s media stream analyzer (after that, Sencore fixed them following my description), 2) flaws that exist in analyzers of Elecard and MainConcept.
-</p>
+<b>Responsibilities:</b>
+<ul>
+    <li>Studying video coding standard H.265 (HEVC) and its development in depth.</li>
+    <li>Training R&D colleagues, by developing and teaching a course in English.</li>
+    <li>Developing software that analyzes coded media files and automates their insertion into a Transport Stream.</li>
+    <li>Performing and automating video quality measures.</li>
+    <li>Elaborating documentation of the UltraHD-4U research project for the CATRENE office.</li>
+</ul>
 
-<p>
-    ► Collaborated along with the engineering department and other participant entities in the elaboration of documentation of the UltraHD-4U research project for the CATRENE office. Participated in the sections of our company and, as leaders of the work package 2, integrated the documentation and established working style guidelines.
-</p>
+
+<b>Approach (tools and knowledge):</b>
+
+<ul>
+    <li>Modern video and audio coding standards (see in <a [routerLink]='"."' fragment="keywords">keywords</a>).</li>
+    <li>C++ application that based on the parameters of the command line automates the creation fo the Transport Stream (TS) multiplex.
+        <p>Media formats supported are:</p>
+        <ul>
+            <li>Video: 
+                <ul>
+                    <li>H.265</li>
+                    <li>H.264</li>
+                </ul>
+            </li>
+            <li>Audio:
+                <ul>
+                    <li>AC-3</li>
+                    <li>Enhanced AC-3</li>
+                    <li>MPEG 1 Layer I, II, and III.</li>
+                    <li>MPEG 2 Layer I, II, and II</li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            Firstly, legacy software was understood. Later, this legacy software was efficiently encapsulated in a newer and clearer software architecture that I designed
+            (more suited for the offline nature of the application). To this architecture, each feature (e.g. new coding format) was developed, integrated and tested iteratively.
+        </p>
+        <p>
+            Among the elements of this software architecture there are several threads:
+        </p>
+        <ol>
+            <li>stream managers (modules that use specific stream analyzers and circular buffers to keep efficiently current interesting data),</li>
+            <li>reporting module (it filters and manages how messages are displayed to the user or logged according to verbose and debugging levels),</li>
+            <li>multiplexer thread.</li>
+        </ol>
+        <p>
+            For managing concurrency, there are synchronization variables and mechanisms distributed along the previous threads, etc.
+        </p>
+        <p>
+            The application was coded following high quality coding standards and documentation was generated using Doxygen. Moreover, the application was optimized when and where
+            optimization was suitable for the business needs (for example, adjust the size of circular buffers to suitable sizes according to UltraHD screen resolutions and bitstream
+            structure).
+        </p>
+    </li>
+    <li>
+        Main development tools: Microsoft Visual Studio (C++/C/C#; non-managed classes were preferred in the application), SourceSafe, Doxygen, Notepad++ and Modelio.
+    </li>
+    <li>Perl & batch scripts to automate video quality measures based on VideoClarity output reports.
+        <p>
+            VideoClarity products produce structured text documents (logs and other results) that are parsed to generate awesome spreadsheets,
+            containing only the interesting information (e.g. date, files; PSNR, DMOS, JND quality measures) and presenting auto-generated graphics.
+        </p>
+    </li>
+    <li>Scripts using batch files, FFmpeg, and HEVC encoder.</li>
+    <li>
+        Media stream analyzer from Sencore, Elecard and MainConcept.
+    </li>
+    <li>Log files of Sapec’s encoders and decoders</li>
+</ul>
+
+
+
+<b>Achievements (results & added value):</b>
+
+<ul>
+    <li>
+        TS_MuxOffline, the software application that takes a set of supported multimedia files and creates a Transport Stream (TS) file by multiplexing them.
+    </li>
+    
+    <li>
+        Scripts, specially for automating video quality measures and enabling quick comparisons of coding standards against specific content.
+    </li>
+    <li>
+        Participated in deliveries within international research project covering the whole value-chain of broadcast industry.
+        <ol>
+            <li>Documentation of Sapec section.</li>
+            <li>Integration of other parties' documentation and establishment of working style guidelines, as leaders of the work package 2.</li>
+        </ol>
+    </li>
+    <li>
+        Created 10 hours course about H.265 (HEVC). Expert level (it takes into account issues like the motivation, design and consequences of its algorithms;
+        for example: performance, trade-offs, parallelization capability, etc.). Slides are in English.
+    </li>
+    <li>
+        Trained colleagues following the previous course.
+    </li>
+    <li>
+        Learned about Sapec’s encoders and decoders (both operative and implementation perspectives).
+    </li>
+    <li>
+        Learned about Intel intrinsics technology (algorithm vectorization) to optimize an image scaler with relation to the processor architecture.
+    </li>
+    <li>
+        Found and reported:
+        <ol>
+            <li>bugs observed in Sencore’s media stream analyzer (after that, Sencore fixed them following my description),</li>
+            <li>flaws existing in analyzers of Elecard and MainConcept.</li>
+        </ol>
+    </li>
+</ul>
+
+
+<h2 id="keywords">Keywords (tools & techniques)</h2>
+
+<ul>
+    <li>C++</li>
+    <li>C#</li>
+    <li>Perl</li>
+    <li>Batch</li>
+    <li>Transport Stream (MPEG-2 Part 1)</li>
+    <li>MPEG-2 (system, video and audio)</li>
+    <li>MPEG-1 Part 3 (audio)</li>
+    <li>H.265 (HEVC)</li>
+    <li>H.264 (AVC)</li>
+    <li>AC-3</li>
+    <li>Enhanced AC-3</li>
+    <li>AAC</li>
+    <li>FFmpeg</li>
+    <li>Sencore</li>
+    <li>Elecard</li>
+    <li>MainConcept</li>
+    <li>VideoClarity</li>
+    <li>PSNR</li>
+    <li>DMOS</li>
+    <li>JND</li>
+    <li>Algorithm vectorization with Intel intrinsics (MMX, SSE to SSE 4.2, AVX)</li>
+</ul>
 
 </div>

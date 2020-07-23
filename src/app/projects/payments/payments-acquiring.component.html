@@ -5,7 +5,8 @@
   <a [routerLink]='"."' fragment="content-top" class="active">Acquiring</a>
   <a [routerLink]='"."' fragment="problem">The problem: context & objectives</a>
   <a [routerLink]='"."' fragment="areas">Areas of activity</a>
-  <a [routerLink]='"."' fragment="features">Features</a>
+  <a [routerLink]='"."' fragment="development">Development</a>
+  <a [routerLink]='"."' fragment="keywords">Keywords</a>
 </div>
 
 <!-- Page content -->
@@ -36,32 +37,68 @@
 
 <h2 id="problem">The problem: context & objectives</h2>
 
-<h3>Benefits of acquiring orchestration</h3>
+<p>
+  Airlines operating globally face important challenges in relation to getting paid.
+</p>
+<p>
+  Firstly, acquirers (banks of each airline) consider their business as a high risk industry, mainly because the low margins and the fact of ticket sales happening in advance (before customers enjoy flight services).
+</p>
+<p>
+  Secondly, the international implications of their business compel them to engage a significant amount of providers
+  (bank at headquarters, other local acquirers with different regulations, local specifities, fraud, foreign exchange, PSPs, different methods of payment, etc.).
+</p>
+<p>
+  As a results, payments management by airlines meet the following drawbacks:
+</p>
+<ul>
+  <li>Lack of flexibility, difficult adaptability to changing environment.</li>
+  <li>Lack of global view of business.</li>
+  <li>Lack of negotiation power in non-core/new markets.</li>
+  <li>Hard reconciliation processes.</li>
+  <li>Need of local teams, making more complex an already complex back office.</li>
+</ul>
 
-<h3>Complexity</h3>
 
-<h4>Involvement needs</h4>
-Modules...
+<h3>Benefits of acquiring orchestration and complexity</h3>
+
+<p>
+  Amadeus and its payment product portfolio are in a position to offer solutions that at least mitigate these airline problems
+  (lower acquiring fees, enhanced settlement periods, more knowledge with BI dashboards, virtual acquiring, etc.).
+  However, the complexity of the solution is high: it needs to orchestrate an assortment of systems, processes and communications with partners that often have challenging specificities.
+</p>
+<p>
+  For instance, when liaising with a partner PSP:
+</p>
+<ul>
+  <li>There is a strong dependency with the automatic and manual processes of the partner.</li>
+  <li>It can name, organize or model data following an approach different to those used by our systems or other partners.</li>
+  <li>Complex and heterogeneus logic might be required because many processes are done with batch jobs that produce files containing transaction records, utilizing cross-references to relate those associated.</li>
+  <li>It can support a reduced set of data or a reduced set of process variants (for instance, the capture can be done online, offline, triggered by some file, ... and the chargeback can offer only some chargeback stages).</li>
+</ul>
+<p>
+  In addition, specialized modules and partners are required to deal with other features like fraud detection, foreign exchange setups or reconciliation
+  (reconciliation consists on ensuring there is a confirmed payment transaction for every sale).
+</p>
+
+
 
 <h2 id="areas">Areas of activity</h2>
-
-<h2 id="features">Developed features</h2>
-Authorization, clearing, source summary, settlement, chargeback.
-
-
-
-Development of MVP for providing Amadeus with acquiring orchestration capabilities.
-
-Travel & tourism sector (customers: airlines, hotels, etc.)
+<ul>
+  <li>Development of Minimum-Value-Produt (MVP) in order to provide Amadeus with an initial acquiring orchestration solution.</li>
+  <li>Proposal of improvements (legacy code, testing, documentation and way of working).</li>
+  <li>Team support, specially to newcomers.</li>
+</ul>
 
 
+<h2 id="development">Development</h2>
+<ul>
+  <li>Integration with partner PSP (RS2): processing of files for clearing, settlement and chargeback flows.</li>
+  <li>Generation of application events (BI) with the processed information.</li>
+  <li>Component and unit testing for these developments (local development environment)</li>
+  <li>Fixes in authorization flow.</li>
+</ul>
 
-Acquiring Orchestration:
-
-- Integration with RS2 (payment capture flow).
-
-- Tests for local development environment.
-
+<img src="assets/img/projects/Payment_Clearing_And_Settlement.svg" alt="Diagram: payment clearing and settlement basic flow">
 
 
 <h2 id="keywords">Keywords</h2>
@@ -75,6 +112,8 @@ Acquiring Orchestration:
 <p>
   Procedures: Capture, Settlement and Chargeback for a payment, Change Control Board, complex production pipeline (more than 8 phases), change-protection frameworks.
 </p>
+
+
 
 
 </div>
