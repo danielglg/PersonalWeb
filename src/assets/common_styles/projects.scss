@@ -40,6 +40,30 @@
     padding: 0.5em 0.5em;
     height: 100%;
   }
+
+  /* Optional table at the top of project pages.*/
+  #proj-top-table {
+    width:50%;
+    border-collapse: collapse;
+  }
+
+  #proj-top-table > tr > th, td {
+      border: 1px solid black;
+  }
+
+  #proj-top-table > tr > :nth-child(1)  {
+    background-color: #e0ebfa;
+  }
+
+  #proj-top-table > :nth-child(1)  {
+    background-color: #e0ebfa;
+  }
+
+  #proj-top-table > tr > td {
+    background-color: #f4f8fd;
+  }
+
+
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
