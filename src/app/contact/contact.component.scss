@@ -40,3 +40,36 @@
     background-color: #ccc;
     color: white;
 }
+
+
+
+@media screen and (max-width: 700px) {
+    #contact-layout {
+        flex-wrap: wrap;
+        
+    }
+
+    #contact-layout-left, #contact-layout-right {
+        width: 100%;
+    }
+    
+
+    #external-links {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #contact-layout {
+        flex-wrap: wrap;
+        
+    }
+
+    #contact-layout-left, #contact-layout-right {
+        width: 100%;
+    }
+
+    #external-links {
+        flex-wrap: wrap;
+    }
+}

@@ -48,3 +48,72 @@
 .logo:hover {
     opacity: .6;
 }
+
+@media screen and (max-width: 700px) { 
+    .employer {
+        flex-wrap: wrap;
+    }
+    
+    .employer-left {
+        width: 100%;
+        padding-right: 2em;
+    }
+    
+    .employer-right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between;
+    }
+
+    .customer-card-content {
+        flex-wrap: wrap;
+    }
+    
+    .customer-left {
+        width: 100%
+    }
+    
+    .customer-right {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between;
+    
+    }
+
+    .logo {
+        max-width:50%;
+        height:auto;
+        margin-bottom: 1em;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .employer {
+        flex-wrap: wrap;
+    }
+    
+    .employer-left {
+        width: 100%;
+        padding-right: 2em;
+    }
+    
+    .employer-right {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+    
+    }
+
+    .logo {
+        max-width:50%;
+        height:auto;
+        margin-bottom: 1em;
+    }
+
+}

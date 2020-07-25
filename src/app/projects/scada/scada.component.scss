@@ -58,3 +58,112 @@
 #img-right {
     width: 550px;
 }
+
+@media screen and (max-width: 700px) {
+    #system-diagram {
+        flex-wrap: wrap;
+    }
+    
+    #system-diagram-left {
+        width: 100%;
+    }
+    
+    #system-diagram-right {
+        width: 100%;
+    }
+
+    #system-instrumentation {
+        flex-wrap: wrap;
+    }
+
+    #gui-examples {
+        flex-wrap: wrap;
+    }
+    
+    #img-gui {
+        width: 100%;
+    }
+
+    #managers {
+        flex-wrap: wrap;
+    }
+    
+    #managers-left {
+        width: 100%;
+    }
+    
+    #managers-right {
+        width: 100%;
+    }
+    
+    #loaders {
+        flex-wrap: wrap;
+    }
+    
+    #loaders-left {
+        width: 100%;
+    }
+    
+    #loaders-right {
+        width: 100%;
+    }
+
+    img {
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #system-diagram {
+        flex-wrap: wrap;
+    }
+    
+    #system-diagram-left {
+        width: 100%;
+    }
+    
+    #system-diagram-right {
+        width: 100%;
+    }
+
+    #system-instrumentation {
+        flex-wrap: wrap;
+    }
+
+    #gui-examples {
+        flex-wrap: wrap;
+    }
+    
+    #img-gui {
+        width: 100%;
+    }
+
+    #managers {
+        flex-wrap: wrap;
+    }
+    
+    #managers-left {
+        width: 100%;
+    }
+    
+    #managers-right {
+        width: 100%;
+    }
+    
+    #loaders {
+        flex-wrap: wrap;
+    }
+    
+    #loaders-left {
+        width: 100%;
+    }
+    
+    #loaders-right {
+        width: 100%;
+    }
+
+    img {
+        width:100%;
+    }
+} 

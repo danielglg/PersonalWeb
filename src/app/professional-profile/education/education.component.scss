@@ -29,3 +29,63 @@
 .logo:hover {
     opacity: .6;
 }
+
+@media screen and (max-width: 700px) {
+
+    .degree {
+        flex-wrap: wrap;
+    }
+    
+    .degree-details {
+        width: 100%;
+    }
+
+    .subject-list {
+        padding-right: 0;
+    }
+
+    .degree-centre {
+        width: 100%;
+    }
+
+    .degree-centre > a {
+        max-width:50%;
+        height:auto;
+    }
+
+    .logo {
+        max-width:50%;
+        height:auto;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .degree {
+        flex-wrap: wrap;
+    }
+    
+    .degree-details {
+        width: 100%;
+    }
+
+    .degree-centre {
+        width: 100%;
+    }
+
+    .subject-list {
+        padding-right: 0;
+    }
+
+    .degree-centre > a {
+        max-width:50%;
+        height:auto;
+    }
+
+    .logo {
+        max-width:50%;
+        height:auto;
+    }
+}
+

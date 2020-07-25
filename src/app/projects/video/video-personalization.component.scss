@@ -11,3 +11,40 @@
     padding-left: 1em;
     padding-right: 1em;
 }
+
+@media screen and (max-width: 700px) {
+    #problem-context {
+        flex-wrap: wrap;
+    }
+    
+    #problem-context-left {
+        width: 100%;
+    }
+    
+    #problem-context-right {
+        width: 100%;
+    }
+
+    img {
+        width:100%;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #problem-context {
+        flex-wrap: wrap;
+    }
+    
+    #problem-context-left {
+        width: 100%;
+    }
+    
+    #problem-context-right {
+        width: 100%;
+    }
+
+    img {
+        width:100%;
+    }
+} 
