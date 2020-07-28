@@ -1,10 +1,31 @@
 <div class="project_content common-bg">
 
     <!-- The sidebar -->
-     <div class="sidebar">
+    <div class="sidebar">
         <a [routerLink]='"."' fragment="content-top" class="active">Introduction</a>
+
+        <a [routerLink]='"."' fragment="own-initiative"> ● By own initiative:</a>
         <a [routerLink]='"."' fragment="website">Personal website</a>
-      </div>
+        <a [routerLink]='"."' fragment="other-learnings">Other learnings</a>
+
+        <a [routerLink]='"."' fragment="hiring-processes"> ● At hiring process:</a>
+        <a [routerLink]='"."' fragment="spring">Web app with Angular and Spring Framework</a>
+        <a [routerLink]='"."' fragment="video-traffic">Video traffic analyzer</a>
+
+        <a [routerLink]='"."' fragment="university"> ● At university</a>
+        <a [routerLink]='"."' fragment="operating-systems">Operating systems</a>
+        <a [routerLink]='"."' fragment="advanced-app-programming">Advanced application programming</a>
+        <a [routerLink]='"."' fragment="modelling-laguages">Modelling languages</a>
+        <a [routerLink]='"."' fragment="virtual-instrumentation">Virtual instrumentation (data acquisition systems fundamentals)</a>
+        <a [routerLink]='"."' fragment="networks-services">Networks and services ubiquitous and secure</a>
+        <a [routerLink]='"."' fragment="services-protocols">Services and protocols engineering</a>
+        <a [routerLink]='"."' fragment="audiovisual">Digital image processing, Audio and video signal processing, Signal recognition techniques</a>
+        <a [routerLink]='"."' fragment="telco-networks">Telecommunications networks and services</a>
+        <a [routerLink]='"."' fragment="projects">Projects</a>
+        <a [routerLink]='"."' fragment="animation-image">Computer animation and image synthesis</a>
+        <a [routerLink]='"."' fragment="programming">Programming</a>
+
+    </div>
     
 <!-- Page content -->
 <div class="content">
@@ -12,210 +33,314 @@
 <h1 id="content-top">
     Introduction
 </h1>
+<p>
+    This page presents other projects and learnings that were performed by own initiative, as course project or as part of a hiring process.
+</p>
 
-<h1 id="website">
-    Personal website.
+<h1 id="own-initiative">
+    By own initiative
 </h1>
 
-<p>
-    This website. Built using Angular, PrimeNG, Mirosoft's Visual Studio Code and browser development tools.
-    In the future a NodeJS backend will be added to support functionalities like e-mail communications and captchas.
-</p>
+<div>
+    <h2 id="website">
+        Personal website.
+    </h2>
+    <div id="personal-web">
+        <div id="personal-web-left">
+            <p>
+                This website. The next diagram shows the top-level tools used, besides Mirosoft's Visual Studio Code and browser development tools.
+            </p>
+            <p>
+                Currently content is being introduced and polished; new features will be introduced in the future (captchas, input sanitization, ...).
+                The backend server is in charge of mails.
+            </p>
+        </div>
+        <div id="personal-web-right">
+            <img src="assets/img/projects/Others_PersonalWeb.svg" alt="Diagram: personal web main features.">
+        </div>
+    
+    </div>
+</div>
 
-<h1>
-    Operating systems
+<div>
+    <h2 id="other-learnings">
+        Other learnings
+    </h2>
+    <i style="color:red;">LIST TO REVIEW</i>
+    <h3>Methodologies</h3>
+    <p>
+        Learnt about:
+    </p>
+    <p>
+        ► Tool Jira, an issue tracking and collaboration tool. Evaluated its features and options (e.g. Scrum and Kanban dashboards, issue types, user management).
+    </p>
+    <p>
+        ► Software testing. Learnt about device quality assurance and quality control techniques.
+    </p>
+
+    <h3>Development tools</h3>
+    <p>
+        Learnt about:
+    </p>
+    <p>
+        ► IDE Qt. Learnt how to develop using Qt Widgets or Qt Quick, and how to cross-compile with it.
+    </p>
+    <p>
+        ► HTML (version 4 and 5), for developing web pages.
+    </p>
+    <p>
+        ► CSS3, for developing web pages and customizing user interfaces.
+    </p>
+    <p>
+        ► Android and Tizen, and how to develop for these operating systems (e.g. knowing their programming approaches, their SDKs).
+    </p>
+    <p>
+        ► C# and .NET.
+    </p>
+
+    <h3>Audiovisual</h3>
+    <p>
+        Learnt about:
+    </p>
+    <p>
+        ► Content delivering networks (CDNs) over controlled (IPTV) and non-controlled (OTT) environments.
+    </p>
+    <p>
+        ► Live555 software library.
+    </p>
+    <p>
+        ► Specification ONVIF (Open Network Video Interface Forum), which is commonly deployed in IP-based video surveillance products.
+    </p>
+    <p>
+        ► Material eXchange Format (MXF), which is currently very widespread along multimedia asset management (MAM) systems.
+    </p>
+
+    <h3>Scada</h3>
+    <p>
+        ► Learnt basics of EPICS (Experimental Physics and Industrial Control System).
+    </p>
+</div>
+
+<h1 id="hiring-processes">
+    At hiring process
 </h1>
 
-<p>
-    ► Studied operating system foundations (e.g. processes, protection mechanisms, system calls, structure, classification, real-time).
-</p>
-<p>
-    ► Studied management of processor (e.g. Process Control Block, process states, threads, scheduler, scheduling algorithms, signalling). Focus on UNIX (Pthreads) and Win32 threads.
-</p>
-<p>
-    ► Studied concurrent computing and concurrence tools in Unix (e.g. concurrence problems, shared memory, mutex, semaphores, conditional variables, message queuing, pipes, signals).
-</p>
-<p>
-    ► Studied memory management (e.g. virtual pages), input/output architectures and file systems (Windows and Unix based systems) 
-</p>
-<p>
-    ► Installed an Unix operating system (FreeBSD), learnt the environment (e.g. commands, structure) and developed a simple application within this environment using C language (example of tools used: bash, sh, vi, gcc, GNU make, gdb). Finally, practiced management of processes.  
-</p>
-<p>
-    ► Using the previous system, developed and tested a web server that has a variable number of threads and communicates with other processes (CGI). Tools used: C language, Pthreads, system signals, pipes, lynx.
-</p>
-<p>
-    ► Developed and tested a multithreaded cache web server using Java and Eclipse. Tools used: Eclipse, several web navigators, communication and synchronization tools offered by Java (queues, mutex, condition variables). Throughout the project, analysed and solved concurrence problems that appear in this sort of application.
-</p>
+<div>
+    <h2 id="spring">
+        Web app with Angular and Spring Framework
+    </h2>
+    <p>
+        Because I applied to a "Full-stack software developer" position, the exercise consisted on developing components of a web application from scratch.
+        The minimal requirements did not request to fully implement every component but I decided to implement the frontend, the backend and one of the optional
+        algorithms. The final application had the following features:
+    </p>
+    <ul>
+        <li>Appliction that following an API contract displays cities stored in the provided database (MariaDB).</li>
+        <li>Frontend: Angular CLI, NodeJS, RxJS, Material Design.</li>
+        <li>Backend: Java 8, Spring Boot, REST, Hibernate, Maven. High coverage of unit tests.</li>
+        <li>
+            Algorithm: to find the most permutable city, which is the city giving the highest number of real words from a dictionary stored on the same database
+            (following some rules, like: cities whose name has length 7, permutations with 5,6 and 7 letters, etc.)
+        </li>
+    </ul>
+</div>
 
+<div>
+    <h2 id="video-traffic">
+        Video traffic analyzer
+    </h2>
+    <p>
+        Console application that listens to a range of ports and displays in real-time statistics of incoming video traffic.
+        The architecture is summarized below. A screen capture is provided too.
+    </p>
+    <p>
+        Keywords: C++, POSIX API, multi-threading, signal handling, UDP, Transport Stream (TS), PID.
+    </p>
+    <div id="video-traffic-images">
+        <img id="video-traffic-img-1" src="assets/img/projects/Others_Video_traffic_analyzer.svg" alt="Diagram: video traffic analyzer.">
+        <img id="video-traffic-img-2" src="assets/img/projects/Others_Video_traffic_analyzer_capture.png" alt="Image: screen capture of video traffic analyzer.">
+    </div>
+    
+    
+</div>
 
-<h1>
-    Advanced application programming
+<h1 id="university">
+    At university
 </h1>
 
-<p>
-    ► Delivered four projects, each one was an email client created with the following technologies (commented in next bullets): AWT, SWING, JSP and Java Servlets.
-</p>
-<p>
-    ► Learnt advanced concepts of object oriented programming (e.g. list, stack, queue, set, map, hash; sorting, comparators; recursion) using Java.
-</p>
-<p>
-    ► Learnt how to design and develop graphical user interfaces (GUI) using AWT and SWING APIs (Java): components, event model, layout managers, Model-View-Controller (MVC) design pattern.
-</p>
-<p>
-    ► Learnt how to design and develop web-server applications using Java (J2SE, J2EE): Servlet, JSP, JavaBeans, databases (JDBC), protocols (e.g. HTTP), Apache Tomcat, software architectures (client-server, programming models in tiers, state control).
-</p>
+<div>
+    <h2 id="operating-systems">
+        Operating systems
+    </h2>
+    
+    <p>
+        ► Studied operating system foundations (e.g. processes, protection mechanisms, system calls, structure, classification, real-time).
+    </p>
+    <p>
+        ► Studied management of processor (e.g. Process Control Block, process states, threads, scheduler, scheduling algorithms, signalling). Focus on UNIX (Pthreads) and Win32 threads.
+    </p>
+    <p>
+        ► Studied concurrent computing and concurrence tools in Unix (e.g. concurrence problems, shared memory, mutex, semaphores, conditional variables, message queuing, pipes, signals).
+    </p>
+    <p>
+        ► Studied memory management (e.g. virtual pages), input/output architectures and file systems (Windows and Unix based systems) 
+    </p>
+    <p>
+        ► Installed an Unix operating system (FreeBSD), learnt the environment (e.g. commands, structure) and developed a simple application within this environment using C language (example of tools used: bash, sh, vi, gcc, GNU make, gdb). Finally, practiced management of processes.  
+    </p>
+    <p>
+        ► Using the previous system, developed and tested a web server that has a variable number of threads and communicates with other processes (CGI). Tools used: C language, Pthreads, system signals, pipes, lynx.
+    </p>
+    <p>
+        ► Developed and tested a multithreaded cache web server using Java and Eclipse. Tools used: Eclipse, several web navigators, communication and synchronization tools offered by Java (queues, mutex, condition variables). Throughout the project, analysed and solved concurrence problems that appear in this sort of application.
+    </p>
+</div>
 
-<h1>
-    Modelling languages
-</h1>
+<div>
+    <h2 id="advanced-app-programming">
+        Advanced application programming
+    </h2>
+    
+    <p>
+        ► Delivered four projects, each one was an email client created with the following technologies (commented in next bullets): AWT, SWING, JSP and Java Servlets.
+    </p>
+    <p>
+        ► Learnt advanced concepts of object oriented programming (e.g. list, stack, queue, set, map, hash; sorting, comparators; recursion) using Java.
+    </p>
+    <p>
+        ► Learnt how to design and develop graphical user interfaces (GUI) using AWT and SWING APIs (Java): components, event model, layout managers, Model-View-Controller (MVC) design pattern.
+    </p>
+    <p>
+        ► Learnt how to design and develop web-server applications using Java (J2SE, J2EE): Servlet, JSP, JavaBeans, databases (JDBC), protocols (e.g. HTTP), Apache Tomcat, software architectures (client-server, programming models in tiers, state control).
+    </p>
+</div>
 
-<p>
-    ► We, a team of 12 people, conceived and designed a future “smart sport center” by means of a set of telematic services. I was one of the four project managers and became one of the leaders of the project.
-</p>
-<p>
-    Once the project was conceived and agreed, we carried out the requirements analysis and the design of the software architecture in several phases (from lower to higher detail and evaluating our decisions). We applied the concepts commented in next bullet. We delivered specific documents and did presentations when defined milestones/deadlines arrived. The result of our work was a document with the detailed design. 
-</p>
-<p>
-    ► Several topics were covered:
-</p>
-<ul>
-    <li>
-        Object Oriented Programming and modelling, using the Unified Modelling Language (UML). Analysis of design decisions and problems.
-    </li>
-    <li>
-        Software development lifecycle and methodologies (e.g. waterfall, waterfall with feedback, spiral, unified process, scrum, extreme programming, incremental, component assembly, etc.). 
-    </li>
-    <li>
-        Modelling software requirements with informal and formal languages, as formal language UML was learnt and employed. Usage of UML too for documenting our design. 
-    </li>
-    <li>
-        Managing requirements (e.g. functional, non-functional, level of detail, priority, etc.).
-    </li>
-    <li>
-        Software architectures and design patterns (e.g. adapter, factory method, observer, etc.).
-    </li>
-</ul>
+<div>
+    <h2 id="modelling-laguages">
+        Modelling languages
+    </h2>
+    
+    <p>
+        ► We, a team of 12 people, conceived and designed a future “smart sport center” by means of a set of telematic services. I was one of the four project managers and became one of the leaders of the project.
+    </p>
+    <p>
+        Once the project was conceived and agreed, we carried out the requirements analysis and the design of the software architecture in several phases (from lower to higher detail and evaluating our decisions). We applied the concepts commented in next bullet. We delivered specific documents and did presentations when defined milestones/deadlines arrived. The result of our work was a document with the detailed design. 
+    </p>
+    <p>
+        ► Several topics were covered:
+    </p>
+    <ul>
+        <li>
+            Object Oriented Programming and modelling, using the Unified Modelling Language (UML). Analysis of design decisions and problems.
+        </li>
+        <li>
+            Software development lifecycle and methodologies (e.g. waterfall, waterfall with feedback, spiral, unified process, scrum, extreme programming, incremental, component assembly, etc.). 
+        </li>
+        <li>
+            Modelling software requirements with informal and formal languages, as formal language UML was learnt and employed. Usage of UML too for documenting our design. 
+        </li>
+        <li>
+            Managing requirements (e.g. functional, non-functional, level of detail, priority, etc.).
+        </li>
+        <li>
+            Software architectures and design patterns (e.g. adapter, factory method, observer, etc.).
+        </li>
+    </ul>
+</div>
 
-<h1>
-    Virtual instrumentation (data acquisition systems fundamentals)
-</h1>
+<div>
+    <h2 id="virtual-instrumentation">
+        Virtual instrumentation (data acquisition systems fundamentals)
+    </h2>
+    
+    <p>
+        ► Implemented control system of an oven (it comprises: DAQ, heater, fan; tools for monitoring and controlling sensors, actuators and signals; tools for storing and getting back historical data). Convenient software architectures and design patterns (such as master-slave, producer-consumer and state machines) were used. Queues, semaphores, threads, local/global variables and events, among others, are key tools in the programming of the system. Other things done: DAQ interfacing, building the application release deliverable, analysis and control of application stages (startup, running and shut down). LabVIEW was the language and IDE used.
+    </p>
+    
+</div>
 
-<p>
-    ► Implemented control system of an oven (it comprises: DAQ, heater, fan; tools for monitoring and controlling sensors, actuators and signals; tools for storing and getting back historical data). Convenient software architectures and design patterns (such as master-slave, producer-consumer and state machines) were used. Queues, semaphores, threads, local/global variables and events, among others, are key tools in the programming of the system. Other things done: DAQ interfacing, building the application release deliverable, analysis and control of application stages (startup, running and shut down). LabVIEW was the language and IDE used.
-</p>
+<div>
+    <h2 id="networks-services">
+        Networks and services ubiquitous and secure
+    </h2>
+    
+    <p>
+        ► Conceived, designed, implemented, simulated and tested control system for greenhouses or similar environments, employing a Wireless Sensor Network (WSN). The system comprises a sink, a server and several Sun SPOT motes and must manage several types of measurements, alarms and commands; as well as do not fail within a real environment (using physical nodes).
+        I lead the project within a team of 4 people. Due to human resource and knowledge issues, I did major parts: trained 2 of my workmates in Java, PDU structure and system design; designed the software architecture from low-level detail to high-level and coded it in Java. All of us performed the requirement analysis, the general design of the system (e.g. PDU structures and listening ports), the definition of the validation tests, the generation of documentation and the presentation of the system. Tools employed: UML, NetBeans, Java (J2ME).
+    </p>
+</div>
 
-<h1>
-    Networks and services ubiquitous and secure
-</h1>
+<div>
+    <h2 id="services-protocols">
+        Services and protocols engineering
+    </h2>
+    
+    <p>
+        ► Analysed performance and security flaws in an existent P2P based set of protocols for 3D data streaming within the research community. Then, proposed fixes. Throughout the subject, elaborated explanatory presentations and research papers. It was purely individual work.
+    </p>
+</div>
 
-<p>
-    ► Conceived, designed, implemented, simulated and tested control system for greenhouses or similar environments, employing a Wireless Sensor Network (WSN). The system comprises a sink, a server and several Sun SPOT motes and must manage several types of measurements, alarms and commands; as well as do not fail within a real environment (using physical nodes).
-    I lead the project within a team of 4 people. Due to human resource and knowledge issues, I did major parts: trained 2 of my workmates in Java, PDU structure and system design; designed the software architecture from low-level detail to high-level and coded it in Java. All of us performed the requirement analysis, the general design of the system (e.g. PDU structures and listening ports), the definition of the validation tests, the generation of documentation and the presentation of the system. Tools employed: UML, NetBeans, Java (J2ME).
-</p>
+<div>
+    <h2 id="audiovisual">
+        Digital image processing, Audio and video signal processing, Signal recognition techniques
+    </h2>
+    
+    <p>
+        ► Implemented and tested many signal processing algorithms and applications using Matlab. Some required initial design and research. Few examples:
+    </p>
+    <ul>
+        <li>
+            Digital image processing (e.g. transforms, filters, point operations, JPEG coding). 
+        </li>
+        <li>
+            Pattern recognition, multimedia indexing and retrieval techniques.
+        </li>
+    </ul>
+</div>
 
-<h1>
-    Services and protocols engineering
-</h1>
-
-<p>
-    ► Analysed performance and security flaws in an existent P2P based set of protocols for 3D data streaming within the research community. Then, proposed fixes. Throughout the subject, elaborated explanatory presentations and research papers. It was purely individual work.
-</p>
-
-<h1>
-    Digital image processing, Audio and video signal processing, Signal recognition techniques
-</h1>
-
-<p>
-    ► Implemented and tested many signal processing algorithms and applications using Matlab. Some required initial design and research. Few examples:
-</p>
-<ul>
-    <li>
-        Digital image processing (e.g. transforms, filters, point operations, JPEG coding). 
-    </li>
-    <li>
-        Pattern recognition, multimedia indexing and retrieval techniques.
-    </li>
-</ul>
-
-<h1>
-    Telecommunications networks and services
-</h1>
-
-<p>
-    ► Learnt Object Oriented Programming (OOP) using Java. (Classes, interfaces, inheritance, polymorphism, exceptions, etc.)
-</p>
-<p>
-    ► Implemented and tested a protocol stack for communicating files through Internet following a client-server framework. Tools/skills employed: Java, Eclipse, bug finding. Led the project within a team of 3 people. 
-</p>
-
-
-
-<h1>
-    Projects
-</h1>
-
-<p>
-    ► Simulated real project in which there are 5 teams of 5 people and each team acts as an enterprise. Was part of the promoting team and applied for example the following skills: presenting, interfacing other teams, document elaboration and revision, planning (using Microsoft Project) and budget analysis.
-</p>
-
-
-<h1>
-    Computer animation and image synthesis
-</h1>
-
-<p>
-    ► Designed and implemented a virtual reality adventure within a 3D world of two scenarios. Team of 2 people. Tools employed: VRML (Virtual Reality Modelling Language), JavaScript and others (Gimp, Milkshape, Cortona3D viewer).
-</p>
-
-<h1>
-    Programming
-</h1>
-
-<p>
-    ► Initiated for first time to programming, using C (functional programming). Basic concepts, maybe the most complex topics covered here were module assembly, abstract data types and basic data structures and algorithms (quicksort, linked lists, trees, stacks, etc.). Two projects delivered. Tools used: C, GCC, Crimson Editor, VisualStudio C++.
-</p>
+<div>
+    <h2 id="telco-networks">
+        Telecommunications networks and services
+    </h2>
+    
+    <p>
+        ► Learnt Object Oriented Programming (OOP) using Java. (Classes, interfaces, inheritance, polymorphism, exceptions, etc.)
+    </p>
+    <p>
+        ► Implemented and tested a protocol stack for communicating files through Internet following a client-server framework. Tools/skills employed: Java, Eclipse, bug finding. Led the project within a team of 3 people. 
+    </p>
+</div>
 
 
-<h1>
-    Other activities by own initiative
-</h1>
+<div>
+    <h2 id="projects">
+        Projects
+    </h2>
+    
+    <p>
+        ► Simulated real project in which there are 5 teams of 5 people and each team acts as an enterprise. Was part of the promoting team and applied for example the following skills: presenting, interfacing other teams, document elaboration and revision, planning (using Microsoft Project) and budget analysis.
+    </p>
+</div>
 
-<p>
-    ► Learnt about the tool Jira, an issue tracking and collaboration tool. Evaluated its features and options (e.g. Scrum and Kanban dashboards, issue types, user management).
-</p>
-<p>
-    ► Learnt about software testing. Learnt about device quality assurance and quality control techniques.
-</p>
-<p>
-    ► Learnt about the IDE Qt. Learnt how to develop using Qt Widgets or Qt Quick, and how to cross-compile with it.
-</p>
-<p>
-    ► Learnt HTML (version 4 and 5) for developing web pages.
-</p>
-<p>
-    ► Learnt CSS3 for developing web pages and customizing user interfaces.
-</p>
-<p>
-    ► Learnt about Android and Tizen, and how to develop for these operating systems (e.g. knowing their programming approaches, their SDKs).
-</p>
-<p>
-    ► Learnt basics of EPICS (Experimental Physics and Industrial Control System).
-</p>
-<p>
-    ► Learnt about C# and .NET.
-</p>
-<p>
-    ► Studied content delivering networks (CDNs) over controlled (IPTV) and non-controlled (OTT) environments.
-</p>
-<p>
-    ► Learnt about the Live555 software library.
-</p>
-<p>
-    ► Learnt about the specification ONVIF (Open Network Video Interface Forum), which is commonly deployed in IP-based video surveillance products.
-</p>
-<p>
-    ► Studied the Material eXchange Format (MXF), which is currently very widespread along multimedia asset management (MAM) systems.
-</p>
+<div>
+    <h2 id="animation-image">
+        Computer animation and image synthesis
+    </h2>
+    
+    <p>
+        ► Designed and implemented a virtual reality adventure within a 3D world of two scenarios. Team of 2 people. Tools employed: VRML (Virtual Reality Modelling Language), JavaScript and others (Gimp, Milkshape, Cortona3D viewer).
+    </p>
+</div>
+
+<div>
+    <h2 id="programming">
+        Programming
+    </h2>
+    
+    <p>
+        ► Initiated for first time to programming, using C (functional programming). Basic concepts, maybe the most complex topics covered here were module assembly, abstract data types and basic data structures and algorithms (quicksort, linked lists, trees, stacks, etc.). Two projects delivered. Tools used: C, GCC, Crimson Editor, VisualStudio C++.
+    </p>
+</div>
+
 
 </div>
