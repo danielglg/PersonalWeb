@@ -9,7 +9,5 @@ export class PaymentsAcquiringComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    alert("The webpage you are accessing is still under development; however you are allowed to see ongoing work.");
-  }
+  ngOnInit(): void {}
 }
