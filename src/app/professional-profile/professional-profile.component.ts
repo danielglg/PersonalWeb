@@ -46,8 +46,6 @@ export class ProfessionalProfileComponent implements OnInit {
       }
     );
 
-    alert("The webpage you are accessing is still under development; however you are allowed to see ongoing work.");
-
   }
 
   showModalDialog() {
