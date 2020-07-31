@@ -14,11 +14,41 @@
 <div class="content">
 
 <h1 id="proj-top-table">Embedded systems</h1>
+<p>
+    An <a href="https://en.wikipedia.org/wiki/Embedded_system"  target="_blank">embedded system</a>
+    is a computer system (combination of a computer processor, computer memory, and input/output peripheral devices)
+    that has a dedicated function within a larger system.
+</p>
 
 <h2 id="platforms">Processing platforms</h2>
-DSP, GPP, FPGA
-
-
+<p>
+    The main processing platform types used in the projects presented next are:
+</p>
+<ul>
+    <li>
+        GPP (<a href="https://en.wikipedia.org/wiki/Microprocessor"  target="_blank">General-Purpose Processor</a>):
+        multipurpose computer processor, optimized for generic tasks and none in particular.
+    </li>
+    <li>
+        DSP (<a href="https://en.wikipedia.org/wiki/Digital_signal_processor"  target="_blank">Digital Signal Processor</a>):
+        specialized microprocessor chip, with its architecture optimized for the operational needs of digital signal processing.
+    </li>
+    <li>
+        FPGA (<a href="https://en.wikipedia.org/wiki/Field-programmable_gate_array"  target="_blank">Field-Programmable Gate Array</a>):
+        integrated circuit designed whose logic can configured after manufacturing using a hardware description language (HDL);
+        some support reprogrammability.
+    </li>
+</ul>
+<p>
+    Other platform types like 
+    <a href="https://en.wikipedia.org/wiki/Microcontroller"  target="_blank">microcontrollers</a> and
+    <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit"  target="_blank">graphics processing units</a> (GPUs)
+    have been at least studied too.
+</p>
+<p>
+    For simplicity, in this page the focus is placed on the processing platforms and other projects in electronics are not mentioned
+    even if such topics can be interesting in the area of embedded systems.
+</p>
 
 
 <h1>Projects</h1>
@@ -30,7 +60,9 @@ DSP, GPP, FPGA
 </p>
 <ul>
     <li>
-        Designed, implemented, simulated and analysed system units and their verification testbenches using VHDL and Modelsim. Evaluated the whole system (it comprises BCD counter, frequency divider, display encoder and synchro) and later, synthesised and prototyped on the FPGA of the DE2-70 board (Terasic, Altera) using Quartus II.
+        Designed, implemented, simulated and analysed system units and their verification testbenches using VHDL and Modelsim. Evaluated the whole system (it comprises BCD counter, frequency divider, display encoder and synchro) and later, synthesised and prototyped on the FPGA of the
+        <a href="https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=53&No=226,&PartNo=1"  target="_blank">DE2-70</a>
+        board (Terasic, Altera) using Quartus II.
     </li>
     <li>
         Carried out functional verification and testbench design of a synchronous system using VHDL and Modelsim. Functions, procedures assertion and file management were required. Later, a peripheral (image filter) was analyzed and verified using the same skills.
@@ -55,19 +87,32 @@ DSP, GPP, FPGA
     </li>
 
 </ul>
+<img src="assets/img/projects/Embedded_Terasic_DE2-70.jpg" alt="Image: DE2-70 board described.">
 
 
 <h2 id="gpp_dsp">Advanced digital architectures</h2>
 
 <p>
-    ► Configured, built (cross-compilation) and booted a Linux Kernel on the BeagleBoard. Compatible X-loader, U-boot and Linux Kernel images were generated; the SD card was set up with a bootable partition and a file system partition.
+    ► Configured, built (cross-compilation) and booted a Linux Kernel on the
+    <a href="https://beagleboard.org/beagleboard"  target="_blank">BeagleBoard</a>.
+    Compatible X-loader, U-boot and Linux Kernel images were generated; the SD card was set up with a bootable partition and a file system partition.
 </p>
 <p>
-    ► Acquired, processed and generated signals on the DSK6713 (board with Texas Instruments DSP). The McBSP (serial port) was controlled by managing timers, interrupts and handles; for that, Code Composer Studio v3, DSP/BIOS, the Chip Support Library and the Board Support Library (C language interfaces) were employed. Optimized libraries were employed for the processing. 
+    ► Acquired, processed and generated signals on the
+    <a href="http://c6000.spectrumdigital.com/dsk6713/revc/"  target="_blank">DSK6713</a>
+    (Spectrum Digital and Texas Instruments, contains DSP from the latter).
+    The McBSP (serial port) was controlled by managing timers, interrupts and handles; for that, Code Composer Studio v3, DSP/BIOS, the Chip Support Library and the Board Support Library (C language interfaces) were employed. Optimized libraries were employed for the processing. 
 </p>
 <p>
     ► Established data communications between the GPP and DSP of the BeagleBoard (it is necessary to install the DSPLINK driver and use message queues and shared memory for the communication). 
 </p>
+
+<div class="img-container">
+    <img src="assets/img/projects/Embedded_BeagleBoard.jpg" alt="Image: BeagleBoard board described.">
+    <img src="assets/img/projects/Embedded_DSK6713.JPG" alt="Image: DSK6713 board described.">
+</div>
+
+
 
 
 
@@ -87,7 +132,9 @@ DSP, GPP, FPGA
     ►The project carried out within the thesis mainly aims to adapt an automated development environment for multicore GPPs to include automation for multicore DSP-based platforms too. The automated development environment converts the configuration and the description of the algorithms in CAL and XML languages to a target code structure in a specific language (C/C++/C#, Java, VHDL, etc.) that can be organised later into an integrated development environment (IDE) project with CMake. This automated development environment has been always since its origin ongoing research and development, so it was necessary to keep up with all the continuous updates.
 </p>
 <p>
-    ► Studied target processing platforms (PC, ARM within PandaBoard, DM6437 EVM from Texas Instruments). 
+    ► Studied target processing platforms (PC, ARM within
+    <a href="https://en.wikipedia.org/wiki/PandaBoard"  target="_blank">PandaBoard</a>,
+    <a href="http://c6000.spectrumdigital.com/evmdm6437/reve/"  target="_blank">DM6437 EVM</a> from Texas Instruments and Spectrum Digital). 
 </p>
 <p>
     ► Studied video specifications, focusing on H.265 (HEVC) and Reconfigurable Video Coding (RVC). H.265 was endorsed as standard during the execution of the project.
@@ -134,5 +181,21 @@ DSP, GPP, FPGA
     ► Generated comprehensible reference documentation.
 </p>
 
+<p>
+    Available for download:
+</p>
+<ul>
+    <li>
+        <a href="https://drive.google.com/file/d/14zMg6r5DhlUySI86z3LBHD8UU940EzVv/view?usp=sharing"  target="_blank">Memory of the project (English).</a>
+    </li>
+    <li>
+        <a href="https://drive.google.com/file/d/1qAuCEgAosDMTWSHG1aUkwYdqxlkf7NRC/view?usp=sharing"  target="_blank">Presentation slides (Spanish).</a>
+    </li>
+</ul>
+
+<div class="img-container">
+    <img src="assets/img/projects/Embedded_PandaBoard.png" alt="Image: PandaBoard board described.">
+    <img src="assets/img/projects/Embedded_DM6437-EVM.jpg" alt="Image: DM6437 EVM board described.">
+</div>
 
 </div>
