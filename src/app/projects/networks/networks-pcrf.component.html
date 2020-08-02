@@ -5,7 +5,6 @@
   <a [routerLink]='"."' fragment="content-top" class="active">PCRF</a>
   <a [routerLink]='"."' fragment="introduction">What is a PCRF?</a>
   <a [routerLink]='"."' fragment="problem">The problem: context & objectives</a>
-  <a [routerLink]='"."' fragment="areas">Areas of activity</a>
   <a [routerLink]='"."' fragment="features">Features</a>
   <a [routerLink]='"."' fragment="keywords">Keywords</a>
 </div>
@@ -40,61 +39,135 @@
 <h2 id="problem">The problem: context & objectives</h2>
 
 <p>
-    The Ericsson Service-Aware Policy Controller (SAPC) product is conceived based on 3GPP Policy and Charging Rules Function (PCRF). SAPC is responsible for the policy control and charging rules that define the services and applications supported in mobile, fixed and converged telecom networks. SAPC is key to secure the network behavior when users access data services, such as, authorizing the services, assigning the QoS of the data-session and the Charging that shall be applied; and performs a business critical role for monetization and differentiation of operator’s mobile and converged broadband commercial packages.
+  The Ericsson Service-Aware Policy Controller (SAPC) product is conceived based on 3GPP Policy and Charging Rules Function (PCRF).
+  SAPC is responsible for the policy control and charging rules that define the services and applications supported in mobile,
+  fixed and converged telecom networks. SAPC is key to secure the network behavior when users access data services, such as,
+  authorizing the services, assigning the QoS of the data-session and the charging that shall be applied; and performs a business critical role
+  for monetization and differentiation of operator’s mobile and converged broadband commercial packages.
 </p>
 <p>
-    Being compliant with 3GPP standards, the SAPC is fully inter-operable with other network elements, including Packet Gateways (PGW, GGSN), stand-alone packet inspection nodes (DPI), Application Function (AF), User Data Repositories (UDR) and Charging Systems (CS) units.
+  Being compliant with 3GPP standards, the SAPC is fully inter-operable with other network elements, including Packet Gateways (PGW, GGSN),
+  stand-alone packet inspection nodes (DPI), Application Function (AF), User Data Repositories (UDR) and Charging Systems (CS) units.
 </p>
 
 <p>
-    The objective of the mission consists on helping Ericsson to evolve SAPC in order to adapt it to the new requirements and technologies of the market (e.g. virtualization, cloud, 5G, etc.).
+  The objective of the mission consists on helping Ericsson to evolve SAPC in order to adapt it to the new requirements and technologies of the market
+  (e.g. robustness, microservice-based architectures, virtualization, cloud, 5G, etc.).
 </p>
+<p>
+  Next, each developed feature is described, mentioning the particular context and goals of each one.
+</p>
+
+<h2 id="features">Developed features</h2>
 
 <h3>Diameter interface Rx - RxRequest AVP</h3>
 <p>
   Basically consisted on fixing an Attribute-Value-Pair (AVP) communicated through the Rx Diameter interface, which is the interface that binds SAPC and AFs.
 </p>
 
-<h3>External Database Redundancy N+N+N</h3>
-
+<h3>External Database Redundancy (N+N+N)</h3>
 <p>
-  <i style="color:red;">TODO To describe the problem of the LDAP</i>
+  SAPC interfaces with a database system called
+  <a href="https://www.ericsson.com/en/portfolio/digital-services/cloud-core/cloud-unified-data-management-and-policy/data-storage-management/centralized-user-database"  target="_blank">Centralized User Database (CUDB)</a>
+  that stores subscriber-related data (e.g. subscriber profile, policing and charging data, ...).
+  The communication with CUDB can be established via standard LDAP (Lightweight Directory Access Protocol) and SOAP (Simple Object Access Protocol).
 </p>
 <p>
-  Basically consisted on refactorizing completely the component in charge of communicating SAPC components to an LDAP database.
-  The legacy component was based on a pool of connections that could not scale and communications with LDAP server were increasingly failing.
-  In addition, the software architecture was not ready for scaling and accomplishing the management algorithm that provided much higher redundancy.
+  SAPC contains a specific component that manages the communication between SAPC and CUDB, employing LDAP.
+  The communication between this component and other SAPC components is done via remote procedure calls (RPC) constructed with technologies like
+  <a href="https://en.wikipedia.org/wiki/Apache_Thrift"  target="_blank">Thrift</a>.
 </p>
 <p>
-  <i style="color:red;">TODO To describe as achievement the improvements that I proposed for the algorithm and the SW architecture.</i>
+  Such a component relied on elementary overload protection and load regulation mechanisms that did not fit well with the higher performance demand of modern times.
+  Indeed, on the one hand, problems with customers arised occassionally, questioning its actual robustness.
+  On the other hand, supporting the flexibility and scalability expected from microservice-based cloud deployments could be hardly met.
+  As a consequence, the goal of this project was to evolute such overload protection and load regulation mechanisms in order to avoid these shortcomings.
 </p>
 <p>
-  <i style="color:red;">TODO To describe connection balancing.</i>
+  It basically consisted on designing the new mechanisms and refactorizing the component completely,
+  transforming the redundancy model supported from a 1+1+1 model to a N+N+N model.
+  1+1+1 means one CUDB instance in one node per region for 3 regions, while N+N+N means one CUDB instance in N nodes per region for 3 regions.
 </p>
-
-<h3>N+K (division in frontend and backend for scaling SAPC, increment redundancy and move towards a cloud microservice architecture)</h3>
 <p>
-  <i style="color:red;">TODO To describe the problems of the monolithic legacy application and the challanges to adapt to new times.</i>
-  <i>Talk about the automation with Swagger and the functional split, technical debt, ...</i>
+  The legacy component based on the 1+1+1 model, was based just on a pool of connections where the load balancing and overload protection logic was
+  managed at connection level. This was one fo the main reasons why the complete refactorization was required: it was hard to integrate other business
+  logic in the legacy implementation. A better software architecture was then proposed, which was able to:
 </p>
+<ul>
+  <li>Meet the current requirements of scalability, performance and robustness.</li>
+  <li>Make much easier any further evolutions like supporting M+N+P or N+N+N+N redundancy models.</li>
+  <li>Maximize the reutilization of legacy code (e.g. pipeline architecture employed for managing communication per connection).</li>
+</ul>
+<p>
+  In addition to the collaboration in the analysis, design and implementation of the solutions, I introduced other achievements to the project:
+</p>
+<ul>
+  <li>
+    Improvement of the initial load balancing algorithm proposed, minimizing innecesary jumps between regions thanks to the inclusion of
+    other particular thresholds in the algorithm.
+  </li>
+  <li>
+    Introduction of unit tests with JUnit, because there were none for this Java component.
+  </li>
+  <li>
+    Management of temporary workarounds designed to:
+    <ol>
+      <li>avoid impacts of a huge technical debt,</li>
+      <li>support the co-existence of the legacy and new solution in production code.</li>
+    </ol>
+  </li>
+</ul>
 
-<h2 id="areas">Areas of activity</h2>
 
-1 - Research, Innovation & Watch
-2 - Development
-3 - Integration, test & validation
+<h3>Split of SAPC to migrate towards microservice-based cloud deployments (N+K)</h3>
+<p>
+  SAPC is a big piece of software whose development has been carried out for more than 12 years at the time this project was handed over to the R&D team I joined.
+  At that time, SAPC was still a big monolithic application, affected by an important technical debt inherited.
+</p>
+<p>
+  Therefore, a migration towards a microservice-based cloud deployment asked for a new design, involving the split of its forming pieces,
+  something that turned to be very complex and risky. In order to work around it safely, in a first approximation the project went after:
+</p>
+<ul>
+  <li>a first separation in frontend and backend, capable of supporting a N+K redundancy model,</li>
+  <li>the minimization of dependecies with the data layer,</li>
+  <li>an access to resources by means of RESTful services.</li>
+</ul>
+<p>
+  During these first stages of the project I: 
+</p>
+<ul>
+  <li>
+    followed the project discussions (planning, analysis and design of possible solutions, ...),
+  </li>
+  <li>
+    worked in a couple of tasks consisting on automation and RESTful APIs,
+  </li>
+  <li>
+    assisted testers in building up the testing framework.
+  </li>
+</ul>
+<p>
+  The result of the automation tasks were scripts (written with CMake, Python and Bash) that automated the following principal actions:
+</p>
+<ul>
+  <li>
+    Retrieval of tool Swagger (Open API code generator) from software repository (JFrog).
+  </li>
+  <li>
+    Retrieval of SAPC Open API specification from another repository.
+  </li>
+  <li>
+    Auto-generation of C++ backend code using such tool and specification.
+  </li>
+  <li>
+    Integration of the generated files in the project so that other components can be bound against them.
+  </li>
+  <li>
+    Additional tooling (e.g. clean-up of auto-generated code and build objects, unit testing, ...).
+  </li>
+</ul>
 
-Skill Areas
-Skill Areas (up to 3)
-*
-
-1 - Digital Applications & Media - Software application development - Custom application
-2 - Networks transformation & performance - Telco Cloud & Software Defined Networking (SDN) - Network Function Virtualization (NFV) Networking
-3 - Networks transformation & performance - Telco Cloud & Software Defined Networking (SDN) - Software Defined Networking (
-
-<h2 id="features">Developed features</h2>
-
-  <i>Describe design</i>
 
 <h2 id="keywords">Keywords (tools & techniques)</h2>
 
@@ -111,14 +184,15 @@ Skill Areas (up to 3)
     <li>Bash</li>
     <li>Cmake</li>
     <li>Jenkins</li>
-    <li>UNIT TESTING</li>
-    <li>JUNIT</li>
+    <li>Unit testing</li>
+    <li>JUnit</li>
     <li>CppUnit</li>
-    <li>OPEN API</li>
+    <li>Open API</li>
     <li>Swagger</li>
     <li>Linux</li>
     <li>Mockito</li>
     <li>Google Mock</li>
+    <li>Thrift</li>
 </ul>
 
 </div>
