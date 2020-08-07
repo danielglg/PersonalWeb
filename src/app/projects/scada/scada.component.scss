@@ -7,7 +7,8 @@
 }
 
 #system-diagram-right {
-    width: 60%;
+    width: 65%;
+    text-align: center;
 }
 
 #system-instrumentation {
@@ -15,11 +16,24 @@
 }
 
 #img-instrumentation {
-    margin: 1em;
+    margin: 0.5em;
 }
 
 #diagrams-architecture {
     text-align: center;
+}
+
+#diagrams-architecture > img {
+    width:60%;
+}
+
+#img-managers-loaders {
+    display: flex;
+}
+
+#img-managers-loaders > img {
+    width: 50%;
+    padding: 1em;
 }
 
 #gui-examples {
@@ -31,33 +45,6 @@
     width: 700px;
 }
 
-#managers {
-    display: flex;
-}
-
-#managers-left {
-    width: 40%;
-}
-
-#managers-right {
-    width: 60%;
-}
-
-#loaders {
-    display: flex;
-}
-
-#loaders-left {
-    width: 40%;
-}
-
-#loaders-right {
-    width: 60%;
-}
-
-#img-right {
-    width: 550px;
-}
 
 @media screen and (max-width: 700px) {
     #system-diagram {
@@ -76,35 +63,23 @@
         flex-wrap: wrap;
     }
 
+    #diagrams-architecture > img {
+        width:100%;
+    }
+    
+    #img-managers-loaders {
+        flex-wrap: wrap;
+    }
+
+    #img-managers-loaders > img {
+        width: 100%;
+    }
+
     #gui-examples {
         flex-wrap: wrap;
     }
     
     #img-gui {
-        width: 100%;
-    }
-
-    #managers {
-        flex-wrap: wrap;
-    }
-    
-    #managers-left {
-        width: 100%;
-    }
-    
-    #managers-right {
-        width: 100%;
-    }
-    
-    #loaders {
-        flex-wrap: wrap;
-    }
-    
-    #loaders-left {
-        width: 100%;
-    }
-    
-    #loaders-right {
         width: 100%;
     }
 
@@ -131,35 +106,23 @@
         flex-wrap: wrap;
     }
 
+    #diagrams-architecture > img {
+        width:100%;
+    }
+
+    #img-managers-loaders {
+        flex-wrap: wrap;
+    }
+
+    #img-managers-loaders > img {
+        width: 100%;
+    }
+
     #gui-examples {
         flex-wrap: wrap;
     }
     
     #img-gui {
-        width: 100%;
-    }
-
-    #managers {
-        flex-wrap: wrap;
-    }
-    
-    #managers-left {
-        width: 100%;
-    }
-    
-    #managers-right {
-        width: 100%;
-    }
-    
-    #loaders {
-        flex-wrap: wrap;
-    }
-    
-    #loaders-left {
-        width: 100%;
-    }
-    
-    #loaders-right {
         width: 100%;
     }
 

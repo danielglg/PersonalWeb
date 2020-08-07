@@ -49,12 +49,13 @@
     </p>
 
     <p>
-        The aim of this project was to build an application that controls a measurement and characterization system recently developed, and meets the needs of its users. The system is based on Kerr effect to extract information from magnetic materials.
+        The aim of this project was to build an application that controls a measurement and characterization system and meets the needs of its users.
+        The system was built just before this project started and it is based on Kerr effect to extract information from magnetic materials.
     </p>
 
     <p>
-        Such application was developed with LabVIEWTM and has a modular structure that allows for future changes or additions regardless of equipment used.
-        The name given to the application implement is CAELMAG (which comes from the Spanish 'CAracterización de ELementos MAGnéticos', in English 'Characterization of magnetic elements'). 
+        Such application was developed with LabVIEW<sup>TM</sup> and has a modular structure that allows for future changes or additions regardless of equipment used.
+        The name given to the implemented application is CAELMAG (which comes from the Spanish 'CAracterización de ELementos MAGnéticos', in English 'Characterization of magnetic elements'). 
     </p>
 
     <p>
@@ -78,13 +79,13 @@
     <p>Primary requirements:</p>
 
     <ul>
-        <li>Apropriate programmation of tests parameters for trying out a sample target of the assay.</li>
+        <li>Appropriate programmation of test parameters for trying out a sample target of the assay.</li>
         <li>Data acquisition.</li>
         <li>Configuration of devices.</li>
         <li>Correct synchronization.</li>
         <li>Measure and control using the instruments involved in the test, and excite the sample target of the assay according to the programmed test parameters.</li>
         <li>Storage and retrieval of data files.</li>
-        <li>Analysis and visualization of the data resulting from tests.</li>
+        <li>Analysis and visualization of the data resulting from tests or stored in files.</li>
         <li>Deploy a 'correct' programming style.</li>
         
     </ul>
@@ -92,7 +93,7 @@
     <p>Secondary requirements:</p>
 
     <ul>
-        <li>Possibility of using the data acquired by means of other appliations.</li>
+        <li>Possibility of using the data acquired by means of other applications.</li>
         <li>Graphical user interface with an attractive and friendly design for its users.</li>
         <li>Help resources and assistants.</li>
         <li>Users management.</li>
@@ -113,39 +114,74 @@
 
     <div id="system-diagram">
         <div id="system-diagram-left">
-            <p>Description missing</p>
+            <p>The magnetic state of a material can be known by comparing the light incident on its surface with the light reflected (magneto-optic Kerr effect).</p>
+            <p>
+                The next diagram represents the system completely. To measure, it is indispensable the laser to be working. The measures are carried out taking data simulatenously
+                from the magnetic field around the sample and the magnetization state it presents. The magnetization state is obtained with the photodiode and the magnetic field
+                with a specialized meter. Both signals are acquired by an advanced data acquisition device for its computerized recording and treatment.
+            </p>
+            <p>
+                To extract characteristics from the sample it is necessary to modify its magnetic state, thing that it is achieved modifying the magnetic field around it.
+                For this purpose the system consists of two excitation sources, which can act together or individually.
+                The former is an electromagnet powered with a power source controlled by means of a signal generated with the DAQ.
+                The latter is a microstrip that produces magnetic pulses when traversed by electric pulses generated with a pulse generator.
+                The magnetic field produced by the electromagnetic has larger amplitude and changes at lower speed than the one produced with the microstrip.
+                
+
+            </p>
+            <p>
+                The method to obtain distinct magnetic pulses consists on altering the parameters of the pulse generator.
+                Such an action is performed remotely from the computer thanks to a GPIB bus.
+                However, to accurately measure the effect of the magnetic pulses, they should be synchronized with the light pulses produced with the laser.
+                This synchronization is achieved putting a delay generator in between the laser controller and the pulse generator.
+                The parameters of the delay generator are set up with the computer too, but by means of a serial cable RS-232.
+                Both the delay generator and the pulse generator are able to intersperse delays between their trigger signals and outputs.
+            </p>
+            <p>
+                Below, images of the system with its elements are provided.
+            </p>
         </div>
         <div id="system-diagram-right">
-            <img src="assets/img/projects/Scada_Characterization_system_for_magnetic_elements.jpg" alt="Diagram: system for the characterization of magnetic elements">
+            <img src="assets/img/projects/Scada_Characterization_system_for_magnetic_elements.svg" alt="Diagram: system for the characterization of magnetic elements">
         </div>
     </div>
 
     <br/>
 
     <div id="system-instrumentation">
-        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_1.jpg" alt="Photos: instrumentation">
-        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_2.jpg" alt="Photos: instrumentation">
-        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_3.jpg" alt="Photos: instrumentation">
+        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_1.png" alt="Photos: instrumentation">
+        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_2.png" alt="Photos: instrumentation">
+        <img id="img-instrumentation" src="assets/img/projects/Scada_Instrumentation_3.png" alt="Photos: instrumentation">
     </div>
     
     <h2 id="architecture">Architecture of the solution</h2>
 
     <p>
-        The solution is a modular application. The first of the next two figure shows the main modules considered based on the requirements.
-        The second figure represents the global design of the application, where modules have been organized according to their functionality.
+        The solution is a modular application. In the next two figures:
+        
     </p>
+    <ul>
+        <li>
+            The first one shows the modules created, where the most important modules are those based on the main requirements.
+        </li>
+        <li>
+            The second one represents the global design of the application from the perspective of users.
+            Users can easily orient themselves in the program thanks to the categories in which modules can be classified.
+        </li>
+    </ul>
 
     <div id="diagrams-architecture">
-        <img src="assets/img/projects/Scada_Application_modules.png" alt="Diagram: application modules">
-        <img src="assets/img/projects/Scada_Architecture_overview.jpg" alt="Diagram: architecture overview">
+        <img src="assets/img/projects/Scada_Application_modules.svg" alt="Diagram: application modules.">
+        <img src="assets/img/projects/Scada_Architecture_overview.svg" alt="Diagram: global design from user perspective.">
     </div>
 
+    <br/>
     <p>
-        The structure of CAELMAG is substantiated in a considerable amount of state machines and produced-consumer relationships distributed among components.
+        The structure of CAELMAG is substantiated in a considerable amount of state machines and producer-consumer relationships distributed among components.
     </p>
 
     <p>
-        The error detection and treament mechanisms are of undeniable value (the dependability requirement is very high), so they were taken into account when defining the architecture.
+        The error detection and treatment mechanisms are of undeniable value (the dependability requirement is very high), so they were taken into account when defining the architecture.
         The state machines, the producers and the consumers handle them following a similar behavioural pattern.
     </p>
 
@@ -155,45 +191,47 @@
 
 
     <div id="managers">
-        <div id="managers-left">
-            <p>
-                A manager carries out a set of defined actions very related among them and executes concurrently with other managers executing other independent tasks,
-            </p>
-        
-            <p>
-                Managers communicate through messages sent and received via queues (e.g. orders, errors, warnings, etc.), so a manager implies both producer and consumer behaviors.
-                When sharing data, they employ one of two mechanism depending on the need of the application: global variables and queues.
-                Global variables are used when the information shared is not big and not frequently consulted.
-                Queues are employed when the amount of information to transmit is big and very frequent.
-                Beyond these aspects, in general each manager is implemented differently based on its committed functions.
-            </p>
-        </div>
-        <div id="managers-right">
-            <img id="img-right" src="assets/img/projects/Scada_Architecture_managers.png" alt="Diagram: managers">
-        </div>
-
-    </div>
+        <p>
+            A manager carries out a set of defined actions very related among them and executes concurrently with other managers executing other independent tasks.
+        </p>
     
-    <br/>
-
+        <p>
+            Managers communicate through messages sent and received via queues (e.g. orders, errors, warnings, etc.), so a manager implies both producer and consumer behaviors.
+            When sharing data, they employ one of two mechanism depending on the need of the application: global variables and queues.
+            Global variables are used when the information shared is not big and not frequently consulted.
+            Queues are employed when the amount of information to transmit is big and very frequent.
+            Beyond these aspects, in general each manager is implemented differently based on its committed functions.
+        </p>
+        <p>
+            As example, this architecture of managers is key for the main use case of module "Conduct experiment”.
+            The DAQ manager is in charge of the administration of the data acquisition device,
+            while the delay generator manager manages delay generator equipment,
+            while the experiment manager controls the global operation of the use case,
+            and so on.
+            In other words, the set of managers running coordinately in parallel allows to perform the tasks of the use case.
+        </p>
+    </div>
     <div id="loaders">
-        <div id="loaders-left">
-            <p>
-                Loaders have the mission of executing concurrently independent pieces of software (they load and execute).
-                The number of available loaders (and then the concurrency) is limited by an structure which also incorporates a controller whose purpose is coordinating the set of loaders.
-                Controllers and loaders share data via global variables and queues too.
-            </p>
-        </div>
-        <div id="loaders-right">
-            <img id="img-right" src="assets/img/projects/Scada_Architecture_module_loaders.jpg" alt="Diagram: module loaders">
-        </div>
-        
+        <p>
+            Loaders have the mission of executing concurrently independent pieces of software (they load and execute).
+            The number of available loaders (and then the concurrency) is limited by an structure which also incorporates a controller whose purpose is coordinating the set of loaders.
+            Controllers and loaders share data via global variables and queues too.
+            In the application, a manager can only be executed in the context of a loader.
+        </p>
+    </div>
+    <div id="img-managers-loaders">
+        <img src="assets/img/projects/Scada_Architecture_managers.svg" alt="Diagram: managers">
+        <img src="assets/img/projects/Scada_Architecture_module_loaders.png" alt="Diagram: module loaders">
     </div>
     
     
     
 
     <h2 id="gui">Graphical user interface</h2>
+
+    <p>
+        The following images are examples of views of the user interface: the main menu of the application and the virtual instrument corresponding to the delay generator.
+    </p>
 
     <div id="gui-examples">
         <div id="gui-examples-left">
@@ -208,8 +246,27 @@
 
     <h2 id="achievements">Achievements</h2>
 
-    <i style="color: red;">TODO</i>
+    <ul>
+        <li>Fulfillment of all the requirements of the application.</li>
+        <li>Huge reduction of the time required to experiment with the system, improving the efficiency and costs of researchers.</li>
+        <li>Detection of limitations whose origin is in the equipmet employed.</li>
+        <li>Highly maintaianble application.</li>
+        <li>Noise analysis of the the signals acquired and their partial correction with digital filters.</li>
+        <li>Recognition by National Instruments with award.</li>
+    </ul>
 
-    </div>
+    <h2 id="keywords">Keywords</h2>
+    <ul>
+        <li>LabVIEW</li>
+        <li>SCADA</li>
+        <li>Data acquisition</li>
+        <li>Virtual instrumentation</li>
+        <li>Laboratory equipment</li>
+        <li>Software architecture</li>
+        <li>Signal processing</li>
+        <li>TDMS file format</li>
+        <li>Magnetism</li>
+        <li>MOKE (Magnetic-Optic Kerr Effect)</li>
+    </ul>
     
 </div>
