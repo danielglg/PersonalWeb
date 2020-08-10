@@ -41,9 +41,9 @@ export class AboutComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    alert("The website you are accessing is still under development; however you are allowed to see ongoing work.\n\n" +
-          "Visualization on desktop/laptop screens is recommended, but you can safely visualize in other mobile devices too.\n\n" +
-          "Disclaimer: the information provided has been reviewed to keep confidential sensitive information of third parties."
+    alert("The website you are accessing is still under development; however you are allowed to see the most current state published.\n\n" +
+          "Visualization on desktop/laptop screens is recommended, but in general you can safely visualize in other mobile devices too.\n\n" +
+          "Disclaimer: the information provided has been reviewed to keep sensitive information of third parties confidential."
       );
 
     this.timerId = setInterval( () => {this.changeAttentionGetter()} , 3000);
