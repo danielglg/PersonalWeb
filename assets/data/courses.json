@@ -1,134 +1,191 @@
 [
     {
+        "title" : "Tactics and Tools for Troubleshooting Front-end Web Development.",
+        "date" : "05/2020",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
+    },
+    {
+        "title" : "CSS: Using Flexbox for Layout.",
+        "date" : "05/2020",
+        "timespan" : "(2h.)",
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
+    },
+    {
         "title" : "Angular Best Practices.",
         "date" : "04/2020",
         "timespan" : "(2h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
     },
     {
         "title" : "How to Start and Run A Consulting Business.",
         "date" : "04/2020",
         "timespan" : "(3h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Career"
     },
     {
         "title" : "Natural Language Processing (NLP).",
         "date" : "02/2020",
         "timespan" : "(16h.)",
-        "provider" : "Altran, Madrid"
+        "provider" : "Altran, Madrid",
+        "category" : "Technology"
     },
     {
         "title" : "Introduction to Banking.",
         "date" : "01/2020",
         "timespan" : "(21h.)",
-        "provider" : "Altran, online."
+        "provider" : "Altran, online.",
+        "category" : "Technology"
     },
     {
         "title" : "Automating Networks with Python.",
         "date" : "09/2019",
         "timespan" : "(4h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
     },
     {
         "title" : "Security for Hackers and Developers: Fuzzing.",
         "date" : "06/2019",
         "timespan" : "(2h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
     },
     {
         "title" : "Payment Card Security, Processing, and the PCI Standards.",
         "date" : "06/2019",
         "timespan" : "(2h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
     },
     {
         "title" : "Security for Hackers and Developers: Overview",
         "date" : "07/2019",
         "timespan" : "(+3h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
     },
     {
         "title" : "Managing Technical Professionals.",
         "date" : "07/2019",
         "timespan" : "(3h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Career"
     },
     {
         "title" : "Spring Fundamentals.",
         "date" : "03/2019",
         "timespan" : "(3h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
     },
     {
-        "title" : "MongoDB; Amadeus Cloud Services.",
+        "title" : "Amadeus Cloud Services.",
         "date" : "4Q, 2018",
-        "timespan" : "",
-        "provider" : "Amadeus, Madrid."
+        "timespan" : "(1d.)",
+        "provider" : "Amadeus, Madrid.",
+        "category" : "Technology"
+    },
+    {
+        "title" : "MongoDB.",
+        "date" : "4Q, 2018",
+        "timespan" : "(1.5d.)",
+        "provider" : "Amadeus, Madrid.",
+        "category" : "Technology"
     },
     {
         "title" : "WebAPI Design.",
         "date" : "05/2018",
         "timespan" : "(2h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
     },
     {
-        "title" : "Developer to Architect; Building Trust and Commitment on Your Team.",
+        "title" : "Building Trust and Commitment on Your Team.",
         "date" : "05/2018",
-        "timespan" : "(4h.)",
-        "provider" : "Pluralsight, online."
+        "timespan" : "(1h.)",
+        "provider" : "Pluralsight, online.",
+        "category" : "Career"
+    },
+    {
+        "title" : "The Hidden Secrets of Technology Careers.",
+        "date" : "05/2018",
+        "timespan" : "(3h.)",
+        "provider" : "Pluralsight, online.",
+        "category" : "Career"
+    },
+    {
+        "title" : "Developer to Architect.",
+        "date" : "05/2018",
+        "timespan" : "(3h.)",
+        "provider" : "Pluralsight, online.",
+        "category" : "Career"
     },
     {
         "title" : "Docker (Deep Dive; Networking; DevOps Automated Workflows).",
         "date" : "05/2018",
         "timespan" : "(10h.)",
-        "provider" : "Pluralsight, online."
+        "provider" : "Pluralsight, online.",
+        "category" : "Technology"
     },
     {
         "title" : "Continuous integration with Jenkins.",
         "date" : "04/2017",
         "timespan" : "(16h.)",
-        "provider" : "Altran, Madrid."
+        "provider" : "Altran, Madrid.",
+        "category" : "Technology"
     },
     {
         "title" : "Continuous Integration (for project managers).",
         "date" : "09/2016",
         "timespan" : "(5h.)",
-        "provider" : "Altran, Madrid."
+        "provider" : "Altran, Madrid.",
+        "category" : "Technology"
     },
     {
         "title" : "French.",
         "date" : "2013 - 2017",
         "timespan" : "(4y.)",
-        "provider" : "Official School of Languages Moratalaz, Madrid."
+        "provider" : "Official School of Languages Moratalaz, Madrid.",
+        "category" : "Language"
     },
     {
         "title" : "English Immersion Course.",
         "date" : "2014",
         "timespan" : "(40h./5d.)",
-        "provider" : "International University Menéndez Pelayo, Seville (Spain)"
+        "provider" : "International University Menéndez Pelayo, Seville (Spain)",
+        "category" : "Language"
     },
     {
         "title" : "English Immersion Course.",
         "date" : "2012",
         "timespan" : "(40h./5d.)",
-        "provider" : "International University Menéndez Pelayo, Seville (Spain)"
+        "provider" : "International University Menéndez Pelayo, Seville (Spain)",
+        "category" : "Language"
     },
     {
         "title" : "Multimedia Indexing and Retrieval.",
         "date" : "2012",
         "timespan" : "(45h./10d.)",
-        "provider" : "Télécom ParisTech, Paris (France)."
+        "provider" : "Télécom ParisTech, Paris (France).",
+        "category" : "Technology"
     },
     {
         "title" : "German course.",
         "date" : "2011",
         "timespan" : "(75h./23d.)",
-        "provider" : "ActiLingua Academy, Vienna (Austria)."
+        "provider" : "ActiLingua Academy, Vienna (Austria).",
+        "category" : "Language"
     },
     {
         "title" : "German",
         "date" : "2002 - 2006",
         "timespan" : "(4y.)",
-        "provider" : "Official School of Languages Moratalaz, Madrid."
+        "provider" : "Official School of Languages Moratalaz, Madrid.",
+        "category" : "Language"
     }
 ]
