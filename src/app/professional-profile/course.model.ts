@@ -6,7 +6,8 @@ export class Course {
         public title: string,
         public date: number,
         public timespan: string,
-        public provider: string
+        public provider: string,
+        public category: string
       ) {}
 }
 
@@ -19,7 +20,8 @@ export class Course {
         object.title,
         object.date,
         object.timespan,
-        object.provider
+        object.provider,
+        object.category
       );
     }
   }
