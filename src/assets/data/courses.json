@@ -1,5 +1,12 @@
 [
     {
+        "title" : "Payment Academy.",
+        "date" : "12/2020",
+        "timespan" : "(1w.)",
+        "provider" : "Amadeus, online.",
+        "category" : "Technology"
+    },
+    {
         "title" : "Tactics and Tools for Troubleshooting Front-end Web Development.",
         "date" : "05/2020",
         "timespan" : "(2h.)",
