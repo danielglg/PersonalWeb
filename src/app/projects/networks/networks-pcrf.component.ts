@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-proj-networks-pcrf',
+  standalone: false,
   templateUrl: './networks-pcrf.component.html',
   styleUrls: ['./networks-pcrf.component.scss', '../../../assets/common_styles/projects.scss'],
 })

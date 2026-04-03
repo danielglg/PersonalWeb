@@ -8,6 +8,7 @@ import { SkillCategory } from './skill-categories.model'
 
 @Component({
   selector: 'app-professional-profile',
+  standalone: false,
   templateUrl: './professional-profile.component.html',
   styleUrls: ['./professional-profile.component.scss', '../../assets/common_styles/projects.scss'],
   providers: [

@@ -5,6 +5,7 @@ import { Degree, Subject } from './../degree.model'
 
 @Component({
   selector: 'app-education',
+  standalone: false,
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss'],
   providers: [

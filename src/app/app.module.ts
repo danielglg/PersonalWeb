@@ -3,16 +3,20 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import Material from '@primeuix/themes/material';
 
 import {MenubarModule} from 'primeng/menubar';
 import {ChartModule} from 'primeng/chart';
 import {CarouselModule} from 'primeng/carousel';
+import { providePrimeNG } from 'primeng/config';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { AboutComponent } from './about/about.component';
+import { ContactModule } from './contact/contact.module';
+import { ProfessionalProfileModule } from './professional-profile/professional-profile.module';
 
 // Projects
 import { PaymentsComponent } from './projects/payments/payments.component';
@@ -52,11 +56,19 @@ import { OthersComponent } from './projects/others/others.component';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    ContactModule,
+    ProfessionalProfileModule,
     MenubarModule,
     ChartModule,
     CarouselModule,
   ],
-  providers: [],
+  providers: [
+    providePrimeNG({
+      theme: {
+        preset: Material
+      }
+    })
+  ],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

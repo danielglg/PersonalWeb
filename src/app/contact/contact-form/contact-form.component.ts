@@ -5,6 +5,7 @@ import { MailService } from './mail.service';
 
 @Component({
   selector: 'app-contact-form',
+  standalone: false,
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss'],
 })
