@@ -29,9 +29,9 @@
 <p-toast [style]="{marginTop: '0px'}"></p-toast>
 
 <p-panel id="goal">
-    <p-header>
-        <span class="ui-panel-title">CAREER GOAL</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">CAREER GOAL</span>
+    </ng-template>
     Primary: Become a reference in payment technologies to be able to lead innovative projects within this area in any industry.
     <br>
     Secondary: Evolve innovative engineering systems and services by combining multimedia, electronic and telematic technologies.
@@ -39,33 +39,33 @@
 <br/>
 
 <p-panel id="education">
-    <p-header>
-        <span class="ui-panel-title">MAIN EDUCATION</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">MAIN EDUCATION</span>
+    </ng-template>
     <app-education></app-education>
 </p-panel>
 <br/>
 
 <p-panel id="experience">
-    <p-header>
-        <span class="ui-panel-title">PROFESSIONAL EXPERIENCE</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">PROFESSIONAL EXPERIENCE</span>
+    </ng-template>
     <app-professional-experience></app-professional-experience>
 </p-panel>
 <br/>
 
 <p-panel id="languages">
-    <p-header>
-        <span class="ui-panel-title">LANGUAGES</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">LANGUAGES</span>
+    </ng-template>
     <app-languages></app-languages>
 </p-panel>
 <br/>
 
 <p-panel id="awards">
-    <p-header>
-        <span class="ui-panel-title">AWARDS</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">AWARDS</span>
+    </ng-template>
     <div class="award-content">
         <div class="award-content-left">
             <h3>“Best End-of-Degree Project with National Instruments technologies”</h3>
@@ -216,9 +216,9 @@
 <br/>
 
 <p-panel id="tools">
-    <p-header>
-        <span class="ui-panel-title">SOFTWARE ENGINEERING TOOLS</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">SOFTWARE ENGINEERING TOOLS</span>
+    </ng-template>
     <p-accordion [multiple]="false">
         @for (category of softwareEngSkills; track category.category; let idx = $index) {
             <p-accordion-panel value="{{idx}">
@@ -272,9 +272,9 @@
 <br/>
 
 <p-panel id="courses">
-    <p-header>
-        <span class="ui-panel-title">COMPLEMENTARY COURSES</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">COMPLEMENTARY COURSES</span>
+    </ng-template>
     <div class="courseList">
         <p-table [value]="courses">
             <ng-template pTemplate="header">
@@ -299,21 +299,30 @@
 <br/>
 
 <p-panel id="participation">
-    <p-header>
-        <span class="ui-panel-title">ACTIVE PARTICIPATION</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">ACTIVE PARTICIPATION</span>
+    </ng-template>
     <div class="participation-categories">
-        <p-card header="Volunteering" class="participation-category">
+        <p-card class="participation-category">
+            <ng-template #header>
+                <span class="panel-title">Volunteering</span>
+            </ng-template>
             <a href="https://www.best.eu.org/" target="_blank">
                 <p>Board of European Students of Technology (BEST, “alumnus”):</p>
             </a>
             <p>Main organizer of course, international delegate, international participant, organization development support, events, networking and training.</p>
 
         </p-card>
-        <p-card header="Fairs/Events" class="participation-category">
+        <p-card class="participation-category">
+            <ng-template #header>
+                <span class="panel-title">Fairs/Events</span>
+            </ng-template>
             Intel Software Summit, Red Innova
         </p-card>
-        <p-card header="Competitions" class="participation-category">
+        <p-card class="participation-category">
+            <ng-template #header>
+                <span class="panel-title">Competitions</span>
+            </ng-template>
             ActúaUPM, Satelec, Hack The Crisis Norway
         </p-card>
     </div>
@@ -321,9 +330,9 @@
 <br/>
 
 <p-panel id="additional">
-    <p-header>
-        <span class="ui-panel-title">ADDITIONAL DATA</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">ADDITIONAL DATA</span>
+    </ng-template>
     <b>Driving license:</b> European B license (full clean).
     <br>
     <b>Willingness to travel:</b> yes (internationally when required).

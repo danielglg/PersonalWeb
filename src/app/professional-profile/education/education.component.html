@@ -1,9 +1,9 @@
 
 <!-- Master degree -->
 <p-panel>
-    <p-header>
-        <span class="ui-panel-title" *ngIf="masterDegree">{{masterDegree.title}}.</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title" *ngIf="masterDegree">{{masterDegree.title}}.</span>
+    </ng-template>
     <div class="degree">
         <div class="degree-details">
             <div class="degree-details-top">
@@ -46,9 +46,9 @@
 
 <!-- Bachelor degree -->
 <p-panel>
-    <p-header>
-        <span class="ui-panel-title" *ngIf="bachelorDegree">{{bachelorDegree.title}}</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title" *ngIf="bachelorDegree">{{bachelorDegree.title}}</span>
+    </ng-template>
     <div class="degree">
         <div class="degree-details">
             <div class="degree-details-top">

@@ -47,7 +47,6 @@ import { EducationComponent } from './education/education.component';
   ],
   providers: [
     MessageService
-  ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  ]
 })
 export class ProfessionalProfileModule { }
