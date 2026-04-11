@@ -3,7 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import Material from '@primeuix/themes/material';
+import NovaLikePreset from './theme/nova-like.preset';
 
 import {MenubarModule} from 'primeng/menubar';
 import {ChartModule} from 'primeng/chart';
@@ -65,7 +65,10 @@ import { OthersComponent } from './projects/others/others.component';
   providers: [
     providePrimeNG({
       theme: {
-        preset: Material
+        preset: NovaLikePreset,
+        options: {
+          darkModeSelector: false
+        }
       }
     })
   ],
