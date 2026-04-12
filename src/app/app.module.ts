@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactModule } from './contact/contact.module';
 import { ProfessionalProfileModule } from './professional-profile/professional-profile.module';
 
@@ -37,6 +38,7 @@ import { OthersComponent } from './projects/others/others.component';
     TopBarComponent,
     TopMenuComponent,
     AboutComponent,
+    NotFoundComponent,
 
     // Projects
     PaymentsComponent,
