@@ -45,7 +45,15 @@
 }
 
 .story-content-left {
+    flex: 1 1 auto;
+    min-width: 0;
     padding-right: 2.5em;
+}
+
+.story-content-right {
+    flex: 0 0 clamp(280px, 32vw, 460px);
+    width: 100%;
+    max-width: 460px;
 }
 
 .evidence-image {
@@ -106,6 +114,16 @@ p.about-short {
         flex-wrap: wrap;
     }
 
+    .story-content-left,
+    .story-content-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .story-content-left {
+        padding-right: 0;
+    }
+
     .charts-row {
         flex-wrap: wrap;
     }
@@ -137,6 +155,16 @@ p.about-short {
 
     .story-content {
         flex-wrap: wrap;
+    }
+
+    .story-content-left,
+    .story-content-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .story-content-left {
+        padding-right: 0;
     }
 
     .charts-row {
