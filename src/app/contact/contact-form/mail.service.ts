@@ -5,7 +5,6 @@ import { HttpErrorResponse } from '@angular/common/http';
 
 import { Observable } from "rxjs";
 import { catchError } from 'rxjs/operators';
-import { tap } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 
 import { environment } from './../../../environments/environment';
@@ -31,20 +30,13 @@ export class MailService {
 
   /**
    * Send the information introduced in the form by e-mail.
-   * TODO: does not handle errors, implement it. Parts commented and handleError method provide guidance.
    */
-  sendMail(message: Message) { // : Observable<any>
-
-    return this.http.post(this.mailServiceUrl, message, httpOptions).subscribe();
-
-    // TODO: provide error handling. Subscribing is necessary for sending the POST message,
-    // pending how to bind subscribe and pipe for calling the error handler.
-    //.pipe(
-    //  tap(val => console.log(`BEFORE catchError: ${val}`)),
-    //  catchError(this.handleError),
-    //  tap(val => console.log(`AFTER catchError: ${val}`))
-    //);
-
+  sendMail(message: Message): Observable<void> {
+    return this.http
+      .post<void>(this.mailServiceUrl, message, httpOptions)
+      .pipe(
+        catchError(this.handleError)
+      );
   }
 
   private handleError(error: HttpErrorResponse) {
@@ -61,8 +53,7 @@ export class MailService {
         `body was: ${error.error}`);
     }
     // return an observable with a user-facing error message
-    return throwError(
-      'Something bad happened; please try again later.');
+    return throwError(() => new Error('Something bad happened; please try again later.'));
   };
 
 }
