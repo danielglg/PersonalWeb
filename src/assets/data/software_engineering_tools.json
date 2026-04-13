@@ -260,11 +260,19 @@
                 "level": "M"
             },
             {
+                "name": "Sentinel",
+                "level": "M"
+            },
+            {
                 "name": "JFrog",
                 "level": "L"
             },
             {
                 "name": "Buildbot",
+                "level": "L"
+            },
+            {
+                "name": "Grafana",
                 "level": "L"
             }
         ]
@@ -379,6 +387,39 @@
         ]
     },
     {
+        "category": "Project Management",
+        "skills": [
+            {
+                "name": "Agile ()",
+                "level": "H"
+            },
+            {
+                "name": "Jira",
+                "level": "H"
+            },
+            {
+                "name": "Confluence",
+                "level": "H"
+            },
+            {
+                "name": "Win@pproach",
+                "level": "M"
+            },
+            {
+                "name": "Microsoft Project",
+                "level": "M"
+            },
+            {
+                "name": "Doxygen",
+                "level": "H"
+            },
+            {
+                "name": "Modelio",
+                "level": "L"
+            }
+        ]
+    },
+    {
         "category": "Operating systems and middleware",
         "skills": [
             {
@@ -444,10 +485,6 @@
             {
                 "name": "Slack",
                 "level": "H"
-            },
-            {
-                "name": "Grafana",
-                "level": "M"
             }
         ]
     }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-top-bar',
+  standalone: false,
   templateUrl: './top-bar.component.html',
   styleUrls: ['./top-bar.component.scss']
 })

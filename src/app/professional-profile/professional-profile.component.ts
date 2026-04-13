@@ -8,6 +8,7 @@ import { SkillCategory } from './skill-categories.model'
 
 @Component({
   selector: 'app-professional-profile',
+  standalone: false,
   templateUrl: './professional-profile.component.html',
   styleUrls: ['./professional-profile.component.scss', '../../assets/common_styles/projects.scss'],
   providers: [
@@ -34,10 +35,11 @@ export class ProfessionalProfileComponent implements OnInit {
       );
 
     this.courseTablecols = [
-      { field: 'date', header: 'Date', width: '10%' },
-      { field: 'timespan', header: 'Duration', width: '10%' },
-      { field: 'title', header: 'Name', width: '45%' },
-      { field: 'provider', header: 'Provider', width: '35%' }
+      { field: 'date', header: 'Date', width: '8%' },
+      { field: 'timespan', header: 'Duration', width: '8%' },
+      { field: 'title', header: 'Name', width: '42%' },
+      { field: 'provider', header: 'Provider', width: '32%' },
+      { field: 'category', header: 'Category', width: '10%' }
     ];
 
     this.profileService.getSoftwareEngineeringSkills()

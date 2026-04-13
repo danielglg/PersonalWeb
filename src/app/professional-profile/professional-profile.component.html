@@ -20,49 +20,52 @@
 
 
 <br>
-<a href="/" target="_blank">
+<a href="https://drive.google.com/file/d/1fQraSS5hwRFm5yAy3Ycav-K_pdvczhAp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
     Click here to download a generic version.
 </a>
-<p>Updated: date (please download the generic version with above link, the content of the page is not mature enough yet)</p>
+<p>Updated: 7th February 2021</p>
+
 
 <p-toast [style]="{marginTop: '0px'}"></p-toast>
 
 <p-panel id="goal">
-    <p-header>
-        <span class="ui-panel-title">CAREER GOAL</span>
-    </p-header>
-    Design, develop and deploy innovative engineering systems and services by combining multimedia, electronic and telematic technologies.
+    <ng-template #header>
+        <span class="panel-title">CAREER GOAL</span>
+    </ng-template>
+    Primary: Become a reference in payment technologies to be able to lead innovative projects within this area in any industry.
+    <br>
+    Secondary: Evolve innovative engineering systems and services by combining multimedia, electronic and telematic technologies.
 </p-panel>
 <br/>
 
 <p-panel id="education">
-    <p-header>
-        <span class="ui-panel-title">MAIN EDUCATION</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">MAIN EDUCATION</span>
+    </ng-template>
     <app-education></app-education>
 </p-panel>
 <br/>
 
 <p-panel id="experience">
-    <p-header>
-        <span class="ui-panel-title">PROFESSIONAL EXPERIENCE</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">PROFESSIONAL EXPERIENCE</span>
+    </ng-template>
     <app-professional-experience></app-professional-experience>
 </p-panel>
 <br/>
 
 <p-panel id="languages">
-    <p-header>
-        <span class="ui-panel-title">LANGUAGES</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">LANGUAGES</span>
+    </ng-template>
     <app-languages></app-languages>
 </p-panel>
 <br/>
 
 <p-panel id="awards">
-    <p-header>
-        <span class="ui-panel-title">AWARDS</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">AWARDS</span>
+    </ng-template>
     <div class="award-content">
         <div class="award-content-left">
             <h3>“Best End-of-Degree Project with National Instruments technologies”</h3>
@@ -70,7 +73,7 @@
         </div>
 
         <div class="award-content-right">
-            <a href="https://ni.com/" target="_blank">
+            <a href="https://ni.com/" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_NI.png" alt="Logo and link: NI"
                     pTooltip="Leading developer of automated test and automated measurement systems for engineering (expert in data acquisition, instrument control, virtual instrumentation and machine vision)." tooltipPosition="top">
             </a>
@@ -90,101 +93,119 @@
                         Project details and memory
                     </a></h3>
                     <hr>
-    
+
                     <h3>Publications</h3>
                     <div class="award-publications">
-                        <h4><a href="https://youtu.be/2aSytLl4oL0?list=UUNW9djX3St9Wtb-oAsSEtkQ&t=3567" target="_blank">
+                        <h4><a href="https://youtu.be/2aSytLl4oL0?list=UUNW9djX3St9Wtb-oAsSEtkQ&t=3567" target="_blank" rel="noopener noreferrer">
                             Video of Diploma Delivery Ceremony, starting at the award delivery act.
                         </a></h4>
                         <p-fieldset legend="Transcription" [toggleable]="true" collapsed=true>
-                            <p-tabView>
-                                <p-tabPanel header="English">
-                                    <p><i>
-                                        “It is going to proceed next to the presention of the <strong>award National Instruments to the best work end-of-degree in the field of engineering
-                                        in electronic equipment, test and measurement titled ‘Measurement and automated control system to characterize magnetic elements’.</strong>
-                                        The presentation of the award will be done by Mr. César Verdejo, responsible of the academic program of National Instruments.
-                                        The Mr. secretary will call the awarded.”
-                                        <br>“The awarded is Mr. David, sorry, <strong>Mr. Daniel Gómez-Lobo García.</strong>”
-                                    </i></p>
-                                </p-tabPanel>
-                                <p-tabPanel header="Spanish (original)">
-                                    <p><i>
-                                        “Se va a proceder a continuación a la entrega del <strong>premio National Instruments al mejor proyecto fin de carrera en el área de ingeniería
-                                        en equipos electrónicos, test y medida titulado ‘Sistema de medida y control automatizado para caracterizar elementos magnéticos’.</strong>
-                                        Hará entrega del premio Don César Verdejo, responsable del programa académico de National Instruments.
-                                        El señor secretario llamará al premiado.”
-                                        <br>“El premiado es Don David, perdón, <strong>Don Daniel Gómez-Lobo García.</strong>”
-                                    </i></p>
-                                </p-tabPanel>
-                            </p-tabView>
+                            <p-tabs value="0">
+                                <p-tablist>
+                                    <p-tab value="0">English</p-tab>
+                                    <p-tab value="1">Spanish (original)</p-tab>
+                                </p-tablist>
+                                <p-tabpanels>
+                                    <p-tabpanel value="0">
+                                        <p><i>
+                                            “It is going to proceed next to the presention of the <strong>award National Instruments to the best work end-of-degree in the field of engineering
+                                            in electronic equipment, test and measurement titled ‘Measurement and automated control system to characterize magnetic elements’.</strong>
+                                            The presentation of the award will be done by Mr. César Verdejo, responsible of the academic program of National Instruments.
+                                            The Mr. secretary will call the awarded.”
+                                            <br>“The awarded is Mr. David, sorry, <strong>Mr. Daniel Gómez-Lobo García.</strong>”
+                                        </i></p>
+                                    </p-tabpanel>
+                                    <p-tabpanel value="1">
+                                        <p><i>
+                                            “Se va a proceder a continuación a la entrega del <strong>premio National Instruments al mejor proyecto fin de carrera en el área de ingeniería
+                                            en equipos electrónicos, test y medida titulado ‘Sistema de medida y control automatizado para caracterizar elementos magnéticos’.</strong>
+                                            Hará entrega del premio Don César Verdejo, responsable del programa académico de National Instruments.
+                                            El señor secretario llamará al premiado.”
+                                            <br>“El premiado es Don David, perdón, <strong>Don Daniel Gómez-Lobo García.</strong>”
+                                        </i></p>
+                                    </p-tabpanel>
+                                </p-tabpanels>
+                            </p-tabs>
                         </p-fieldset>
                 
-                        <h4><a href="http://www.upm.es/UPM/SalaPrensa/Noticias?fmt=detail&prefmt=articulo&id=ae3e531528078310VgnVCM10000009c7648a____" target="_blank">
+                        <h4><a href="http://www.upm.es/UPM/SalaPrensa/Noticias?fmt=detail&prefmt=articulo&id=ae3e531528078310VgnVCM10000009c7648a____" target="_blank" rel="noopener noreferrer">
                             Press release: Diploma Delivery Ceremony at the faculty EUITT.
                         </a></h4>
                         <p-fieldset legend="Transcription" [toggleable]="true" collapsed=true>
-                            <p-tabView>
-                                <p-tabPanel header="English">
-                                    <p><i>
-                                        “In the ceremony it was done too the presentation by José Javier Medina, chairman of COITT,
-                                        of the award to the best record to Roberto Pérez Carrasco, and Carlos Conde presented the Award Javier Hernández Bermejo to the best record
-                                        in first course to Víctor Diéguez Rubio. Likewise, <strong>it was delivered the awards to the best works end-of-degree by the companies
-                                        National Instruments to Daniel Gómez-Lobo García</strong>, Graudio to Aitor Hernández Martínez and Rohde&Schwarz to
-                                        Javier Pérez Mesa, Patricia Robles Mansilla and David Sánchez Mínguez.”
-                                    </i></p>
-                                </p-tabPanel>
-                                <p-tabPanel header="Spanish (original)">
-                                    <p><i>
-                                        “En la ceremonia también se hizo entrega por parte de José Javier Medina, decano del COITT,
-                                        del premio al mejor expediente a Roberto Pérez Carrasco, y Carlos Conde entregó el Premio Javier Hernández Bermejo al mejor rendimiento de
-                                        primer curso a Víctor Diéguez Rubio. Asimismo, <strong>se entregaron los premios a los mejores proyectos fin de carrera por parte de las empresas
-                                        National Instruments a Daniel Gómez-Lobo García</strong>, Graudio a Aitor Hernández Martínez y Rohde&Schwarz a
-                                        Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez.”
-                                    </i></p>
-                                </p-tabPanel>
-                            </p-tabView>
+                            <p-tabs value="0">
+                                <p-tablist>
+                                    <p-tab value="0">English</p-tab>
+                                    <p-tab value="1">Spanish (original)</p-tab>
+                                </p-tablist>
+                                <p-tabpanels>
+                                    <p-tabpanel value="0">
+                                        <p><i>
+                                            “In the ceremony it was done too the presentation by José Javier Medina, chairman of COITT,
+                                            of the award to the best record to Roberto Pérez Carrasco, and Carlos Conde presented the Award Javier Hernández Bermejo to the best record
+                                            in first course to Víctor Diéguez Rubio. Likewise, <strong>it was delivered the awards to the best works end-of-degree by the companies
+                                            National Instruments to Daniel Gómez-Lobo García</strong>, Graudio to Aitor Hernández Martínez and Rohde&Schwarz to
+                                            Javier Pérez Mesa, Patricia Robles Mansilla and David Sánchez Mínguez.”
+                                        </i></p>
+                                    </p-tabpanel>
+                                    <p-tabpanel value="1">
+                                        <p><i>
+                                            “En la ceremonia también se hizo entrega por parte de José Javier Medina, decano del COITT,
+                                            del premio al mejor expediente a Roberto Pérez Carrasco, y Carlos Conde entregó el Premio Javier Hernández Bermejo al mejor rendimiento de
+                                            primer curso a Víctor Diéguez Rubio. Asimismo, <strong>se entregaron los premios a los mejores proyectos fin de carrera por parte de las empresas
+                                            National Instruments a Daniel Gómez-Lobo García</strong>, Graudio a Aitor Hernández Martínez y Rohde&Schwarz a
+                                            Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez.”
+                                        </i></p>
+                                    </p-tabpanel>
+                                </p-tabpanels>
+                            </p-tabs>
                         </p-fieldset>
                 
                 
-                        <h4><a href="https://www.euitt.upm.es/escuela/comunicaciones_escuela/eventos_historicos?anyoactual=2012&mesactual=6&fechalink=29/11/2018&mesmas=1" target="_blank">
+                        <h4><a href="https://www.euitt.upm.es/escuela/comunicaciones_escuela/eventos_historicos?anyoactual=2012&mesactual=6&fechalink=29/11/2018&mesmas=1" target="_blank" rel="noopener noreferrer">
                             Press release: Awards of course 2011-2012 (06/07/2012)
                         </a></h4>
                         <p-fieldset legend="Transcription" [toggleable]="true" collapsed=true>
-                            <p-tabView>
-                                <p-tabPanel header="English">
-                                    <p><i>
-                                        Award 'COITT' to the best record:
-                                        <br>&emsp;Roberto Pérez Carrasco
-                                        <br>Award 'Javier Hernández' to the best record in 1st course:
-                                        <br>&emsp;Víctor Diéguez Rubio
-                                        <br>Award 'Rohde&Schwarz' to the best work-end-of-degree in Radiocommunication:
-                                        <br>&emsp;Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez
-                                        <strong><br>Award 'National Instruments' to the best work-end-of-degree in Virtual Instrumentation:
-                                        <br>&emsp;Daniel Gómez-Lobo García</strong>
-                                        <br>Award 'Graudio' to the best work-end-of-degree in Audio:
-                                        <br>&emsp;Aitor Hernández Martínez
-                                    </i></p>
-                                </p-tabPanel>
-                                <p-tabPanel header="Spanish (original)">
-                                    <p><i>
-                                        Premio COITT al mejor expediente:
-                                        <br>&emsp;Roberto Pérez Carrasco
-                                        <br>Premio Javier Hernández al mejor expediente 1er curso:
-                                        <br>&emsp;Víctor Diéguez Rubio
-                                        <br>Premio Rohde&Schwarz al mejor PFC en Radiocomunicación:
-                                        <br>&emsp;Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez
-                                        <strong><br>Premio National Instruments al mejor PFC en Instrumentación Virtual:
-                                        <br>&emsp;Daniel Gómez-Lobo García</strong>
-                                        <br>Premio Graudio al mejor PFC en Audio:
-                                        <br>&emsp;Aitor Hernández Martínez
-                                    </i></p>
-                                </p-tabPanel>
-                            </p-tabView>
+                            <p-tabs value="0">
+                                <p-tablist>
+                                    <p-tab value="0">English</p-tab>
+                                    <p-tab value="1">Spanish (original)</p-tab>
+                                </p-tablist>
+                                <p-tabpanels>
+                                    <p-tabpanel value="0">
+                                        <p><i>
+                                            Award 'COITT' to the best record:
+                                            <br>&emsp;Roberto Pérez Carrasco
+                                            <br>Award 'Javier Hernández' to the best record in 1st course:
+                                            <br>&emsp;Víctor Diéguez Rubio
+                                            <br>Award 'Rohde&Schwarz' to the best work-end-of-degree in Radiocommunication:
+                                            <br>&emsp;Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez
+                                            <strong><br>Award 'National Instruments' to the best work-end-of-degree in Virtual Instrumentation:
+                                            <br>&emsp;Daniel Gómez-Lobo García</strong>
+                                            <br>Award 'Graudio' to the best work-end-of-degree in Audio:
+                                            <br>&emsp;Aitor Hernández Martínez
+                                        </i></p>
+                                    </p-tabpanel>
+                                    <p-tabpanel value="1">
+                                        <p><i>
+                                            Premio COITT al mejor expediente:
+                                            <br>&emsp;Roberto Pérez Carrasco
+                                            <br>Premio Javier Hernández al mejor expediente 1er curso:
+                                            <br>&emsp;Víctor Diéguez Rubio
+                                            <br>Premio Rohde&Schwarz al mejor PFC en Radiocomunicación:
+                                            <br>&emsp;Javier Pérez Mesa, Patricia Robles Mansilla y David Sánchez Mínguez
+                                            <strong><br>Premio National Instruments al mejor PFC en Instrumentación Virtual:
+                                            <br>&emsp;Daniel Gómez-Lobo García</strong>
+                                            <br>Premio Graudio al mejor PFC en Audio:
+                                            <br>&emsp;Aitor Hernández Martínez
+                                        </i></p>
+                                    </p-tabpanel>
+                                </p-tabpanels>
+                            </p-tabs>
                         </p-fieldset>
-    
+
                     </div>
                     <br>
-    
+
                 </p-dialog>
             </div>
 
@@ -195,60 +216,65 @@
 <br/>
 
 <p-panel id="tools">
-    <p-header>
-        <span class="ui-panel-title">SOFTWARE ENGINEERING TOOLS</span>
-    </p-header>
-    <p-accordion [multiple]="true">
-        <p-accordionTab *ngFor="let category of softwareEngSkills" header="{{category.category}}">
-            <div class="skillsList" pTooltip="Level: high" tooltipPosition="left">
-                <p-card *ngFor="let skill of getSkillsByLevel(category, 'H')">
-                    <div class="skill-h">
-                        {{skill.name}}
-                        <span *ngIf="skill.comment">
-                            ({{skill.comment}})
-                        </span>
+    <ng-template #header>
+        <span class="panel-title">SOFTWARE ENGINEERING TOOLS</span>
+    </ng-template>
+    <p-accordion [multiple]="false">
+        @for (category of softwareEngSkills; track category.category; let idx = $index) {
+            <p-accordion-panel value="{{idx}">
+                <p-accordion-header>{{category.category}}</p-accordion-header>
+                <p-accordion-content>
+                    <div class="skillsList" pTooltip="Level: high" tooltipPosition="left">
+                        <p-card *ngFor="let skill of getSkillsByLevel(category, 'H')">
+                            <div class="skill-h">
+                                {{skill.name}}
+                                <span *ngIf="skill.comment">
+                                    ({{skill.comment}})
+                                </span>
+                            </div>
+                        </p-card>
                     </div>
-                </p-card>
-            </div>
-            <div class="skillsList" pTooltip="Level: medium" tooltipPosition="left">
-                <p-card *ngFor="let skill of getSkillsByLevel(category, 'M')">
-                    <div class="skill-m">
-                        {{skill.name}}
-                        <span *ngIf="skill.comment">
-                            ({{skill.comment}})
-                        </span>
+                    <div class="skillsList" pTooltip="Level: medium" tooltipPosition="left">
+                        <p-card *ngFor="let skill of getSkillsByLevel(category, 'M')">
+                            <div class="skill-m">
+                                {{skill.name}}
+                                <span *ngIf="skill.comment">
+                                    ({{skill.comment}})
+                                </span>
+                            </div>
+                        </p-card>
                     </div>
-                </p-card>
-            </div>
-            <div class="skillsList" pTooltip="Level: medium-low" tooltipPosition="left">
-                <p-card *ngFor="let skill of getSkillsByLevel(category, 'M-L')">
-                    <div class="skill-ml">
-                        {{skill.name}}
-                        <span *ngIf="skill.comment">
-                            ({{skill.comment}})
-                        </span>
+                    <div class="skillsList" pTooltip="Level: medium-low" tooltipPosition="left">
+                        <p-card *ngFor="let skill of getSkillsByLevel(category, 'M-L')">
+                            <div class="skill-ml">
+                                {{skill.name}}
+                                <span *ngIf="skill.comment">
+                                    ({{skill.comment}})
+                                </span>
+                            </div>
+                        </p-card>
                     </div>
-                </p-card>
-            </div>
-            <div class="skillsList" pTooltip="Level: low" tooltipPosition="left">
-                <p-card *ngFor="let skill of getSkillsByLevel(category, 'L')">
-                    <div class="skill-l">
-                        {{skill.name}}
-                        <span *ngIf="skill.comment">
-                            ({{skill.comment}})
-                        </span>
+                    <div class="skillsList" pTooltip="Level: low" tooltipPosition="left">
+                        <p-card *ngFor="let skill of getSkillsByLevel(category, 'L')">
+                            <div class="skill-l">
+                                {{skill.name}}
+                                <span *ngIf="skill.comment">
+                                    ({{skill.comment}})
+                                </span>
+                            </div>
+                        </p-card>
                     </div>
-                </p-card>
-            </div>
-        </p-accordionTab>
+                </p-accordion-content>
+            </p-accordion-panel>
+        }
     </p-accordion>
 </p-panel>
 <br/>
 
 <p-panel id="courses">
-    <p-header>
-        <span class="ui-panel-title">COMPLEMENTARY COURSES</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">COMPLEMENTARY COURSES</span>
+    </ng-template>
     <div class="courseList">
         <p-table [value]="courses">
             <ng-template pTemplate="header">
@@ -264,6 +290,7 @@
                     <td>{{course["timespan"]}}</td>
                     <td>{{course["title"]}}</td>
                     <td>{{course["provider"]}}</td>
+                    <td>{{course["category"]}}</td>
                 </tr>
             </ng-template>
         </p-table>
@@ -272,21 +299,30 @@
 <br/>
 
 <p-panel id="participation">
-    <p-header>
-        <span class="ui-panel-title">ACTIVE PARTICIPATION</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">ACTIVE PARTICIPATION</span>
+    </ng-template>
     <div class="participation-categories">
-        <p-card header="Volunteering" class="participation-category">
-            <a href="https://www.best.eu.org/" target="_blank">
-                <p>Board of European Students of Technology (BEST):</p>
+        <p-card class="participation-category">
+            <ng-template #header>
+                <span class="panel-title">Volunteering</span>
+            </ng-template>
+            <a href="https://www.best.eu.org/" target="_blank" rel="noopener noreferrer">
+                <p>Board of European Students of Technology (BEST, “alumnus”):</p>
             </a>
-            <p>Main organizer of course, international delegate, international participant, member supporting organization development, events, networking and training. Currently “alumnus”.</p>
+            <p>Main organizer of course, international delegate, international participant, organization development support, events, networking and training.</p>
 
         </p-card>
-        <p-card header="Fairs/Events" class="participation-category">
+        <p-card class="participation-category">
+            <ng-template #header>
+                <span class="panel-title">Fairs/Events</span>
+            </ng-template>
             Intel Software Summit, Red Innova
         </p-card>
-        <p-card header="Competitions" class="participation-category">
+        <p-card class="participation-category">
+            <ng-template #header>
+                <span class="panel-title">Competitions</span>
+            </ng-template>
             ActúaUPM, Satelec, Hack The Crisis Norway
         </p-card>
     </div>
@@ -294,9 +330,9 @@
 <br/>
 
 <p-panel id="additional">
-    <p-header>
-        <span class="ui-panel-title">ADDITIONAL DATA</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">ADDITIONAL DATA</span>
+    </ng-template>
     <b>Driving license:</b> European B license (full clean).
     <br>
     <b>Willingness to travel:</b> yes (internationally when required).

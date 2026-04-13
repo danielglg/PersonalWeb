@@ -1,18 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import NovaLikePreset from './theme/nova-like.preset';
 
 import {MenubarModule} from 'primeng/menubar';
 import {ChartModule} from 'primeng/chart';
 import {CarouselModule} from 'primeng/carousel';
+import { providePrimeNG } from 'primeng/config';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { AboutComponent } from './about/about.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ContactModule } from './contact/contact.module';
+import { ProfessionalProfileModule } from './professional-profile/professional-profile.module';
 
 // Projects
 import { PaymentsComponent } from './projects/payments/payments.component';
@@ -33,6 +38,7 @@ import { OthersComponent } from './projects/others/others.component';
     TopBarComponent,
     TopMenuComponent,
     AboutComponent,
+    NotFoundComponent,
 
     // Projects
     PaymentsComponent,
@@ -52,12 +58,22 @@ import { OthersComponent } from './projects/others/others.component';
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
+    ContactModule,
+    ProfessionalProfileModule,
     MenubarModule,
     ChartModule,
     CarouselModule,
   ],
-  providers: [],
+  providers: [
+    providePrimeNG({
+      theme: {
+        preset: NovaLikePreset,
+        options: {
+          darkModeSelector: false
+        }
+      }
+    })
+  ],
   bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

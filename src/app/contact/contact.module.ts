@@ -1,8 +1,10 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import {CardModule} from 'primeng/card';
+import {ToastModule} from 'primeng/toast';
+import {MessageService} from 'primeng/api';
 
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactComponent } from './contact.component';
@@ -12,11 +14,12 @@ import { ContactComponent } from './contact.component';
   imports: [
     CommonModule,
     FormsModule,
-    CardModule
+    CardModule,
+    ToastModule
   ],
+  providers: [MessageService],
   exports: [
     ContactComponent
-  ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  ]
 })
 export class ContactModule { }
