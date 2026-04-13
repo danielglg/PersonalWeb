@@ -68,14 +68,14 @@
 <h3>External Database Redundancy (N+N+N)</h3>
 <p>
   SAPC interfaces with a database system called
-  <a href="https://www.ericsson.com/en/portfolio/digital-services/cloud-core/cloud-unified-data-management-and-policy/data-storage-management/centralized-user-database"  target="_blank">Centralized User Database (CUDB)</a>
+  <a href="https://www.ericsson.com/en/portfolio/digital-services/cloud-core/cloud-unified-data-management-and-policy/data-storage-management/centralized-user-database"  target="_blank" rel="noopener noreferrer">Centralized User Database (CUDB)</a>
   that stores subscriber-related data (e.g. subscriber profile, policing and charging data, ...).
   The communication with CUDB can be established via standard LDAP (Lightweight Directory Access Protocol) and SOAP (Simple Object Access Protocol).
 </p>
 <p>
   SAPC contains a specific component that manages the communication between SAPC and CUDB, employing LDAP.
   The communication between this component and other SAPC components is done via remote procedure calls (RPC) constructed with technologies like
-  <a href="https://en.wikipedia.org/wiki/Apache_Thrift"  target="_blank">Thrift</a>.
+  <a href="https://en.wikipedia.org/wiki/Apache_Thrift"  target="_blank" rel="noopener noreferrer">Thrift</a>.
 </p>
 <p>
   Such a component relied on elementary overload protection and load regulation mechanisms that did not fit well with the higher performance demand of modern times.

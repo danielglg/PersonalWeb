@@ -1,9 +1,9 @@
 
 <!-- Master degree -->
 <p-panel>
-    <p-header>
-        <span class="ui-panel-title" *ngIf="masterDegree">{{masterDegree.title}}.</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title" *ngIf="masterDegree">{{masterDegree.title}}.</span>
+    </ng-template>
     <div class="degree">
         <div class="degree-details">
             <div class="degree-details-top">
@@ -34,10 +34,10 @@
             </div>
         </div>
         <div class="degree-centre">
-            <a href="http://www.upm.es/internacional" target="_blank">
+            <a href="http://www.upm.es/internacional" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_Politecnica.png" alt="Logo and link: university" pTooltip="University" tooltipPosition="bottom">
             </a>
-            <a href="https://www.euitt.upm.es/?idioma=EN" target="_blank">
+            <a href="https://www.euitt.upm.es/?idioma=EN" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_ETSIST.png" alt="Logo and link: faculty" pTooltip="Faculty" tooltipPosition="bottom">
             </a>
         </div>
@@ -46,9 +46,9 @@
 
 <!-- Bachelor degree -->
 <p-panel>
-    <p-header>
-        <span class="ui-panel-title" *ngIf="bachelorDegree">{{bachelorDegree.title}}</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title" *ngIf="bachelorDegree">{{bachelorDegree.title}}</span>
+    </ng-template>
     <div class="degree">
         <div class="degree-details">
             <div class="degree-details-top">
@@ -79,10 +79,10 @@
             </div>
         </div>
         <div class="degree-centre">
-            <a href="http://www.upm.es/internacional" target="_blank">
+            <a href="http://www.upm.es/internacional" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_Politecnica.png" alt="Logo and link: university" pTooltip="University" tooltipPosition="bottom">
             </a>
-            <a href="https://www.euitt.upm.es/?idioma=EN" target="_blank">
+            <a href="https://www.euitt.upm.es/?idioma=EN" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_ETSIST.png" alt="Logo and link: faculty" pTooltip="Faculty" tooltipPosition="bottom">
             </a>
         </div>

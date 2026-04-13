@@ -5,6 +5,7 @@ import { ChartInfoService } from './chart-info.service';
 
 @Component({
   selector: 'app-about',
+  standalone: false,
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
   providers: [ChartInfoService]

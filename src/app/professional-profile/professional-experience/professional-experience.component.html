@@ -1,7 +1,7 @@
 <p-panel>
-    <p-header>
-        <span class="ui-panel-title">R&D engineer and consultant.</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">R&D engineer and consultant.</span>
+    </ng-template>
     <div class="employer">
         <div class="employer-left">
             <div class="employer-name">
@@ -30,7 +30,7 @@
             </ol>
         </div>
         <div class="employer-right">
-            <a href="https://www.altran.com/" target="_blank"
+            <a href="https://www.altran.com/" target="_blank" rel="noopener noreferrer"
                 pTooltip="Consulting firm specialized in engineering, innovation and R&D services." tooltipPosition="bottom">
                 <img class="logo" src="assets/logos/Logo_Altran.png" alt="Logo and link: Altran">
             </a>
@@ -41,7 +41,10 @@
     <h3>Customers:</h3>
     <br>
     <div class="customers">
-        <p-card header="AMADEUS (Amadeus Payments)" class="customer-card">
+        <p-card class="customer-card">
+            <ng-template #header>
+                <span class="panel-title">AMADEUS (Amadeus Payments)</span>
+            </ng-template>
             <div class="customer-card-content">
                 <div class="customer-left">
                     05/2018 – Currently
@@ -51,7 +54,7 @@
                     Key words: payments, fintech, traveltech, Control Change Board processes, EDIFACT, BI, PCI DSS.
                 </div>
                 <div class="customer-right">
-                    <a href="https://amadeus.com/" target="_blank">
+                    <a href="https://amadeus.com/" target="_blank" rel="noopener noreferrer">
                         <img class="logo" src="assets/logos/Logo_Amadeus.png" alt="Logo and link: Amadeus"
                             pTooltip="A leading provider of travel technology that solves critical requirements of airlines, airports, hotels, railways, search engines, travel agencies, tour operators and other travel players." tooltipPosition="top">
                     </a>
@@ -60,7 +63,10 @@
             </div>
         </p-card>
         
-        <p-card header="ERICSSON (Core Network)" class="customer-card">
+        <p-card class="customer-card">
+            <ng-template #header>
+                <span class="panel-title">ERICSSON (Core Network)</span>
+            </ng-template>
             <div class="customer-card-content">
                 <div class="customer-left">
                     05/2017 – 05/2018
@@ -70,7 +76,7 @@
                     Key words: telecom, core network, 3GPP, PCRF, Diameter, 4G, 5G, migration to cloud architecture.
                 </div>
                 <div class="customer-right">
-                    <a href="https://www.ericsson.com/" target="_blank">
+                    <a href="https://www.ericsson.com/" target="_blank" rel="noopener noreferrer">
                         <img class="logo"src="assets/logos/Logo_Ericsson.png" alt="Logo and link: Ericsson"
                             pTooltip="One of the leading providers of Information and Communication Technology (ICT) to service providers." tooltipPosition="top">
                     </a>
@@ -79,7 +85,10 @@
             </div>
         </p-card>
         
-        <p-card header="NOKIA / ALCATEL-LUCENT (Video Business Unit)" class="customer-card">
+        <p-card class="customer-card">
+            <ng-template #header>
+                <span class="panel-title">NOKIA / ALCATEL-LUCENT (Video Business Unit)</span>
+            </ng-template>
             <div class="customer-card-content">
                 <div class="customer-left">
                     10/2015 – 05/2017
@@ -89,7 +98,7 @@
                     Key words: multimedia specifications (HLS, MSS, DASH), Content Delivery Network (Nokia’s CDN), IPTV, content transformation (ad insertion, blackout, alternative content, etc.), HTTP REST APIs, compatibility.
                 </div>
                 <div class="customer-right">
-                    <a href="https://www.nokia.com/" target="_blank">
+                    <a href="https://www.nokia.com/" target="_blank" rel="noopener noreferrer">
                         <img class="logo" src="assets/logos/Logo_Nokia.png" alt="Logo and link: Nokia"
                             pTooltip="One of the leading providers of Information and Communication Technology (ICT) and consumer electronics." tooltipPosition="top">
                     </a>
@@ -102,9 +111,9 @@
 </p-panel>
 
 <p-panel>
-    <p-header>
-        <span class="ui-panel-title">R&D engineer.</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">R&D engineer.</span>
+    </ng-template>
     <div class="employer">
         <div class="employer-left">
             <div class="employer-name">
@@ -118,11 +127,11 @@
             Key words: H.265 (HEVC), H.264, AC-3 (DD), E-AC-3 (DD+), MPEG-1 Part 3, MPEG-2 Part 1, quality metrics (PSNR, DMOS, JND, ITU BS.1770, EBU R128), multimedia analyzers, FFmpeg, TSReader, Sapec’s codecs.
         </div>
         <div class="employer-right">
-            <a href="http://sapec.es/en/" target="_blank">
+            <a href="http://sapec.es/en/" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_SAPEC.png" alt="Logo and link: Sapec"
                     pTooltip="Manufacturer of devices and developer of solutions for high-quality TV signal transport in professional environments (expert in video compression for contribution)." tooltipPosition="top">
             </a>
-            <a href="https://www.gti.ssr.upm.es/" target="_blank">
+            <a href="https://www.gti.ssr.upm.es/" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_GTI.png" alt="Logo and link: Image Processing Group (GTI)"
                     pTooltip="Research group working on theory, methods, and applications of digital image, video processing, visual communications, real-time computer vision and multimedia telecom applications." tooltipPosition="bottom">
             </a>
@@ -132,9 +141,9 @@
 </p-panel>
 
 <p-panel>
-    <p-header>
-        <span class="ui-panel-title">Collaborator in research activities.</span>
-    </p-header>
+    <ng-template #header>
+        <span class="panel-title">Collaborator in research activities.</span>
+    </ng-template>
     <div class="employer">
         <div class="employer-left">
             <div class="employer-name">
@@ -148,7 +157,7 @@
             Key words: RVC, H.265, H.264, Orcc, ARM, DSP (TI DM6437).
         </div>
         <div class="employer-right">
-            <a href="https://www.etsist.upm.es/estaticos/gdem/en/index.php.html" target="_blank">
+            <a href="https://www.etsist.upm.es/estaticos/gdem/en/index.php.html" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_GDEM.png" alt="Logo and link: Electronic and Microelectronic Design Group (GDEM)"
                     pTooltip="Research group whose main expertise is in electronic design, video coding, digital television and convergence of audio, video and data over different broadcasting networks (cable, satellite and radio)." tooltipPosition="top">
             </a>

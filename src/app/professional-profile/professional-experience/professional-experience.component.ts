@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import {MenuItem} from 'primeng/primeng';
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-professional-experience',
+  standalone: false,
   templateUrl: './professional-experience.component.html',
   styleUrls: ['./professional-experience.component.scss']
 })
