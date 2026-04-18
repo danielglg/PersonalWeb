@@ -4,6 +4,7 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ProfessionalProfileComponent } from './professional-profile/professional-profile.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 // Projects
 import { PaymentsComponent } from './projects/payments/payments.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'cv', component: ProfessionalProfileComponent },
   { path: 'contact', component: ContactComponent },
+  { path: '404', component: NotFoundComponent },
 
   // Projects
   { path: 'projects/payments', component: PaymentsComponent },
@@ -45,7 +47,7 @@ const routes: Routes = [
   { path: 'projects/others', component: OthersComponent },
 
   // Default
-  { path: '**', component: AboutComponent }
+  { path: '**', redirectTo: '404' }
 ];
 
 @NgModule({

@@ -3,6 +3,7 @@ import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-top-menu',
+  standalone: false,
   templateUrl: './top-menu.component.html',
   styleUrls: ['./top-menu.component.scss']
 })

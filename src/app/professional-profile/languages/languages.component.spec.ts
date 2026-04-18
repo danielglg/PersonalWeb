@@ -1,4 +1,5 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { LanguagesComponent } from './languages.component';
 
@@ -6,9 +7,10 @@ describe('LanguagesComponent', () => {
   let component: LanguagesComponent;
   let fixture: ComponentFixture<LanguagesComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LanguagesComponent ]
+      declarations: [ LanguagesComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-proj-others',
+  standalone: false,
   templateUrl: './others.component.html',
   styleUrls: ['./others.component.scss', '../../../assets/common_styles/projects.scss'],
 })
