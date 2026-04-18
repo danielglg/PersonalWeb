@@ -23,6 +23,8 @@ import { ProfessionalProfileModule } from './professional-profile/professional-p
 import { PaymentsComponent } from './projects/payments/payments.component';
 import { PaymentsEmvComponent } from './projects/payments/payments-emv.component';
 import { PaymentsAcquiringComponent } from './projects/payments/payments-acquiring.component';
+import { PaymentsIssuingComponent } from './projects/payments/payments-issuing.component';
+import { PaymentsTokenizationComponent } from './projects/payments/payments-tokenization.component';
 import { NetworksComponent } from './projects/networks/networks.component';
 import { NetworksPcrfComponent } from './projects/networks/networks-pcrf.component';
 import { VideoComponent } from './projects/video/video.component';
@@ -44,6 +46,8 @@ import { OthersComponent } from './projects/others/others.component';
     PaymentsComponent,
     PaymentsEmvComponent,
     PaymentsAcquiringComponent,
+    PaymentsIssuingComponent,
+    PaymentsTokenizationComponent,
     NetworksComponent,
     NetworksPcrfComponent,
     VideoComponent,
