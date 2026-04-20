@@ -4,12 +4,12 @@
         "skills": [
             {
                 "name": "C++",
-                "comment": "11/14/17",
+                "comment": "11/14/17/20",
                 "level": "H"
             },
             {
                 "name": "Java",
-                "comment": "J8SE",
+                "comment": "17/21",
                 "level": "H"
             },
             {
@@ -88,6 +88,10 @@
             },
             {
                 "name": "Perforce",
+                "level": "H"
+            },
+            {
+                "name": "Github",
                 "level": "H"
             },
             {
@@ -390,7 +394,15 @@
         "category": "Project Management",
         "skills": [
             {
-                "name": "Agile ()",
+                "name": "Agile",
+                "level": "H"
+            },
+            {
+                "name": "Safe",
+                "level": "H"
+            },
+            {
+                "name": "Scrum",
                 "level": "H"
             },
             {
@@ -420,7 +432,7 @@
         ]
     },
     {
-        "category": "Operating systems and middleware",
+        "category": "Operating systems",
         "skills": [
             {
                 "name": "Linux-based",
@@ -442,6 +454,27 @@
         ]
     },
     {
+        "category": "Middleware and frameworks",
+        "skills": [
+            {
+                "name": "Azure",
+                "level": "M"
+            },
+            {
+                "name": "Quarkus (CNA development)",
+                "level": "M"
+            },
+            {
+                "name": "Amadeus Open-Backend MDW",
+                "level": "M"
+            },
+            {
+                "name": "Amadeus Skube",
+                "level": "M"
+            }
+        ]
+    },
+    {
         "category": "Software design",
         "skills": [
             {
@@ -456,6 +489,14 @@
             {
                 "name": "APIs",
                 "level": "M"
+            },
+            {
+                "name": "Open Backend Architecture",
+                "level": "H"
+            },
+            {
+                "name": "Cloud Native Applications",
+                "level": "H"
             }
         ]
     },
@@ -476,6 +517,10 @@
             },
             {
                 "name": "Notepad++",
+                "level": "H"
+            },
+            {
+                "name": "Microsoft Teams",
                 "level": "H"
             },
             {
