@@ -5,6 +5,10 @@
     margin-top:2px;
 }
 
+:host ::ng-deep p-panel .p-panel-header {
+    background: linear-gradient(to right, #5c9caf71, #c9d6db71 );
+}
+
 .employer {
     display: flex;
     justify-content: space-between;

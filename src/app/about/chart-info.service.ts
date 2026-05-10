@@ -41,7 +41,7 @@ export class ChartInfoService {
           labels: ['C++', 'Python', 'Java', 'Others'],
           datasets: [
               {
-                    data: [57, 18, 15, 10],
+                    data: [55, 15, 20, 10],
                     backgroundColor: backgroundColorList,
                     hoverBackgroundColor: backgroundHoverColorList
               }]
@@ -51,7 +51,7 @@ export class ChartInfoService {
           labels: ['Video', 'Networks', 'Payments', 'Others'],
           datasets: [
               {
-                    data: [38.46, 15.38, 30.77, 15.38],
+                    data: [35.46, 7.38, 46.77, 10.38],
                     backgroundColor: backgroundColorList,
                     hoverBackgroundColor: backgroundHoverColorList
               }]
@@ -61,17 +61,17 @@ export class ChartInfoService {
           labels: ['Backend', 'Frontend', 'Devops', 'Signal/data processing', 'Embedded'],
           datasets: [
               {
-                    data: [60, 10, 10, 10, 10],
+                    data: [66, 10, 10, 7, 7],
                     backgroundColor: backgroundColorList,
                     hoverBackgroundColor: backgroundHoverColorList
               }]
           };
 
         this.dataMethodologies = {
-            labels: ['Scrum', 'Kanban', 'SaFe', 'Other Agile', 'Traditional'],
+            labels: ['SaFe', 'Scrum', 'Kanban', 'Other Agile', 'Traditional'],
             datasets: [
                 {
-                    data: [60, 5, 10, 5, 20],
+                    data: [35, 50, 5, 5, 5],
                     backgroundColor: backgroundColorList,
                     hoverBackgroundColor: backgroundHoverColorList
                 }]
@@ -81,7 +81,7 @@ export class ChartInfoService {
             labels: ['SQL (Oracle)', 'SQL (Other)', 'No-SQL (MongoDB)', 'No-SQL (Other)', 'Other'],
             datasets: [
                 {
-                    data: [55, 10, 20, 10, 5],
+                    data: [75, 10, 10, 3, 2],
                     backgroundColor: backgroundColorList,
                     hoverBackgroundColor: backgroundHoverColorList
                 }]
@@ -101,7 +101,7 @@ export class ChartInfoService {
             labels: ['Linux-based', 'Windows-based'],
             datasets: [
                 {
-                    data: [75, 25],
+                    data: [80, 20],
                     backgroundColor: backgroundColorList,
                     hoverBackgroundColor: backgroundHoverColorList
                 }]
@@ -112,7 +112,7 @@ export class ChartInfoService {
             labels: ['Git-based', 'Perforce', 'Others'],
             datasets: [
                 {
-                    data: [70, 20, 10],
+                    data: [80, 15, 5],
                     backgroundColor: backgroundColorList,
                     hoverBackgroundColor: backgroundHoverColorList
                 }]
