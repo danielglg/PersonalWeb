@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng deploy"
+    "predeploy": "ng build --configuration production --base-href /PersonalWeb/",
+    "deploy": "gh-pages -d dist/app"
   },
   "private": true,
   "dependencies": {
@@ -40,6 +41,7 @@
     "angular-cli-ghpages": "^3.0.2",
     "angular-eslint": "21.3.1",
     "eslint": "^10.0.3",
+    "gh-pages": "^6.3.0",
     "jasmine-core": "^6.1.0",
     "karma": "^6.4.4",
     "karma-chrome-launcher": "^3.2.0",
