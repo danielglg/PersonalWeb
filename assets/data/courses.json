@@ -1,5 +1,26 @@
 [
     {
+        "title" : "Several Cloud courses",
+        "date" : "09/2023",
+        "timespan" : "(~3w.)",
+        "provider" : "Amadeus & Pluralsight, online.",
+        "category" : "Technology"
+    },
+    {
+        "title" : "Amadeus Software Developer Security Training",
+        "date" : "05/2022",
+        "timespan" : "(4h.)",
+        "provider" : "Amadeus, online.",
+        "category" : "Technology"
+    },
+    {
+        "title" : "SAFe for Teams (Certified SAFe® 5 Practitioner)",
+        "date" : "03/2022",
+        "timespan" : "(1w.)",
+        "provider" : "Scaled Agile, Inc., online.",
+        "category" : "Methodology"
+    },
+    {
         "title" : "Payment Academy.",
         "date" : "12/2020",
         "timespan" : "(1w.)",
