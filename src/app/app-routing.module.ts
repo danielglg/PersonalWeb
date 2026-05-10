@@ -10,6 +10,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PaymentsComponent } from './projects/payments/payments.component';
 import { PaymentsEmvComponent } from './projects/payments/payments-emv.component';
 import { PaymentsAcquiringComponent } from './projects/payments/payments-acquiring.component';
+import { PaymentsIssuingComponent } from './projects/payments/payments-issuing.component';
+import { PaymentsTokenizationComponent } from './projects/payments/payments-tokenization.component';
 import { NetworksComponent } from './projects/networks/networks.component';
 import { NetworksPcrfComponent } from './projects/networks/networks-pcrf.component';
 import { VideoComponent } from './projects/video/video.component';
@@ -37,6 +39,8 @@ const routes: Routes = [
   { path: 'projects/payments', component: PaymentsComponent },
   { path: 'projects/payments/emv', component: PaymentsEmvComponent },
   { path: 'projects/payments/acquiring', component: PaymentsAcquiringComponent },
+  { path: 'projects/payments/issuing', component: PaymentsIssuingComponent },
+  { path: 'projects/payments/tokenization', component: PaymentsTokenizationComponent },
   { path: 'projects/networks', component: NetworksComponent },
   { path: 'projects/networks/pcrf', component: NetworksPcrfComponent },
   { path: 'projects/video', component: VideoComponent },

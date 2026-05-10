@@ -37,6 +37,14 @@ export class TopMenuComponent implements OnInit {
               {
                 label: 'Acquiring',
                 routerLink: ['/projects/payments/acquiring']
+              },
+              {
+                label: 'Issuing',
+                routerLink: ['/projects/payments/issuing']
+              },
+              {
+                label: 'Tokenization',
+                routerLink: ['/projects/payments/tokenization']
               }
             ]
           },
