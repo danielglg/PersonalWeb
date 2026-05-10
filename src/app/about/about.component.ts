@@ -42,8 +42,10 @@ export class AboutComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    alert("The website you are accessing is still under development; however you are allowed to see the most current state published.\n\n" +
+    alert("The website you are accessing is under renovation (in 2026); however you are allowed to see the most current state published.\n\n" +
           "Visualization on desktop/laptop screens is recommended, but in general you can safely visualize in other mobile devices too.\n\n" +
+          "Note 1: contact form server has been disabled temporarily, but you can still contact me through LinkedIn or email.\n\n" +
+          "Note 2: CV sections 'Software engineering tools' and 'Complementary courses' have a bug. You have to cross top-bar to make content visible.\n\n" +
           "Disclaimer: the information provided has been reviewed to keep sensitive information of third parties confidential."
       );
 
