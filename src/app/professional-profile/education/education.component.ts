@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ProfessionalProfileService } from '../professional-profile.service';
 
 import { Degree, Subject } from './../degree.model'
@@ -22,7 +22,10 @@ export class EducationComponent implements OnInit {
 
   subjectTablecols: any[];
 
-  constructor(private profileService: ProfessionalProfileService) {}
+  constructor(
+    private profileService: ProfessionalProfileService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngOnInit(): void {
 
@@ -30,6 +33,7 @@ export class EducationComponent implements OnInit {
       .subscribe(resp => {
           this.masterDegree = resp;
           this.masterSubjects = this.masterDegree.subjects;
+          this.cdr.detectChanges();
         }
       );
 
@@ -37,6 +41,7 @@ export class EducationComponent implements OnInit {
       .subscribe(resp => {
           this.bachelorDegree = resp;
           this.bachelorSubjects = this.bachelorDegree.subjects;
+          this.cdr.detectChanges();
         }
       );
 

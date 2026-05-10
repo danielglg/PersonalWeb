@@ -1,0 +1,50 @@
+name: Deploy Angular to gh-pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund || npm install --no-audit --no-fund
+
+      - name: Build app for GitHub Pages
+        run: npx ng build --configuration production --base-href /PersonalWeb/
+
+      - name: Resolve Angular output folder
+        id: outdir
+        shell: bash
+        run: |
+          if [ -f dist/app/browser/index.html ]; then
+            echo "dir=dist/app/browser" >> "$GITHUB_OUTPUT"
+          elif [ -f dist/app/index.html ]; then
+            echo "dir=dist/app" >> "$GITHUB_OUTPUT"
+          else
+            echo "No index.html found in dist/"
+            find dist -name index.html || true
+            exit 1
+          fi
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ${{ steps.outdir.outputs.dir }}

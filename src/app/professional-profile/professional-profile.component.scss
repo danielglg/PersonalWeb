@@ -5,6 +5,10 @@
     margin-top:2px
 }
 
+:host ::ng-deep p-panel .p-panel-header {
+    background: linear-gradient(to right, #477a8a71, #78808371 );
+}
+
 .courseList {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -64,6 +68,9 @@
     padding: 2px;
 }
 
+.certification-card {
+    flex-direction: row;
+}
 
 .logo {
     width:150px;

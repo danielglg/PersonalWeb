@@ -1,5 +1,74 @@
 <p-panel>
     <ng-template #header>
+        <span class="panel-title">Senior Software Engineer.</span>
+    </ng-template>
+    <div class="employer">
+        <div class="employer-left">
+            <div class="employer-name">
+                AMADEUS (Outpayce)
+            </div>
+            <br>
+            05/2018 – Currently
+            <br>
+            <br>
+            Responsibilities:
+            <ol type="circle">
+                <li>Researching and developing ideas, features, technologies and tools.</li>
+                <li>Building software; validating implementations by means of unit, regression and system tests.</li>
+                <li>Maintaining existing solutions, adapting them to new business and technical requirements.</li>
+                <li>Improving software quality by refactoring and tracking technical debt and other metrics.</li>
+                <li>Detecting, debugging and solving problems in software and system integrations.</li>
+                <li>Designing, analyzing, proposing and implementing software architectures.</li>
+                <li>Managing software configuration and its state along the production pipeline.</li>
+                <li>Guaranteeing the quality and reliability of the software services so customers are satisfied.</li>
+                <li>Estimating effort, resources and timelines for development tasks.</li>
+                <li>Anticipating and mitigating technical risks and interdependencies.</li>
+                <li>Managing technical aspects of products and projects.</li>
+                <li>Establishing, reviewing and evolving technical standards</li>
+                <li>Elaborating documentation and keeping it up to date.</li>
+                <li>Translating complex concepts into understandable information.</li>
+                <li>Serving as reference or point of contact.</li>
+                <li>Fostering engineering culture.</li>
+                <li>Promoting the adoption of suitable and consistent working methodologies (adapting Agile, Scaled Agile, TDD, BDD, etc.).</li>
+                <li>Contributing with cross-functional mindset and assisting when special needs arise.</li>
+                <li>Preparing and carrying out demonstrations and proofs of concept.</li>
+                <li>Participating in audits (e.g. PCI DSS, security) and assessments (e.g. Artificial Intelligence, cloud solutions).</li>
+                <li>Sharing/importing knowledge to/in the organization.</li>
+                <li>Training people and explaining solutions.</li>
+                <li>Mentoring/coaching.</li>
+                <li>Supporting hiring processes.</li>
+            </ol>
+            <br>
+            Specific special roles:
+            <ol type="disc">
+                <li>Change Control Board member: designated expert that inspects and plans the submission of changes to systems, setting and endorsing quality gatekeeping practices.</li>
+                <li>Application owner of Tokenizer Gateway</li>
+                <li>Component owner of Airport Pay components and temporarily from PCI DSS Tokenizer</li>
+                <li>Mentor</li>
+                <li>R&D technical lead</li>
+            </ol>
+            <br>
+            Relevant accomplishments:
+            <ol type="disc">
+                <li>Contributed to building good teams.</li>
+                <li>Acquired the trust of colleagues and stakeholders to hold specific roles and guide product development.</li>
+                <li>Integrated, modeled and mentored the first Hospitality-Payments transversal team; created in different location with newcomers in 2022.</li>
+                <li>Reinforced cross-functional engineering squad to launch minimum-viable product that made Amadeus comply timely with Royal Bank of India laws. First cloud native application in Outpayce.</li>
+                <li>Assisted urgency in project on Issuing area to achieve compliance with Bank of Spain and keep e-money license. </li>
+            </ol>
+
+        </div>
+        <div class="employer-right">
+            <a href="https://outpayce.com/en" target="_blank" rel="noopener noreferrer"
+                pTooltip="Outpayce:&#010;Spin-off from Amadeus bringing smooth end-to-end payments solutions to the travel industry." tooltipPosition="bottom">
+                <img class="logo" src="assets/logos/Logo_Outpayce-220x61.png" alt="Logo and link: Outpayce (from Amadeus)">
+            </a>
+        </div>
+    </div>
+</p-panel>
+
+<p-panel>
+    <ng-template #header>
         <span class="panel-title">R&D engineer and consultant.</span>
     </ng-template>
     <div class="employer">
@@ -8,7 +77,7 @@
                 ALTRAN
             </div>
             <br>
-            10/2015 – Currently
+            10/2015 – 05/2021
             <br>
             Responsibilities / accomplishments:
             <ol type="disc">
@@ -31,7 +100,7 @@
         </div>
         <div class="employer-right">
             <a href="https://www.altran.com/" target="_blank" rel="noopener noreferrer"
-                pTooltip="Consulting firm specialized in engineering, innovation and R&D services." tooltipPosition="bottom">
+                pTooltip="Altran:&#010;Consulting firm specialized in engineering, innovation and R&D services." tooltipPosition="bottom">
                 <img class="logo" src="assets/logos/Logo_Altran.png" alt="Logo and link: Altran">
             </a>
         </div>
@@ -47,7 +116,7 @@
             </ng-template>
             <div class="customer-card-content">
                 <div class="customer-left">
-                    05/2018 – Currently
+                    05/2018 – 05/2021
                     <br>
                     Main products: Airport Pay (EMV), Acquiring Orchestration and Payment Server
                     <br>
@@ -56,7 +125,7 @@
                 <div class="customer-right">
                     <a href="https://amadeus.com/" target="_blank" rel="noopener noreferrer">
                         <img class="logo" src="assets/logos/Logo_Amadeus.png" alt="Logo and link: Amadeus"
-                            pTooltip="A leading provider of travel technology that solves critical requirements of airlines, airports, hotels, railways, search engines, travel agencies, tour operators and other travel players." tooltipPosition="top">
+                            pTooltip="Amadeus:&#010;A leading provider of travel technology that solves critical requirements of airlines, airports, hotels, railways, search engines, travel agencies, tour operators and other travel players." tooltipPosition="top">
                     </a>
                     <p-splitButton label="Projects in: payments" icon="pi pi-file" (onClick)="goToProjects('payments')" [model]="amadeusItems"></p-splitButton>
                 </div>
@@ -78,7 +147,7 @@
                 <div class="customer-right">
                     <a href="https://www.ericsson.com/" target="_blank" rel="noopener noreferrer">
                         <img class="logo"src="assets/logos/Logo_Ericsson.png" alt="Logo and link: Ericsson"
-                            pTooltip="One of the leading providers of Information and Communication Technology (ICT) to service providers." tooltipPosition="top">
+                            pTooltip="Ericsson:&#010;One of the leading providers of Information and Communication Technology (ICT) to service providers." tooltipPosition="top">
                     </a>
                     <p-splitButton label="Projects in: core networks" icon="pi pi-file" (onClick)="goToProjects('networks')" [model]="ericssonItems"></p-splitButton>
                 </div>
@@ -100,7 +169,7 @@
                 <div class="customer-right">
                     <a href="https://www.nokia.com/" target="_blank" rel="noopener noreferrer">
                         <img class="logo" src="assets/logos/Logo_Nokia.png" alt="Logo and link: Nokia"
-                            pTooltip="One of the leading providers of Information and Communication Technology (ICT) and consumer electronics." tooltipPosition="top">
+                            pTooltip="Nokia:&#010;One of the leading providers of Information and Communication Technology (ICT) and consumer electronics." tooltipPosition="top">
                     </a>
                     <p-splitButton label="Projects in: video" icon="pi pi-file" (onClick)="goToProjects('video')" [model]="nokiaItems"></p-splitButton>
                 </div>
@@ -129,11 +198,11 @@
         <div class="employer-right">
             <a href="http://sapec.es/en/" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_SAPEC.png" alt="Logo and link: Sapec"
-                    pTooltip="Manufacturer of devices and developer of solutions for high-quality TV signal transport in professional environments (expert in video compression for contribution)." tooltipPosition="top">
+                    pTooltip="Sapec:&#010;Manufacturer of devices and developer of solutions for high-quality TV signal transport in professional environments (expert in video compression for contribution)." tooltipPosition="top">
             </a>
             <a href="https://www.gti.ssr.upm.es/" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_GTI.png" alt="Logo and link: Image Processing Group (GTI)"
-                    pTooltip="Research group working on theory, methods, and applications of digital image, video processing, visual communications, real-time computer vision and multimedia telecom applications." tooltipPosition="bottom">
+                    pTooltip="GTI:&#010;Research group working on theory, methods, and applications of digital image, video processing, visual communications, real-time computer vision and multimedia telecom applications." tooltipPosition="bottom">
             </a>
             <p-splitButton label="Projects in: video" icon="pi pi-file" (onClick)="goToProjects('video')" [model]="sapecItems"></p-splitButton>
         </div>
@@ -159,7 +228,7 @@
         <div class="employer-right">
             <a href="https://www.etsist.upm.es/estaticos/gdem/en/index.php.html" target="_blank" rel="noopener noreferrer">
                 <img class="logo" src="assets/logos/Logo_GDEM.png" alt="Logo and link: Electronic and Microelectronic Design Group (GDEM)"
-                    pTooltip="Research group whose main expertise is in electronic design, video coding, digital television and convergence of audio, video and data over different broadcasting networks (cable, satellite and radio)." tooltipPosition="top">
+                    pTooltip="GDEM:&#010;Research group whose main expertise is in electronic design, video coding, digital television and convergence of audio, video and data over different broadcasting networks (cable, satellite and radio)." tooltipPosition="top">
             </a>
             <p-splitButton label="Projects in: embedded systems" icon="pi pi-file" (onClick)="goToProjects('embedded')" [model]="gdemItems"></p-splitButton>
         </div>

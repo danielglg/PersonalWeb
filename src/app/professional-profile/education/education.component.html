@@ -2,7 +2,7 @@
 <!-- Master degree -->
 <p-panel>
     <ng-template #header>
-        <span class="panel-title" *ngIf="masterDegree">{{masterDegree.title}}.</span>
+        <span class="panel-title">{{ masterDegree?.title }}.</span>
     </ng-template>
     <div class="degree">
         <div class="degree-details">
@@ -27,6 +27,7 @@
                             <tr>
                                 <td *ngFor="let col of subjectTablecols">
                                     {{subject[col.field]}}
+                                </td>
                             </tr>
                         </ng-template>
                     </p-table>
@@ -47,7 +48,7 @@
 <!-- Bachelor degree -->
 <p-panel>
     <ng-template #header>
-        <span class="panel-title" *ngIf="bachelorDegree">{{bachelorDegree.title}}</span>
+        <span class="panel-title">{{ bachelorDegree?.title }}</span>
     </ng-template>
     <div class="degree">
         <div class="degree-details">
@@ -72,6 +73,7 @@
                             <tr>
                                 <td *ngFor="let col of subjectTablecols">
                                     {{subject[col.field]}}
+                                </td>
                             </tr>
                         </ng-template>
                     </p-table>
